@@ -18,11 +18,7 @@ abstract class BaseEntity
      */
     public function __construct(array $data, ?string $key = null)
     {
-        if ($key === null) {
-            $this->load($data);
-        } elseif (isset($data[$key])) {
-            $this->load($data[$key]);
-        }
+        $this->load($this->getDataByKey($data, $key));
     }
 
     /**
@@ -48,8 +44,8 @@ abstract class BaseEntity
             $attributes = $this->getAttributes();
             $attributes = array_flip($attributes);
             foreach ($values as $name => $value) {
-                if (isset($attributes[$name])) {
-                    if (is_array($value)) {
+                if (isset($attributes[$name]) && $this->{$name} === null) {
+                    if (is_array($value) && !$this->isAssociative($value)) {
                         if (($class = $this->getClassNameByKey($name)) !== null) {
                             foreach ($values[$name] as $key => $objData) {
                                 $obj = new $class($objData);
@@ -79,12 +75,47 @@ abstract class BaseEntity
         return $names;
     }
 
+    private function isAssociative($array): bool
+    {
+        if (!is_array($array) || empty($array)) {
+            return false;
+        }
+
+        foreach ($array as $key => $value) {
+            if (!is_string($key)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     /**
      * @param string $key
      * @return null|string
      */
     protected function getClassNameByKey(string $key): ?string
     {
-        return $key;
+        var_dump($key);
+        return null;
+    }
+
+    /**
+     * @param array $data
+     * @param null|string $key
+     * @return array
+     * @throws \Exception
+     */
+    protected function getDataByKey(array $data, ?string $key): array
+    {
+        if ($key !== null) {
+            if (isset($data[$key])) {
+                return $data[$key];
+            }
+//            else {
+//                throw new \Exception("Key '{$key}' doesn't exist.");
+//            }
+        }
+        return $data;
     }
 }

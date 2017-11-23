@@ -32,17 +32,19 @@ class ItemEntity extends base\BaseEntity
      * ItemEntity constructor.
      *
      * @param array $data
+     * @param string|null $key
      */
-    public function __construct(array $data)
+    public function __construct(array $data, ?string $key = null)
     {
-        parent::__construct($data);
-
+        parent::__construct($data, $key);
+        $data = $this->getDataByKey($data, $key);
         $this->unit = new UnitEntity($data, 'unit');
         $this->deliveryDate = new base\DateEntity($data, 'deliveryDate');
         $this->deliveryAddress = new DeliveryAddressEntity($data, 'deliveryAddress');
         $this->deliveryLocation = new DeliveryLocationEntity($data, 'deliveryLocation');
         $this->classification = new ClassificationEntity($data, 'classification');
     }
+
 
     /**
      * @return mixed

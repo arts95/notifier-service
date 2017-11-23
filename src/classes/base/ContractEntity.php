@@ -12,7 +12,7 @@ namespace app\entity\base;
  *
  * @package app\entity\base
  */
-abstract class ContractEntity extends BaseEntity
+class ContractEntity extends BaseEntity
 {
     protected $id;
     protected $awardID;
@@ -37,7 +37,7 @@ abstract class ContractEntity extends BaseEntity
     public function __construct(array $data, ?string $key = null)
     {
         parent::__construct($data, $key);
-
+        $data = $this->getDataByKey($data, $key);
         $this->period = new DateEntity($data, 'period');
         $this->value = new ValueEntity($data, 'value');
     }

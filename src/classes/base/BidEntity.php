@@ -12,7 +12,7 @@ namespace app\entity\base;
  *
  * @package app\entity\base
  */
-abstract class BidEntity extends BaseEntity
+class BidEntity extends BaseEntity
 {
     protected $tenderers;
     protected $date;
@@ -32,7 +32,7 @@ abstract class BidEntity extends BaseEntity
     public function __construct(array $data, $key = null)
     {
         parent::__construct($data, $key);
-
+        $data = $this->getDataByKey($data, $key);
         $this->value = new ValueEntity($data, 'value');
     }
 

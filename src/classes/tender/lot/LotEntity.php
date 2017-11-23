@@ -32,11 +32,12 @@ class LotEntity extends base\BaseEntity
      * LotEntity constructor.
      *
      * @param array $data
+     * @param null $key
      */
-    public function __construct(array $data)
+    public function __construct(array $data, $key = null)
     {
-        parent::__construct($data);
-
+        parent::__construct($data, $key);
+        $data = $this->getDataByKey($data, $key);
         $this->value = new base\ValueEntity($data, 'value');
         $this->minimalStep = new base\ValueEntity($data, 'minimalStep');
         $this->auctionPeriod = new base\DateEntity($data, 'auctionPeriod');

@@ -27,11 +27,12 @@ class OrganizationEntity extends BaseEntity
      *
      * @param array $data
      * @param null $key
+     * @throws \Exception
      */
     public function __construct(array $data, $key = null)
     {
         parent::__construct($data, $key);
-
+        $data = $this->getDataByKey($data, $key);
         $this->contactPoint = new ContactPoint($data, 'contactPoint');
         $this->identifier = new IdentifierEntity($data, 'identifier');
         $this->address = new AddressEntity($data, 'address');

@@ -1,0 +1,750 @@
+{
+  "data": {
+    "procurementMethod": "open",
+    "numberOfBids": 2,
+    "awardPeriod": {
+      "startDate": "2017-11-01T13:00:02.909867+02:00",
+      "endDate": "2017-11-01T13:18:03.966470+02:00"
+    },
+    "complaintPeriod": {
+      "startDate": "2017-10-31T16:36:11.599863+02:00",
+      "endDate": "2017-10-31T17:06:00+02:00"
+    },
+    "enquiryPeriod": {
+      "startDate": "2017-10-31T16:36:11.599863+02:00",
+      "clarificationsUntil": "2017-10-31T17:03:00+02:00",
+      "endDate": "2017-10-31T17:00:00+02:00",
+      "invalidationDate": "2017-10-31T16:36:11.987650+02:00"
+    },
+    "qualifications": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:4646daec70c21cb7412cf27eb53acb33",
+            "author": "tender_owner",
+            "language": "uk",
+            "format": "text/plain",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/03bcfff0bb2d4a5f81c2906c709354c8?KeyID=ce796f2d&Signature=4F%252Btu4yqMHWUuf6nuN9oWiAUMcV%252BKiD8YvPprCVyzjRAI%252BfeHeqThOshkgsympGYDwQPBoGe53o2lEjJjzX3DA%253D%253D",
+            "title": "noname1.txt",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T12:45:05.870443+02:00",
+            "documentType": "awardNotice",
+            "dateModified": "2017-11-01T12:45:05.870465+02:00",
+            "id": "ab83da236d6946959aa2402ca7a38699"
+          },
+          {
+            "hash": "md5:66db2c032a3383b5c01345c0e6805b2d",
+            "author": "tender_owner",
+            "language": "uk",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/cfa01055161f43519e5f43d599d5cc3a?KeyID=ce796f2d&Signature=OQRTQwLRsF00VjKYdshq00tRFJWDmYiAtEuvkPOSgJXaTX%2FA%2FunB6JK8XMqR8AQqSHIr5i%2FltSI8woZ2o7C7Cg%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T12:52:02.000469+02:00",
+            "dateModified": "2017-11-01T12:52:02.000490+02:00",
+            "id": "8492dc2016854c089fa6d5178bdf4da8"
+          }
+        ],
+        "eligible": true,
+        "qualified": true,
+        "bidID": "59713dd90e474474a6e45a0c7552b2b3",
+        "date": "2017-11-01T12:52:02.989929+02:00",
+        "id": "cbd291c3751348fe992181d5bf33daa0"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:4646daec70c21cb7412cf27eb53acb33",
+            "author": "tender_owner",
+            "language": "uk",
+            "format": "text/plain",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/3b4416dc35e74988a4557c13b461d11c?KeyID=ce796f2d&Signature=QCRVnK1JElsDEQGNP4TyJHDvchhP6IPolZhjuFPHzzbnlPJzJ5l1R6mC7mFz68%2FxYGO3PUc%252BUY0m70nCmh%2F%2FBw%253D%253D",
+            "title": "noname1.txt",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T12:45:07.511637+02:00",
+            "documentType": "awardNotice",
+            "dateModified": "2017-11-01T12:45:07.511662+02:00",
+            "id": "f53e19e024b1453eaf7a67e5b6656046"
+          },
+          {
+            "hash": "md5:d652861bec0b96cf32143370276ef671",
+            "author": "tender_owner",
+            "language": "uk",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/f9c7475f7f164ed3a007f138e8805319?KeyID=ce796f2d&Signature=E5GR4hVSsKx09cOR2Ef9qmYc%2FjKz5cJb774PRXjDsnsEK8iv%2FeIvaUV5NXhPaFHlDrS9agoMOL9%2FXvp5WHzsCA%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T12:52:15.697874+02:00",
+            "dateModified": "2017-11-01T12:52:15.697895+02:00",
+            "id": "fbefb2e01f084d34a1fa7ea77972675e"
+          }
+        ],
+        "eligible": true,
+        "qualified": true,
+        "bidID": "732baae92286457184ed6be0b8011703",
+        "date": "2017-11-01T12:52:16.748314+02:00",
+        "id": "99db3c2f154241f183af86041c98ebf0"
+      }
+    ],
+    "submissionMethod": "electronicAuction",
+    "awardCriteria": "ratedCriteria",
+    "owner": "brizol.net",
+    "title_en": "[TESTING] 300",
+    "id": "a15768b94ddb4c269df4b8a43e44df29",
+    "description": "description description description",
+    "title": "[\u0422\u0415\u0421\u0422\u0423\u0412\u0410\u041d\u041d\u042f] Title . 2017-10-31T16:06:04+02:00",
+    "qualificationPeriod": {
+      "startDate": "2017-10-31T17:12:50.206844+02:00",
+      "endDate": "2017-11-01T12:57:28.313606+02:00"
+    },
+    "tenderID": "UA-2017-10-31-000054-a",
+    "minimalStepPercentage": 0.006,
+    "auctionPeriod": {
+      "startDate": "2017-11-01T13:00:02.783645+02:00",
+      "endDate": "2017-11-01T13:00:02.783645+02:00"
+    },
+    "guarantee": {
+      "currency": "UAH",
+      "amount": 0.0
+    },
+    "dateModified": "2017-11-01T13:38:12.157983+02:00",
+    "status": "complete",
+    "tenderPeriod": {
+      "startDate": "2017-10-31T16:36:11.599863+02:00",
+      "endDate": "2017-10-31T17:10:00+02:00"
+    },
+    "contracts": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:148f6febd9c978a522ea87789e233b3c",
+            "language": "uk",
+            "format": "text/plain",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/7e5a2456e2a348b7a6e058c97149f959?KeyID=ce796f2d&Signature=f%252Brxn5ft%252BoB6s%2Fh5uep4KFZ%252BFsGQgs3P2EbcWgxVpOg6XyeM6H%252BzIbAm8Vrv1q5w6n%252B7NwOea17HcRsEeTXcBA%253D%253D",
+            "title": "User.cer",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T13:37:37.077427+02:00",
+            "documentType": "subContract",
+            "dateModified": "2017-11-01T13:37:37.077447+02:00",
+            "id": "58e96ba214974d0b91a7990863eac9da"
+          },
+          {
+            "hash": "md5:27e1ad5f8819773e97ba13f69b440f9d",
+            "language": "uk",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/5b5c57fbfd9046b59366f01d658dc778?KeyID=ce796f2d&Signature=aErjPUVM0HDVdh5hoI%252BtCZlMQWg7mSrLEsngdkBzs%252BEHHbsYHHSTWjmjLAniTf6L%252BOqx8s6I2tdAiBS2EbMMDg%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T13:38:11.410323+02:00",
+            "dateModified": "2017-11-01T13:38:11.410344+02:00",
+            "id": "b448516a2c4d4acd8792ce1894118384"
+          }
+        ],
+        "items": [
+          {
+            "description": "description description description",
+            "classification": {
+              "scheme": "\u0414\u041a021",
+              "description": "\u0421\u0456\u043b\u044c\u0441\u044c\u043a\u043e\u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u0441\u044c\u043a\u0430, \u0444\u0435\u0440\u043c\u0435\u0440\u0441\u044c\u043a\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f, \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f \u0440\u0438\u0431\u0430\u043b\u044c\u0441\u0442\u0432\u0430, \u043b\u0456\u0441\u0456\u0432\u043d\u0438\u0446\u0442\u0432\u0430 \u0442\u0430 \u0441\u0443\u043f\u0443\u0442\u043d\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f",
+              "id": "03000000-1"
+            },
+            "description_en": "3234",
+            "deliveryAddress": {
+              "postalCode": "12345",
+              "countryName": "",
+              "streetAddress": "efrfref",
+              "region": "",
+              "locality": "referf"
+            },
+            "id": "8b134feeb14db10069228c2e42ea8295",
+            "unit": {
+              "code": "BX",
+              "name": "\u044f\u0449\u0438\u043a"
+            }
+          }
+        ],
+        "suppliers": [
+          {
+            "contactPoint": {
+              "telephone": "+38(044)444-44-44",
+              "faxNumber": "+38(044)444-44-44",
+              "name": "Persons[userSurname] Persons[userSurname] Persons[userSurname]",
+              "email": "seller@ustudio.com.ua"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "65498713"
+            },
+            "name": "kjkjh",
+            "address": {
+              "postalCode": "34122",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "fsdsd",
+              "region": "\u041a\u0438\u0457\u0432",
+              "locality": "dffsad"
+            }
+          }
+        ],
+        "contractNumber": "34563456",
+        "period": {
+          "startDate": "2017-11-01T13:29:00+02:00",
+          "endDate": "2017-11-01T13:36:00+02:00"
+        },
+        "dateSigned": "2017-11-01T13:29:00+02:00",
+        "value": {
+          "yearlyPaymentsPercentage": 0.8,
+          "amountPerformance": 10866.86,
+          "currency": "UAH",
+          "amount": 17019.18,
+          "contractDuration": {
+            "days": 300,
+            "years": 2
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            6E+3,
+            6E+3,
+            6E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3
+          ]
+        },
+        "date": "2017-11-01T13:38:12.157983+02:00",
+        "awardID": "4048315a1c81484faa9febf908a4f200",
+        "id": "3db326b28f6346a4a75fe27ff485f741",
+        "contractID": "UA-2017-10-31-000054-a-a1"
+      }
+    ],
+    "procurementMethodDetails": "quick, accelerator=1440",
+    "yearlyPaymentsPercentageRange": 0.8,
+    "procurementMethodType": "esco",
+    "description_en": "",
+    "awards": [
+      {
+        "status": "unsuccessful",
+        "documents": [
+          {
+            "hash": "md5:148f6febd9c978a522ea87789e233b3c",
+            "author": "tender_owner",
+            "language": "uk",
+            "format": "text/plain",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/b5d5ed27e271490fa51ce603b48d5265?KeyID=ce796f2d&Signature=vE03iErkxt2a%2F%2FzkzJTSVmS8FwO6OdKa9sP7trIGxfV11u7gTFBfLQDb%2FY5jBrV7v4gj8Ka1qgLMQknLcJqkCQ%253D%253D",
+            "title": "User.cer",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T13:06:57.412697+02:00",
+            "documentType": "complaints",
+            "dateModified": "2017-11-01T13:06:57.412718+02:00",
+            "id": "2f911cd77ed043d48ff16756ef8bf03a"
+          },
+          {
+            "hash": "md5:eaed985f0c7ce703cb780fc629433765",
+            "author": "tender_owner",
+            "language": "uk",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/2e1db5f3a354446d8eaef73d62a7eb3e?KeyID=ce796f2d&Signature=kqFxvT2PfMO3IyY59zZKjUrthZu6gD0rw4OoL742qzYTcHcUbrOnmv5UQ0%252BZI2KS1AREjHNQdKxZSCWmc0k4Bg%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T13:07:35.104761+02:00",
+            "dateModified": "2017-11-01T13:07:35.104781+02:00",
+            "id": "561d82fd0e444205806c48bc5333e16e"
+          }
+        ],
+        "description": " \u041d\u0435 \u0432i\u0434\u043f\u043e\u0432i\u0434\u0430\u0454 \u043a\u0432\u0430\u043bi\u0444i\u043a\u0430\u0446i\u0439\u043d\u0438\u043c \u043a\u0440\u0438\u0442\u0435\u0440i\u044f\u043c.",
+        "title": "\u041d\u0435 \u0432i\u0434\u043f\u043e\u0432i\u0434\u0430\u0454 \u043a\u0432\u0430\u043bi\u0444i\u043a\u0430\u0446i\u0439\u043d\u0438\u043c \u043a\u0440\u0438\u0442\u0435\u0440i\u044f\u043c.",
+        "suppliers": [
+          {
+            "contactPoint": {
+              "telephone": "+38(111)111-11-11",
+              "faxNumber": "+38(111)111-11-11",
+              "name": "asdasd asdbas basdbasd",
+              "email": "sasdasd@smail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "01234561"
+            },
+            "name": "test@i.d",
+            "address": {
+              "postalCode": "12345",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "123",
+              "region": "\u041a\u0438\u0457\u0432",
+              "locality": "keiv"
+            }
+          }
+        ],
+        "complaintPeriod": {
+          "startDate": "2017-11-01T13:00:03.026424+02:00",
+          "endDate": "2017-11-01T13:17:36.228684+02:00"
+        },
+        "bid_id": "59713dd90e474474a6e45a0c7552b2b3",
+        "value": {
+          "yearlyPaymentsPercentage": 0.9,
+          "amountPerformance": 11639.48,
+          "currency": "UAH",
+          "amount": 15600.82,
+          "contractDuration": {
+            "days": 50,
+            "years": 2
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            6E+3,
+            6E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3
+          ]
+        },
+        "complaints": [
+          {
+            "status": "cancelled",
+            "dateCanceled": "2017-11-01T13:17:04.759346+02:00",
+            "description": "'open_esco', 'open_esco', 'open_esco', 'open_esco', 'open_esco', 'open_esco', 'open_esco', 'open_esco', 'open_esco', ",
+            "title": "1",
+            "resolutionType": "declined",
+            "resolution": "'open_esco', 'open_esco', 'open_esco', 'open_esco', 'open_esco', 'open_esco', 'open_esco', 'open_esco', ",
+            "author": {
+              "contactPoint": {
+                "telephone": "+38(111)111-11-11",
+                "name": "asdasd asdbas basdbasd",
+                "email": "sasdasd@smail.com"
+              },
+              "identifier": {
+                "scheme": "UA-EDR",
+                "id": "01234561",
+                "legalName": "test@i.d"
+              },
+              "name": "test@i.d",
+              "address": {
+                "postalCode": "12345",
+                "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+                "streetAddress": "123",
+                "region": "\u041a\u0438\u0457\u0432",
+                "locality": "keiv"
+              }
+            },
+            "bid_id": "59713dd90e474474a6e45a0c7552b2b3",
+            "cancellationReason": "fd hdfgh dfgh dfgh dfg hdfg hdfg hdfg hdfgh dfg hdfgh",
+            "dateAnswered": "2017-11-01T13:10:23.669742+02:00",
+            "dateSubmitted": "2017-11-01T13:10:03.034892+02:00",
+            "complaintID": "UA-2017-10-31-000054-a.a1",
+            "date": "2017-11-01T13:17:04.810091+02:00",
+            "type": "claim",
+            "id": "e1f248fe6c0742b69cc46897e8cefee0"
+          }
+        ],
+        "date": "2017-11-01T13:07:36.302836+02:00",
+        "id": "c886bccf5aba48239491c92b0262e201"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:148f6febd9c978a522ea87789e233b3c",
+            "author": "tender_owner",
+            "language": "uk",
+            "format": "text/plain",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/a825e7103039488caf07ee0589182896?KeyID=ce796f2d&Signature=aYwHNgWzrMmJfwRNsKSHVJ6jg7XDQn2YUfne7PW%252B7YDyQugjY5i3Zx19VTelHioDGvnNjBeBNkMXO74%252BL9TvDA%253D%253D",
+            "title": "User.cer",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T13:17:27.503929+02:00",
+            "documentType": "evaluationReports",
+            "dateModified": "2017-11-01T13:17:27.503949+02:00",
+            "id": "3d54791f264648409a8291b190b1429c"
+          },
+          {
+            "hash": "md5:311b2fee481f0559e38dc95f8a23ec65",
+            "author": "tender_owner",
+            "language": "uk",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/7966fe2bfde84bfc939fc8cd8852ec2d?KeyID=ce796f2d&Signature=MhiNmdUQOxBkJRcFbgeqYk0YqcmgtJJ%2FNvDkiYctamP0e5Km6w0YpL2lMQGF%2F33Ex2MSmVTQwtWzqx4kqU0YCA%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T13:18:02.492662+02:00",
+            "dateModified": "2017-11-01T13:18:02.492682+02:00",
+            "id": "8cf0a0e00351413593ca6c5ffba87c49"
+          }
+        ],
+        "complaintPeriod": {
+          "startDate": "2017-11-01T13:07:36.251436+02:00",
+          "endDate": "2017-11-01T13:28:03.966180+02:00"
+        },
+        "suppliers": [
+          {
+            "contactPoint": {
+              "telephone": "+38(044)444-44-44",
+              "faxNumber": "+38(044)444-44-44",
+              "name": "Persons[userSurname] Persons[userSurname] Persons[userSurname]",
+              "email": "seller@ustudio.com.ua"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "65498713"
+            },
+            "name": "kjkjh",
+            "address": {
+              "postalCode": "34122",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "fsdsd",
+              "region": "\u041a\u0438\u0457\u0432",
+              "locality": "dffsad"
+            }
+          }
+        ],
+        "eligible": true,
+        "bid_id": "732baae92286457184ed6be0b8011703",
+        "value": {
+          "yearlyPaymentsPercentage": 0.8,
+          "amountPerformance": 10866.86,
+          "currency": "UAH",
+          "amount": 17019.18,
+          "contractDuration": {
+            "days": 300,
+            "years": 2
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            6E+3,
+            6E+3,
+            6E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3
+          ]
+        },
+        "complaints": [
+          {
+            "status": "cancelled",
+            "dateCanceled": "2017-11-01T13:20:13.693176+02:00",
+            "description": "11111 1  1  1 11 1 1 11 1 1  1 1   1",
+            "title": "1",
+            "resolutionType": "invalid",
+            "resolution": "1asd ds fsdfasdfad sfa sfda fsdafs dsf ds fs fda fdsasadf",
+            "author": {
+              "contactPoint": {
+                "telephone": "+38(111)111-11-11",
+                "name": "asdasd asdbas basdbasd",
+                "email": "sasdasd@smail.com"
+              },
+              "identifier": {
+                "scheme": "UA-EDR",
+                "id": "01234561",
+                "legalName": "test@i.d"
+              },
+              "name": "test@i.d",
+              "address": {
+                "postalCode": "12345",
+                "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+                "streetAddress": "123",
+                "region": "\u041a\u0438\u0457\u0432",
+                "locality": "keiv"
+              }
+            },
+            "bid_id": "59713dd90e474474a6e45a0c7552b2b3",
+            "cancellationReason": "sd fdfs dfsa dsafdfsa fd fdsafasfd saf dsdffds a sfd",
+            "dateAnswered": "2017-11-01T13:19:41.132606+02:00",
+            "dateSubmitted": "2017-11-01T13:19:27.808563+02:00",
+            "complaintID": "UA-2017-10-31-000054-a.a2",
+            "date": "2017-11-01T13:20:13.737611+02:00",
+            "type": "claim",
+            "id": "8d1d2e2ed7614394ae83de27cd1aa0a6"
+          },
+          {
+            "status": "answered",
+            "description": "a a a a a a a a a a a a a a a a a a a a a a a a a a ",
+            "title": "a",
+            "resolutionType": "resolved",
+            "resolution": "333333333444 44  44 4  44 4 4  4 4 4",
+            "author": {
+              "contactPoint": {
+                "telephone": "+38(111)111-11-11",
+                "name": "asdasd asdbas basdbasd",
+                "email": "sasdasd@smail.com"
+              },
+              "identifier": {
+                "scheme": "UA-EDR",
+                "id": "01234561",
+                "legalName": "test@i.d"
+              },
+              "name": "test@i.d",
+              "address": {
+                "postalCode": "12345",
+                "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+                "streetAddress": "123",
+                "region": "\u041a\u0438\u0457\u0432",
+                "locality": "keiv"
+              }
+            },
+            "satisfied": true,
+            "bid_id": "59713dd90e474474a6e45a0c7552b2b3",
+            "dateAnswered": "2017-11-01T13:25:06.339260+02:00",
+            "dateSubmitted": "2017-11-01T13:24:52.996858+02:00",
+            "complaintID": "UA-2017-10-31-000054-a.a3",
+            "date": "2017-11-01T13:25:06.388199+02:00",
+            "type": "claim",
+            "id": "ddc9ef1c7f6e47b09d7cceadafd8b2c0"
+          }
+        ],
+        "qualified": true,
+        "date": "2017-11-01T13:18:04.039256+02:00",
+        "id": "4048315a1c81484faa9febf908a4f200"
+      }
+    ],
+    "date": "2017-11-01T13:38:12.157983+02:00",
+    "NBUdiscountRate": 0.3,
+    "minValue": {
+      "currency": "UAH",
+      "amount": 0.0,
+      "valueAddedTaxIncluded": true
+    },
+    "fundingKind": "other",
+    "submissionMethodDetails": "quick(mode:no-auction)",
+    "items": [
+      {
+        "description": "description description description",
+        "classification": {
+          "scheme": "\u0414\u041a021",
+          "description": "\u0421\u0456\u043b\u044c\u0441\u044c\u043a\u043e\u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u0441\u044c\u043a\u0430, \u0444\u0435\u0440\u043c\u0435\u0440\u0441\u044c\u043a\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f, \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f \u0440\u0438\u0431\u0430\u043b\u044c\u0441\u0442\u0432\u0430, \u043b\u0456\u0441\u0456\u0432\u043d\u0438\u0446\u0442\u0432\u0430 \u0442\u0430 \u0441\u0443\u043f\u0443\u0442\u043d\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f",
+          "id": "03000000-1"
+        },
+        "description_en": "3234",
+        "deliveryAddress": {
+          "postalCode": "12345",
+          "countryName": "",
+          "streetAddress": "efrfref",
+          "region": "",
+          "locality": "referf"
+        },
+        "id": "8b134feeb14db10069228c2e42ea8295",
+        "unit": {
+          "code": "BX",
+          "name": "\u044f\u0449\u0438\u043a"
+        }
+      }
+    ],
+    "bids": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:148f6febd9c978a522ea87789e233b3c",
+            "confidentiality": "public",
+            "language": "uk",
+            "format": "text/plain",
+            "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/aea32bd899fe427d9963b02de40d9df1?KeyID=ce796f2d&Signature=QhfrVDVo3xibg1jCC1Y7qDa0IHVRsBfOBmY7H5HZ690Hq4yG%252BGQTvNOprEG98CjeTdzP8OIfpQuyp5QdYEy5Bg%253D%253D",
+            "title": "User.cer",
+            "documentOf": "tender",
+            "datePublished": "2017-11-01T13:05:32.104787+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-11-01T13:05:32.104808+02:00",
+            "id": "bf1374b6491d47d197f73454cf1f4e9a"
+          }
+        ],
+        "selfEligible": true,
+        "value": {
+          "yearlyPaymentsPercentage": 0.9,
+          "amountPerformance": 11639.48,
+          "currency": "UAH",
+          "amount": 15600.82,
+          "contractDuration": {
+            "days": 50,
+            "years": 2
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            6E+3,
+            6E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3,
+            5.5E+3
+          ]
+        },
+        "subcontractingDetails": "",
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "contactPoint": {
+              "telephone": "+38(111)111-11-11",
+              "faxNumber": "+38(111)111-11-11",
+              "name": "asdasd asdbas basdbasd",
+              "email": "sasdasd@smail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "01234561"
+            },
+            "name": "test@i.d",
+            "address": {
+              "postalCode": "12345",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "123",
+              "region": "\u041a\u0438\u0457\u0432",
+              "locality": "keiv"
+            }
+          }
+        ],
+        "date": "2017-10-31T16:37:21.385103+02:00",
+        "id": "59713dd90e474474a6e45a0c7552b2b3"
+      },
+      {
+        "status": "active",
+        "selfEligible": true,
+        "value": {
+          "yearlyPaymentsPercentage": 0.8,
+          "amountPerformance": 10866.86,
+          "currency": "UAH",
+          "amount": 17019.18,
+          "contractDuration": {
+            "days": 300,
+            "years": 2
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            6E+3,
+            6E+3,
+            6E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3,
+            5E+3
+          ]
+        },
+        "subcontractingDetails": "",
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "contactPoint": {
+              "telephone": "+38(044)444-44-44",
+              "faxNumber": "+38(044)444-44-44",
+              "name": "Persons[userSurname] Persons[userSurname] Persons[userSurname]",
+              "email": "seller@ustudio.com.ua"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "65498713"
+            },
+            "name": "kjkjh",
+            "address": {
+              "postalCode": "34122",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "fsdsd",
+              "region": "\u041a\u0438\u0457\u0432",
+              "locality": "dffsad"
+            }
+          }
+        ],
+        "date": "2017-10-31T17:00:10.946601+02:00",
+        "id": "732baae92286457184ed6be0b8011703"
+      }
+    ],
+    "noticePublicationDate": "2017-10-31T16:36:11.988602+02:00",
+    "mode": "test",
+    "title_ru": "[\u0422\u0415\u0421\u0422\u0418\u0420\u041e\u0412\u0410\u041d\u0418\u0415] ",
+    "procuringEntity": {
+      "kind": "defense",
+      "name": "\u041a\u043e\u043c\u043f\u0430\u043d\u0456\u044f \"\u041e\u0420\u0413\u0410\u041d\u0406\u0417\u0410\u0422\u041e\u0420+\"",
+      "address": {
+        "postalCode": "12345",
+        "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+        "streetAddress": "buyer.brizol@yandex.com",
+        "region": "\u041a\u0438\u0457\u0432",
+        "locality": "buyer.brizol@yandex.com"
+      },
+      "contactPoint": {
+        "telephone": "+38(444)444-44-44",
+        "name_en": "\u0424\u0430\u0439\u043d\u0438\u0439 \u041c\u043e\u043b\u043e\u0434\u0435\u0446\u044c \u041c\u043e\u043b\u043e\u0434\u043a\u043e\u0432\u0438\u0447",
+        "name": "\u0424\u0430\u0439\u043d\u0438\u0439 \u041c\u043e\u043b\u043e\u0434\u0435\u0446\u044c \u041c\u043e\u043b\u043e\u0434\u043a\u043e\u0432\u0438\u0447",
+        "availableLanguage": "uk",
+        "email": "buyer.brizol@yandex.com"
+      },
+      "identifier": {
+        "scheme": "UA-EDR",
+        "legalName_en": "Company \"\u041e\u0420\u0410\u0413\u0406\u0417\u0410\u0422\u041e\u0420\"",
+        "id": "84567891",
+        "legalName": "\u041a\u043e\u043c\u043f\u0430\u043d\u0456\u044f \"\u041e\u0420\u0413\u0410\u041d\u0406\u0417\u0410\u0422\u041e\u0420+\""
+      },
+      "name_en": "Company \"\u041e\u0420\u0410\u0413\u0406\u0417\u0410\u0422\u041e\u0420\""
+    }
+  }
+}

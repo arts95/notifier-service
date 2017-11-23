@@ -30,6 +30,7 @@ class BidValueEntity extends ValueEntity
     public function __construct(array $data, $key = null)
     {
         parent::__construct($data, $key);
+        $data = $this->getDataByKey($data, $key);
         $this->contractDuration = new ContractDurationEntity($data, 'contractDuration');
     }
 

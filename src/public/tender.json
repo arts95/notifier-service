@@ -1,0 +1,3282 @@
+{
+  "data": {
+    "procurementMethod": "open",
+    "numberOfBids": 5,
+    "awardPeriod": {
+      "startDate": "2017-02-03T15:17:16.664804+02:00",
+      "endDate": "2017-02-14T12:06:40.577187+02:00"
+    },
+    "complaintPeriod": {
+      "startDate": "2017-01-05T16:01:59.606120+02:00",
+      "endDate": "2017-01-29T00:00:00+02:00"
+    },
+    "enquiryPeriod": {
+      "startDate": "2017-01-05T16:01:59.606120+02:00",
+      "clarificationsUntil": "2017-01-26T16:06:59+02:00",
+      "endDate": "2017-01-23T16:06:59+02:00",
+      "invalidationDate": "2017-01-20T13:49:08.103889+02:00"
+    },
+    "submissionMethod": "electronicAuction",
+    "procuringEntity": {
+      "contactPoint": {
+        "name_ru": "  ",
+        "name_en": "  ",
+        "telephone": "+380977690705",
+        "name": "Левченко Алла Валентиновна",
+        "email": "rccLivecomplex@gmail.com"
+      },
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "32035610",
+        "legalName": "Житлово-комунальне підприємтство"
+      },
+      "name": "Житлово-комунальне підприємтство",
+      "kind": "general",
+      "address": {
+        "postalCode": "87515",
+        "countryName": "Україна",
+        "streetAddress": "вулиця Артема будинок 92 міста Маріуполя Донецька область",
+        "region": "Донецька область",
+        "locality": "місто Маріуполь"
+      }
+    },
+    "owner": "netcast.com.ua",
+    "id": "40d1700dbf804c19a9d50cb9b3e0f34c",
+    "description": "Труби та фітинги для поточного ремонту інженерних мереж будинків ( холодне ,гаряче водопостачання та опалення),за рахунок коштів підприємства.Очікувана вартість предмета закупівлі визначена з урахуванням  ПДВ та складає - 877100 грн00 коп.Кількість та якісні вимоги до предмета закупівлі згідно Додатку № 2,3,4.Код згідно з ДК 021:2015-44160000-Магістралі, трубопроводи , труби , обсадні труби , тюбінги та супутні вироби.",
+    "documents": [
+      {
+        "hash": "md5:af087b8e74b3ce5d12f59d7de0314a1c",
+        "description": "SHA1: 6a308512f8627eac58c6060b65c8e6dd5e2babe0",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/9c070794f491470b9acae35f43ae9dbe?KeyID=52462340&Signature=07cYlKEgEPwcFkmuKBSQPXDyua7BY9MYh8BhppaD%252Byp6HTWwjEf%2FloDtPxOCEXEj6mLUgRph3WUIu8sv9XDuBg%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: 6a308512f8627eac58c6060b65c8e6dd5e2babe0",
+        "datePublished": "2017-01-05T16:02:12.692764+02:00",
+        "documentOf": "item",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-05T16:02:12.692796+02:00",
+        "relatedItem": "c9883826f42e9ccc3cd191c717e3c877",
+        "description_ru": "SHA1: 6a308512f8627eac58c6060b65c8e6dd5e2babe0",
+        "id": "1b4ef4da9fd542c8bb079d52748d74b4"
+      },
+      {
+        "hash": "md5:08ef0cdfba73fabd3a5e39f3fc62e40d",
+        "description": "SHA1: 595466707d064a2fca82267cacd1eea9560051a5",
+        "title": "дод 5 договор.docx",
+        "url": "https://public.docs.openprocurement.org/get/e7c8d0b66f874decb9276a00464876c0?KeyID=52462340&Signature=62BRVeM9B7UQd7cQudUJJLv60CMYANVEd79Sm90u0u4U4rqWjufnshnUaUt8URYFpphqaVD7dtT5nfY2zXpFBg%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "дод 5 договор.docx",
+        "description_en": "SHA1: 595466707d064a2fca82267cacd1eea9560051a5",
+        "datePublished": "2017-01-05T16:02:13.389741+02:00",
+        "documentOf": "item",
+        "title_ru": "дод 5 договор.docx",
+        "documentType": "contractProforma",
+        "dateModified": "2017-01-05T16:02:13.389762+02:00",
+        "relatedItem": "c9883826f42e9ccc3cd191c717e3c877",
+        "description_ru": "SHA1: 595466707d064a2fca82267cacd1eea9560051a5",
+        "id": "14023e5a347840fda04b1ec97ded4e60"
+      },
+      {
+        "hash": "md5:5e3fbe5b48b5fe70b5c8adf2482e29ab",
+        "description": "SHA1: b7b92c28644f1d28a31788d26a10129ff9b68962",
+        "title": "Додаток 2 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/121c1fde96164c9e84ec1c0091060623?KeyID=52462340&Signature=%252B2B9kLz2m8avmIECquStYNY7jBxDtg1BD%2Fm8LY20AncQdG9ifEoawcKa8ilobD%2FXdUnaUw5BiJhEC3vSK4Y9DQ%253D%253D",
+        "format": "application/msword",
+        "title_en": "Додаток 2 (1).doc",
+        "description_en": "SHA1: b7b92c28644f1d28a31788d26a10129ff9b68962",
+        "datePublished": "2017-01-05T16:02:14.502583+02:00",
+        "documentOf": "item",
+        "title_ru": "Додаток 2 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-05T16:02:14.502614+02:00",
+        "relatedItem": "c9883826f42e9ccc3cd191c717e3c877",
+        "description_ru": "SHA1: b7b92c28644f1d28a31788d26a10129ff9b68962",
+        "id": "d3158608df7946f4acd65c166792b1ca"
+      },
+      {
+        "hash": "md5:dcaea36454d00e38c30e50ed34d53f75",
+        "description": "SHA1: f07ec25deca3ea8f7d960fefd7f73386ea0ef17b",
+        "title": "оголошення труби.doc",
+        "url": "https://public.docs.openprocurement.org/get/bef275afb1624f8db43b574e696a5125?KeyID=52462340&Signature=iJXEnVJaeClsq4MVx5pUXgYen1ZD05Qmj2zWUdgKq8qY1namXadR3SfBwdiwA1gF1AvDeIOLNl0r%2F5hbet%2FzDw%253D%253D",
+        "format": "application/msword",
+        "title_en": "оголошення труби.doc",
+        "description_en": "SHA1: f07ec25deca3ea8f7d960fefd7f73386ea0ef17b",
+        "datePublished": "2017-01-05T16:02:15.652739+02:00",
+        "documentOf": "item",
+        "title_ru": "оголошення труби.doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-05T16:02:15.652774+02:00",
+        "relatedItem": "c9883826f42e9ccc3cd191c717e3c877",
+        "description_ru": "SHA1: f07ec25deca3ea8f7d960fefd7f73386ea0ef17b",
+        "id": "4b0e6b8785d64b5dbed84797696d9541"
+      },
+      {
+        "hash": "md5:af087b8e74b3ce5d12f59d7de0314a1c",
+        "description": "SHA1: 6a308512f8627eac58c6060b65c8e6dd5e2babe0",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/dfd1203c3b8143d399687775605d9b0c?KeyID=52462340&Signature=rcLN0PlC311%2FyRz7AxWG6B9sCircsloG7YoKZ%252B9X3mKQeeIY8HBD0X026ZQ%2FJHyjMBF%2F%252BFJmjtLECB9uLh9HAA%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: 6a308512f8627eac58c6060b65c8e6dd5e2babe0",
+        "datePublished": "2017-01-05T16:02:16.543495+02:00",
+        "documentOf": "item",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-05T16:02:16.543529+02:00",
+        "relatedItem": "ef17380683e7a2e1da0bd59a5b80d2e1",
+        "description_ru": "SHA1: 6a308512f8627eac58c6060b65c8e6dd5e2babe0",
+        "id": "2934f8573f5341daa0d9f7cc91563dda"
+      },
+      {
+        "hash": "md5:1fc56d5823846e23691e46f15bd670fd",
+        "description": "SHA1: 52036bb5d978e3660af6179d7ea45b4732b1e84a",
+        "title": "Додаток 3 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/1b6081c1803a420a81500a5243405612?KeyID=52462340&Signature=%2F216fqbtibZeD%2Fgu8NypOWcK9OMAiBm9ofjZE9g2qbW59XxsnnYOKWLpqJSRICASDJ7x9r2xcnUAlqXmdBzhCg%253D%253D",
+        "format": "application/msword",
+        "title_en": "Додаток 3 (1).doc",
+        "description_en": "SHA1: 52036bb5d978e3660af6179d7ea45b4732b1e84a",
+        "datePublished": "2017-01-05T16:02:17.132872+02:00",
+        "documentOf": "item",
+        "title_ru": "Додаток 3 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-05T16:02:17.132894+02:00",
+        "relatedItem": "ef17380683e7a2e1da0bd59a5b80d2e1",
+        "description_ru": "SHA1: 52036bb5d978e3660af6179d7ea45b4732b1e84a",
+        "id": "e3aa4fd65fe5417ba98c15738c8c4372"
+      },
+      {
+        "hash": "md5:08ef0cdfba73fabd3a5e39f3fc62e40d",
+        "description": "SHA1: 595466707d064a2fca82267cacd1eea9560051a5",
+        "title": "дод 5 договор.docx",
+        "url": "https://public.docs.openprocurement.org/get/d56baacec6234c639aa9ce0e08de03be?KeyID=52462340&Signature=NZ0QBFDEPyhKz%2FOAw7zoql0LxVR8OV%252BrmWdnkcu7Cn8ZbsjkWPt1AaYfBT5Xk3%2F8xeT27huQY8vU7mX6to7bDQ%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "дод 5 договор.docx",
+        "description_en": "SHA1: 595466707d064a2fca82267cacd1eea9560051a5",
+        "datePublished": "2017-01-05T16:02:17.786813+02:00",
+        "documentOf": "item",
+        "title_ru": "дод 5 договор.docx",
+        "documentType": "contractProforma",
+        "dateModified": "2017-01-05T16:02:17.786834+02:00",
+        "relatedItem": "ef17380683e7a2e1da0bd59a5b80d2e1",
+        "description_ru": "SHA1: 595466707d064a2fca82267cacd1eea9560051a5",
+        "id": "d7b9a69185df4eff82ebcaed59edaa62"
+      },
+      {
+        "hash": "md5:dcaea36454d00e38c30e50ed34d53f75",
+        "description": "SHA1: f07ec25deca3ea8f7d960fefd7f73386ea0ef17b",
+        "title": "оголошення труби.doc",
+        "url": "https://public.docs.openprocurement.org/get/b4f619a582074479bb97bdf38a1ae8ca?KeyID=52462340&Signature=1nNDqDtvKc1%2FL4gKtrWv3mtj7ozd5Zi5m2oeEAqc4XEImXCMvH6Nx4RTh0e%2F3QSMfUX5Jp3IPMZYh2dF6z5pBg%253D%253D",
+        "format": "application/msword",
+        "title_en": "оголошення труби.doc",
+        "description_en": "SHA1: f07ec25deca3ea8f7d960fefd7f73386ea0ef17b",
+        "datePublished": "2017-01-05T16:02:18.571410+02:00",
+        "documentOf": "item",
+        "title_ru": "оголошення труби.doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-05T16:02:18.571445+02:00",
+        "relatedItem": "ef17380683e7a2e1da0bd59a5b80d2e1",
+        "description_ru": "SHA1: f07ec25deca3ea8f7d960fefd7f73386ea0ef17b",
+        "id": "748af9eb24c54e8d81c12abfddccad16"
+      },
+      {
+        "hash": "md5:af087b8e74b3ce5d12f59d7de0314a1c",
+        "description": "SHA1: 6a308512f8627eac58c6060b65c8e6dd5e2babe0",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/9ff86051113449d980d6f1fd4d8388db?KeyID=52462340&Signature=OOll%2F8pxAhPXkCGLMvCj5c8cIr6L3OjvlF%2F88wqGKgxFeU0iCAps%2FIU0dQoYlhdMos4aaXd9mPQs8MRLVRatDw%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: 6a308512f8627eac58c6060b65c8e6dd5e2babe0",
+        "datePublished": "2017-01-05T16:02:19.337090+02:00",
+        "documentOf": "item",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-05T16:02:19.337111+02:00",
+        "relatedItem": "66cbb83e4394c3e2e1e6402d0f450c13",
+        "description_ru": "SHA1: 6a308512f8627eac58c6060b65c8e6dd5e2babe0",
+        "id": "612e373eb17845d0940a0be1a17cf2d5"
+      },
+      {
+        "hash": "md5:08ef0cdfba73fabd3a5e39f3fc62e40d",
+        "description": "SHA1: 595466707d064a2fca82267cacd1eea9560051a5",
+        "title": "дод 5 договор.docx",
+        "url": "https://public.docs.openprocurement.org/get/6f47293b0572497c8572277a65ece6c7?KeyID=52462340&Signature=XCCW7r78Ssm885B9Ck9rkGqfpUNvXObYk4uCe7wJs0gm6ki3hReKdVEtRonShN0Bsqtfch7GXTrTJnk36CPXBQ%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "дод 5 договор.docx",
+        "description_en": "SHA1: 595466707d064a2fca82267cacd1eea9560051a5",
+        "datePublished": "2017-01-05T16:02:19.980232+02:00",
+        "documentOf": "item",
+        "title_ru": "дод 5 договор.docx",
+        "documentType": "contractProforma",
+        "dateModified": "2017-01-05T16:02:19.980253+02:00",
+        "relatedItem": "66cbb83e4394c3e2e1e6402d0f450c13",
+        "description_ru": "SHA1: 595466707d064a2fca82267cacd1eea9560051a5",
+        "id": "08681b5efe9c4c5d80016454e4d2567b"
+      },
+      {
+        "hash": "md5:3712ca832b804f030632d16fd661b67e",
+        "description": "SHA1: a6d15ebd4fa795b15fb29c0239a99c43f5518dfb",
+        "title": "Додаток 4.doc",
+        "url": "https://public.docs.openprocurement.org/get/5adf784f76894d679863c86efe4475f4?KeyID=52462340&Signature=XoGrqVwCa0uukra0E4uKAv5d7fB3oSSbpBHgyLd%2FuoWhTl7RcK8D5jtJTtVvj8yQLac1D7o62HLcTPoZjGCRDg%253D%253D",
+        "format": "application/msword",
+        "title_en": "Додаток 4.doc",
+        "description_en": "SHA1: a6d15ebd4fa795b15fb29c0239a99c43f5518dfb",
+        "datePublished": "2017-01-05T16:02:20.720294+02:00",
+        "documentOf": "item",
+        "title_ru": "Додаток 4.doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-05T16:02:20.720315+02:00",
+        "relatedItem": "66cbb83e4394c3e2e1e6402d0f450c13",
+        "description_ru": "SHA1: a6d15ebd4fa795b15fb29c0239a99c43f5518dfb",
+        "id": "35767a9b083e4938af625131982391b1"
+      },
+      {
+        "hash": "md5:dcaea36454d00e38c30e50ed34d53f75",
+        "description": "SHA1: f07ec25deca3ea8f7d960fefd7f73386ea0ef17b",
+        "title": "оголошення труби.doc",
+        "url": "https://public.docs.openprocurement.org/get/cdbc88855b854f119202c6c267a1c1e8?KeyID=52462340&Signature=sib%252BfNcl%2FA%2F7b28IY2eQVJxmQl9RfnSEBvLCepBSQJpNZxt0eDP7HpH1fo66NFWQwqmqErfiruBLmhqWjkBfDg%253D%253D",
+        "format": "application/msword",
+        "title_en": "оголошення труби.doc",
+        "description_en": "SHA1: f07ec25deca3ea8f7d960fefd7f73386ea0ef17b",
+        "datePublished": "2017-01-05T16:02:21.378057+02:00",
+        "documentOf": "item",
+        "title_ru": "оголошення труби.doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-05T16:02:21.378078+02:00",
+        "relatedItem": "66cbb83e4394c3e2e1e6402d0f450c13",
+        "description_ru": "SHA1: f07ec25deca3ea8f7d960fefd7f73386ea0ef17b",
+        "id": "a1e81fa2ce504c9c9de8ff8c42114401"
+      },
+      {
+        "hash": "md5:075492c064710b0c598016a637e4bfd5",
+        "description": "SHA1: f3c568e6daaa485ef0b9a6340e3bdb370ff7751d",
+        "title": "Додаток 2 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/94cf3b3971c94688947138ffedda4190?KeyID=52462340&Signature=87Ib9KJfCJEsrQ%2FIfg1alR4wSLwKQixvNa0O8o7a6PEL5Yx%2FnjQHj7V22oc2D7AIL2JHjvCXDoEmcY6k6YIRDg%253D%253D",
+        "format": "application/msword",
+        "title_en": "Додаток 2 (1).doc",
+        "description_en": "SHA1: f3c568e6daaa485ef0b9a6340e3bdb370ff7751d",
+        "datePublished": "2017-01-05T16:02:14.502583+02:00",
+        "documentOf": "lot",
+        "title_ru": "Додаток 2 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-06T11:55:00.077513+02:00",
+        "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "description_ru": "SHA1: f3c568e6daaa485ef0b9a6340e3bdb370ff7751d",
+        "id": "d3158608df7946f4acd65c166792b1ca"
+      },
+      {
+        "hash": "md5:70627f92d2dd422a491a99eaaff3ff2d",
+        "description": "SHA1: 7ff27a3ea220d4753be53ab38f94070abf7f49f1",
+        "title": "Додаток 3 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/8d5ae66ecd1d472c8d5e532bbfe2eaf0?KeyID=52462340&Signature=APa%252BnZGadTzYTByAkqwk%2F2fX67B85ddhEyTSvUIVCgDtYFQLTUNbz8gjrc%252B5p%2F1DzRrlyNBM3PSuSDE83MpCBA%253D%253D",
+        "format": "application/msword",
+        "title_en": "Додаток 3 (1).doc",
+        "description_en": "SHA1: 7ff27a3ea220d4753be53ab38f94070abf7f49f1",
+        "datePublished": "2017-01-05T16:02:17.132872+02:00",
+        "documentOf": "lot",
+        "title_ru": "Додаток 3 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-06T11:55:00.907162+02:00",
+        "relatedItem": "a99a305c246ada78a18fadf7db742812",
+        "description_ru": "SHA1: 7ff27a3ea220d4753be53ab38f94070abf7f49f1",
+        "id": "e3aa4fd65fe5417ba98c15738c8c4372"
+      },
+      {
+        "hash": "md5:21eabafeab79712aaabf271885d7efb8",
+        "description": "SHA1: c9bf64f4a3d76a052150b3e98ec0eccb6299f298",
+        "title": "sign.p7s",
+        "url": "https://public.docs.openprocurement.org/get/592df6d582834bf7a07f5847b33e66f1?KeyID=52462340&Signature=zm8HWhYZcYGEcCmeFGGYcrOT82P3xq9GuN%252BIfggnSCSZnCTZhSQuClVbv6y8UziJe99cqhtPXVtLxsiVlZ2MDg%253D%253D",
+        "format": "application/pkcs7-signature",
+        "title_en": "sign.p7s",
+        "description_en": "SHA1: c9bf64f4a3d76a052150b3e98ec0eccb6299f298",
+        "datePublished": "2017-01-10T13:43:11.098187+02:00",
+        "documentOf": "tender",
+        "title_ru": "sign.p7s",
+        "dateModified": "2017-01-10T13:43:11.098209+02:00",
+        "description_ru": "SHA1: c9bf64f4a3d76a052150b3e98ec0eccb6299f298",
+        "id": "c7a93b95f85e4dcbae6c0d794340d686"
+      },
+      {
+        "hash": "md5:f277775dc16008c3caa66d8fd9032386",
+        "description": "SHA1: 425fb4d3349e8220e15f76ca9790e9b0d90694f3",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/7141da0d7f5b4449b0c9dbc831301301?KeyID=52462340&Signature=PEDeGAg%2FDLutUGNE0yIdfKmprYDwXqIPYZdAjG1PZ%2FWlm9Fx%252BIR0qJIuGZVTBxKXhpBzneKAHg46YrwDrFIRDw%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: 425fb4d3349e8220e15f76ca9790e9b0d90694f3",
+        "datePublished": "2017-01-05T16:02:12.692764+02:00",
+        "documentOf": "lot",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-17T16:32:23.479312+02:00",
+        "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "description_ru": "SHA1: 425fb4d3349e8220e15f76ca9790e9b0d90694f3",
+        "id": "1b4ef4da9fd542c8bb079d52748d74b4"
+      },
+      {
+        "hash": "md5:7a927861fbe1c2ed89eef82bfe4121eb",
+        "description": "SHA1: db499aa2ac182f508b86845f96e2327a2f95fdc5",
+        "title": "дод 5 договор.docx",
+        "url": "https://public.docs.openprocurement.org/get/29822984cf044815a4a814bf764703cb?KeyID=52462340&Signature=9%252BqlqXMVVBcbwhEQ7wFI0%2Fo5p%2Fi2yWdzidbkdhKaUxb6xXEJawhOrDuUyIFqB9cJF3TYwegbQwoRESYSefXZCQ%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "дод 5 договор.docx",
+        "description_en": "SHA1: db499aa2ac182f508b86845f96e2327a2f95fdc5",
+        "datePublished": "2017-01-05T16:02:13.389741+02:00",
+        "documentOf": "lot",
+        "title_ru": "дод 5 договор.docx",
+        "documentType": "contractProforma",
+        "dateModified": "2017-01-17T16:32:25.369443+02:00",
+        "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "description_ru": "SHA1: db499aa2ac182f508b86845f96e2327a2f95fdc5",
+        "id": "14023e5a347840fda04b1ec97ded4e60"
+      },
+      {
+        "hash": "md5:be0170dc2e1bed9738279102142038a0",
+        "description": "SHA1: 6323d32261f4dcd1740f1bb07edeb0a248423f56",
+        "title": "Додаток 2 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/e90cc9ab62a247b49e24e02abcb4032a?KeyID=52462340&Signature=z3eKJ3Tr9rsOyVUfy4J0Tbb6bSrU3ubZH%252B7b9xVK8KybeC%2F%2F70sFu1jkS9pHVeVBBr0YOhuc4Ph6XWtA77lkAw%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "Додаток 2 (1).doc",
+        "description_en": "SHA1: 6323d32261f4dcd1740f1bb07edeb0a248423f56",
+        "datePublished": "2017-01-05T16:02:14.502583+02:00",
+        "documentOf": "lot",
+        "title_ru": "Додаток 2 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-17T16:32:26.641192+02:00",
+        "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "description_ru": "SHA1: 6323d32261f4dcd1740f1bb07edeb0a248423f56",
+        "id": "d3158608df7946f4acd65c166792b1ca"
+      },
+      {
+        "hash": "md5:f277775dc16008c3caa66d8fd9032386",
+        "description": "SHA1: 425fb4d3349e8220e15f76ca9790e9b0d90694f3",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/6e77abf4f15e4409849ea13c66d40752?KeyID=52462340&Signature=Zc27oqN5DvVHTZNONBJB9wjn5rXr9erB5mk%2F1fPTgkg%2F8gA8nc4HF8wrABW3Wq5WV6pBUmSX9l6gS7RT7Lo0Bg%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: 425fb4d3349e8220e15f76ca9790e9b0d90694f3",
+        "datePublished": "2017-01-05T16:02:16.543495+02:00",
+        "documentOf": "lot",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-17T16:32:28.029217+02:00",
+        "relatedItem": "a99a305c246ada78a18fadf7db742812",
+        "description_ru": "SHA1: 425fb4d3349e8220e15f76ca9790e9b0d90694f3",
+        "id": "2934f8573f5341daa0d9f7cc91563dda"
+      },
+      {
+        "hash": "md5:5925deddf1b75017594d96abe0b9fe63",
+        "description": "SHA1: 6b5f3b8e34628fc6850ed7d17466a9d8f8a20490",
+        "title": "Додаток 3 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/768e0fe88dd1423a90e9fe949d8a720e?KeyID=52462340&Signature=PrZ66nUXNI2eIpWhWrXpLTfCuDqVGmLgALFbRjsUWacX%252BRZq1ll5ykiSwcQC%2F2FWoy2KBJLmUGD4E3MK3eI4Cg%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "Додаток 3 (1).doc",
+        "description_en": "SHA1: 6b5f3b8e34628fc6850ed7d17466a9d8f8a20490",
+        "datePublished": "2017-01-05T16:02:17.132872+02:00",
+        "documentOf": "lot",
+        "title_ru": "Додаток 3 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-17T16:32:29.455075+02:00",
+        "relatedItem": "a99a305c246ada78a18fadf7db742812",
+        "description_ru": "SHA1: 6b5f3b8e34628fc6850ed7d17466a9d8f8a20490",
+        "id": "e3aa4fd65fe5417ba98c15738c8c4372"
+      },
+      {
+        "hash": "md5:7a927861fbe1c2ed89eef82bfe4121eb",
+        "description": "SHA1: db499aa2ac182f508b86845f96e2327a2f95fdc5",
+        "title": "дод 5 договор.docx",
+        "url": "https://public.docs.openprocurement.org/get/676bb009bb924e96b7790230ccf9d29a?KeyID=52462340&Signature=ZGsqqf%252BLKwjsubO6rA6h0%2FkWb829auwsAOZJVPneGxEmGB7CKgeDuKNe03UfRYlD5gWCoDqEYEB9UTT3HJUMBw%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "дод 5 договор.docx",
+        "description_en": "SHA1: db499aa2ac182f508b86845f96e2327a2f95fdc5",
+        "datePublished": "2017-01-05T16:02:17.786813+02:00",
+        "documentOf": "lot",
+        "title_ru": "дод 5 договор.docx",
+        "documentType": "contractProforma",
+        "dateModified": "2017-01-17T16:32:30.477864+02:00",
+        "relatedItem": "a99a305c246ada78a18fadf7db742812",
+        "description_ru": "SHA1: db499aa2ac182f508b86845f96e2327a2f95fdc5",
+        "id": "d7b9a69185df4eff82ebcaed59edaa62"
+      },
+      {
+        "hash": "md5:f277775dc16008c3caa66d8fd9032386",
+        "description": "SHA1: 425fb4d3349e8220e15f76ca9790e9b0d90694f3",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/129a396bd1834993af821d8424b89929?KeyID=52462340&Signature=5dmfko%252BShRBXrf2w0mBPlhlOGQDrKlGkWwGL8Jh3WwFiZ1WDwxhrdUH3uy8sq47aJP%2FGEyOZFn3tMy9xuyAqDQ%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: 425fb4d3349e8220e15f76ca9790e9b0d90694f3",
+        "datePublished": "2017-01-05T16:02:19.337090+02:00",
+        "documentOf": "lot",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-17T16:32:32.850395+02:00",
+        "relatedItem": "02996dea76705b391a8ea6da699da91e",
+        "description_ru": "SHA1: 425fb4d3349e8220e15f76ca9790e9b0d90694f3",
+        "id": "612e373eb17845d0940a0be1a17cf2d5"
+      },
+      {
+        "hash": "md5:c1e99c468e06a10a494c1b14604458be",
+        "description": "SHA1: c90195652b0dfd448b6c0f4bc55ac53837f34b18",
+        "title": "дод 5 договор.docx",
+        "url": "https://public.docs.openprocurement.org/get/e5e10e31a2574beea59e0563f3265c42?KeyID=52462340&Signature=PiMyTj3zZpFskmgmVNgsRH6JnYz3hVwTe3zYo%252B0bGWQv7VZ%252B9Es0%252BCY6MCPpQd42tg3kSOGkymBqPPnKm3oDDQ%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "дод 5 договор.docx",
+        "description_en": "SHA1: c90195652b0dfd448b6c0f4bc55ac53837f34b18",
+        "datePublished": "2017-01-05T16:02:19.980232+02:00",
+        "documentOf": "lot",
+        "title_ru": "дод 5 договор.docx",
+        "documentType": "contractProforma",
+        "dateModified": "2017-01-17T16:32:38.666964+02:00",
+        "relatedItem": "02996dea76705b391a8ea6da699da91e",
+        "description_ru": "SHA1: c90195652b0dfd448b6c0f4bc55ac53837f34b18",
+        "id": "08681b5efe9c4c5d80016454e4d2567b"
+      },
+      {
+        "hash": "md5:7a927861fbe1c2ed89eef82bfe4121eb",
+        "description": "SHA1: db499aa2ac182f508b86845f96e2327a2f95fdc5",
+        "title": "Додаток 4.doc",
+        "url": "https://public.docs.openprocurement.org/get/c6c4971a62d34c0fbea3ba5994be0a5a?KeyID=52462340&Signature=w1S0OsEqlAwUwUe8T6a2%2F2HYE2uPJE7n1hFtAPyNHw2poysl3NqcwD8Yfl%2FVaLYRUJRmGRaa1pZCM5sdkLFOAw%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "Додаток 4.doc",
+        "description_en": "SHA1: db499aa2ac182f508b86845f96e2327a2f95fdc5",
+        "datePublished": "2017-01-05T16:02:20.720294+02:00",
+        "documentOf": "lot",
+        "title_ru": "Додаток 4.doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-17T16:32:39.716075+02:00",
+        "relatedItem": "02996dea76705b391a8ea6da699da91e",
+        "description_ru": "SHA1: db499aa2ac182f508b86845f96e2327a2f95fdc5",
+        "id": "35767a9b083e4938af625131982391b1"
+      },
+      {
+        "hash": "md5:2b182752bf771f566e0c4fc84bfd46b0",
+        "description": "SHA1: 3f067c6994c21d5cd4bf8ce993d6fc351061d2e7",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/85430335b9c448fd9d03d706c6613535?KeyID=52462340&Signature=EdG34ZNSLHZ%252BS5uLRxXUKadLCCbAeYETEGOo9Wdtt7rENVcvh43o6SMSFXEzgxL7xhADTpY7yi%2F%2F5SUqJKydDg%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: 3f067c6994c21d5cd4bf8ce993d6fc351061d2e7",
+        "datePublished": "2017-01-05T16:02:12.692764+02:00",
+        "documentOf": "lot",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-18T15:44:20.550094+02:00",
+        "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "description_ru": "SHA1: 3f067c6994c21d5cd4bf8ce993d6fc351061d2e7",
+        "id": "1b4ef4da9fd542c8bb079d52748d74b4"
+      },
+      {
+        "hash": "md5:84666d52634717d83b2893c2c39ea4c3",
+        "description": "SHA1: f9c6154b56db853346096371729b34534fa2492c",
+        "title": "дод 5 договор.docx",
+        "url": "https://public.docs.openprocurement.org/get/fe6ff2cede9f4b7a8d1ceb3b193d1e05?KeyID=52462340&Signature=yw8a1VwtjIWRwmYnZ9iVEEZm%2FsKPkkjETASkY4wxlU8lyrWj3n4GgrIe1IljUIi98GeuneY2ex7rAhlYDfyECg%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "дод 5 договор.docx",
+        "description_en": "SHA1: f9c6154b56db853346096371729b34534fa2492c",
+        "datePublished": "2017-01-05T16:02:13.389741+02:00",
+        "documentOf": "lot",
+        "title_ru": "дод 5 договор.docx",
+        "documentType": "contractProforma",
+        "dateModified": "2017-01-18T15:44:21.957559+02:00",
+        "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "description_ru": "SHA1: f9c6154b56db853346096371729b34534fa2492c",
+        "id": "14023e5a347840fda04b1ec97ded4e60"
+      },
+      {
+        "hash": "md5:565d43e36d233124f9461447d0b114f6",
+        "description": "SHA1: 9940137a30b36516cbed541b6b2e19c5294599a8",
+        "title": "Додаток 2 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/3d9632c3d4b34eeebef0ccf2b1df8d07?KeyID=52462340&Signature=IJw8utMUKyyMHR8%2FDknsUrron9yLef%252B9i7TwLMrTM1zxeEDLR8KcG5lHsH4PBTbgrcscNkjDNKILEVYG1yt3BA%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "Додаток 2 (1).doc",
+        "description_en": "SHA1: 9940137a30b36516cbed541b6b2e19c5294599a8",
+        "datePublished": "2017-01-05T16:02:14.502583+02:00",
+        "documentOf": "lot",
+        "title_ru": "Додаток 2 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-18T15:44:22.857913+02:00",
+        "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "description_ru": "SHA1: 9940137a30b36516cbed541b6b2e19c5294599a8",
+        "id": "d3158608df7946f4acd65c166792b1ca"
+      },
+      {
+        "hash": "md5:2b182752bf771f566e0c4fc84bfd46b0",
+        "description": "SHA1: 3f067c6994c21d5cd4bf8ce993d6fc351061d2e7",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/0bc5b0f2562d4b83923a5142a40c52fd?KeyID=52462340&Signature=XtlWH79nSXahNe%252BvhcluPGmnvFCYnB9%2FgnzfIbjIV1lRCLCMNNxVz6kJfBbDi5fNbOoFd4khS21QCaqH46RnAA%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: 3f067c6994c21d5cd4bf8ce993d6fc351061d2e7",
+        "datePublished": "2017-01-05T16:02:16.543495+02:00",
+        "documentOf": "lot",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-18T15:44:24.512695+02:00",
+        "relatedItem": "a99a305c246ada78a18fadf7db742812",
+        "description_ru": "SHA1: 3f067c6994c21d5cd4bf8ce993d6fc351061d2e7",
+        "id": "2934f8573f5341daa0d9f7cc91563dda"
+      },
+      {
+        "hash": "md5:84666d52634717d83b2893c2c39ea4c3",
+        "description": "SHA1: f9c6154b56db853346096371729b34534fa2492c",
+        "title": "дод 5 договор.docx",
+        "url": "https://public.docs.openprocurement.org/get/c183cc79cf874106968dd06438289311?KeyID=52462340&Signature=h13mCZA88q%252BYVu1%252BXJAYKPjbePmq7uK9%2Fdfipwdc0A44dkiuRGL159z0bdoAzHD6jFzxriKlgR1QLgaHQxdLDg%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "дод 5 договор.docx",
+        "description_en": "SHA1: f9c6154b56db853346096371729b34534fa2492c",
+        "datePublished": "2017-01-05T16:02:17.786813+02:00",
+        "documentOf": "lot",
+        "title_ru": "дод 5 договор.docx",
+        "documentType": "contractProforma",
+        "dateModified": "2017-01-18T15:44:25.192582+02:00",
+        "relatedItem": "a99a305c246ada78a18fadf7db742812",
+        "description_ru": "SHA1: f9c6154b56db853346096371729b34534fa2492c",
+        "id": "d7b9a69185df4eff82ebcaed59edaa62"
+      },
+      {
+        "hash": "md5:2b182752bf771f566e0c4fc84bfd46b0",
+        "description": "SHA1: 3f067c6994c21d5cd4bf8ce993d6fc351061d2e7",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/510a8936c96247eb99375d202661ceae?KeyID=52462340&Signature=OUjferRKDNnD%252BA8eh88TNEmO%2FYSC0du6ndJ0%2Fl9L278FeBUdwrpJrTqkEQsG%2FVhHMmUY1FAuU%2FCUO1zkLATJBA%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: 3f067c6994c21d5cd4bf8ce993d6fc351061d2e7",
+        "datePublished": "2017-01-05T16:02:19.337090+02:00",
+        "documentOf": "lot",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-18T15:44:26.828902+02:00",
+        "relatedItem": "02996dea76705b391a8ea6da699da91e",
+        "description_ru": "SHA1: 3f067c6994c21d5cd4bf8ce993d6fc351061d2e7",
+        "id": "612e373eb17845d0940a0be1a17cf2d5"
+      },
+      {
+        "hash": "md5:84666d52634717d83b2893c2c39ea4c3",
+        "description": "SHA1: f9c6154b56db853346096371729b34534fa2492c",
+        "title": "Додаток 4.doc",
+        "url": "https://public.docs.openprocurement.org/get/17d65a0476f845cf8c16b94162fb062f?KeyID=52462340&Signature=BHxVmeDUcicWiufXKmJ%2F%2FocwKpI4M5OeF5XgT5OE240wlAVbBbJaWgZJeuep9lvESDb0i9Qn3DwCuswVo6b%252BDg%253D%253D",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "title_en": "Додаток 4.doc",
+        "description_en": "SHA1: f9c6154b56db853346096371729b34534fa2492c",
+        "datePublished": "2017-01-05T16:02:20.720294+02:00",
+        "documentOf": "lot",
+        "title_ru": "Додаток 4.doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-18T15:44:28.171430+02:00",
+        "relatedItem": "02996dea76705b391a8ea6da699da91e",
+        "description_ru": "SHA1: f9c6154b56db853346096371729b34534fa2492c",
+        "id": "35767a9b083e4938af625131982391b1"
+      },
+      {
+        "hash": "md5:c0f0a65b5caccc894366c7e6364240ae",
+        "description": "SHA1: c29f7863eda9562ceaeff7e61d38884ca004ef3d",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/009435e545f04d0c97464c8c870b25f5?KeyID=52462340&Signature=PsO3ojCFSAeuvMYYs0eCh1aUJ34jFQarO90R67xfvmeoMVYa69HHeDpabGFCLbyC5zPJ5IUqDmcsMGaqeVseDA%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: c29f7863eda9562ceaeff7e61d38884ca004ef3d",
+        "datePublished": "2017-01-05T16:02:12.692764+02:00",
+        "documentOf": "lot",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-20T13:49:02.399114+02:00",
+        "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "description_ru": "SHA1: c29f7863eda9562ceaeff7e61d38884ca004ef3d",
+        "id": "1b4ef4da9fd542c8bb079d52748d74b4"
+      },
+      {
+        "hash": "md5:c0f0a65b5caccc894366c7e6364240ae",
+        "description": "SHA1: c29f7863eda9562ceaeff7e61d38884ca004ef3d",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/d2768845fc1946b292a7a97b4c7bcc97?KeyID=52462340&Signature=4CwxU34c16ohDH2%2FK86nQcoU%2FkcymLFfb65fzazw5jyQCEQtw4pvTq4dNbCqO0UVmUpneiKcvE%252BOaniCIX%252BwBQ%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: c29f7863eda9562ceaeff7e61d38884ca004ef3d",
+        "datePublished": "2017-01-05T16:02:16.543495+02:00",
+        "documentOf": "lot",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-20T13:49:03.983757+02:00",
+        "relatedItem": "a99a305c246ada78a18fadf7db742812",
+        "description_ru": "SHA1: c29f7863eda9562ceaeff7e61d38884ca004ef3d",
+        "id": "2934f8573f5341daa0d9f7cc91563dda"
+      },
+      {
+        "hash": "md5:c0f0a65b5caccc894366c7e6364240ae",
+        "description": "SHA1: c29f7863eda9562ceaeff7e61d38884ca004ef3d",
+        "title": "dodatok_1 (1).doc",
+        "url": "https://public.docs.openprocurement.org/get/46d50fd54ba04b64b6f0dd86b4c367d1?KeyID=52462340&Signature=Pe3xRpgtabQQbQ9%2Fc6EEChmnMDKQ%252BfsxBgzEOfcVnjvmMFkTHJIdp25kDJwjpAa10LyE9%252BE7Gym24QZLIwLEAg%253D%253D",
+        "format": "application/msword",
+        "title_en": "dodatok_1 (1).doc",
+        "description_en": "SHA1: c29f7863eda9562ceaeff7e61d38884ca004ef3d",
+        "datePublished": "2017-01-05T16:02:19.337090+02:00",
+        "documentOf": "lot",
+        "title_ru": "dodatok_1 (1).doc",
+        "documentType": "biddingDocuments",
+        "dateModified": "2017-01-20T13:49:06.497304+02:00",
+        "relatedItem": "02996dea76705b391a8ea6da699da91e",
+        "description_ru": "SHA1: c29f7863eda9562ceaeff7e61d38884ca004ef3d",
+        "id": "612e373eb17845d0940a0be1a17cf2d5"
+      },
+      {
+        "hash": "md5:c14af02b244ee031e23be359d128168c",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/df9d87fb056a405fb46a365e41dd4db2?KeyID=52462340&Signature=1fcQFexCZYOzGMTMxT7GSn6BZDPXCLfBz64vvO0lQRw8AqZrM%252BXJ1CX4bcX7F7ekaxY%2FzMPs%252B4u436torTXXCw%253D%253D",
+        "title": "audit_40d1700dbf804c19a9d50cb9b3e0f34c_6b14fb8c8ebb9411103592c75b68aaf2.yaml",
+        "documentOf": "tender",
+        "datePublished": "2017-02-03T14:55:36.003599+02:00",
+        "dateModified": "2017-02-03T14:55:36.003621+02:00",
+        "id": "33ce01e63055451eba38c063cafb59ee"
+      },
+      {
+        "hash": "md5:dd0ea989eff8c09da4f5196ecb058112",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/738e342430c74a8d83bd0f51a50f9779?KeyID=52462340&Signature=W%2F%252Bh5amSgwOgaoF3%2Fhfn0FLIliM%252BMDt5Wca%252BBkt0Tabaz2Ymsix03rNElkih6LR73qsKM6WuLdUkNE8%2FzqBZAg%253D%253D",
+        "title": "audit_40d1700dbf804c19a9d50cb9b3e0f34c_a99a305c246ada78a18fadf7db742812.yaml",
+        "documentOf": "tender",
+        "datePublished": "2017-02-03T15:17:13.713205+02:00",
+        "dateModified": "2017-02-03T15:17:13.713228+02:00",
+        "id": "ec47082a9c6042f387c1582018b5b6c1"
+      }
+    ],
+    "title": "Труби та фітинги пластикові ,сталеві, композит ( реалізація договору протягом 2017 року)",
+    "lots": [
+      {
+        "status": "complete",
+        "description": "Кількістні та якісні вимоги до предмета закупівлі згідно Додатку № 2.Очікувана віртість предмета закупівлі визначена з урахуванням ПДВ.Реалізація договору протягом 2017 року.",
+        "title": "Труби та фітинги пластикові",
+        "minimalStep": {
+          "currency": "UAH",
+          "amount": 6048.3,
+          "valueAddedTaxIncluded": true
+        },
+        "auctionPeriod": {
+          "startDate": "2017-02-03T14:22:35+02:00",
+          "endDate": "2017-02-03T14:55:38.456222+02:00"
+        },
+        "value": {
+          "currency": "UAH",
+          "amount": 604830,
+          "valueAddedTaxIncluded": true
+        },
+        "auctionUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_6b14fb8c8ebb9411103592c75b68aaf2",
+        "date": "2017-03-03T15:05:42.556987+02:00",
+        "id": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "guarantee": {
+          "currency": "UAH",
+          "amount": 0
+        }
+      },
+      {
+        "status": "complete",
+        "description": "Кількістні та якісні вимоги до предмета закупівлі згідно Додатку № 2.Очікувана віртість предмета закупівлі визначена з урахуванням ПДВ.Реалізація договору протягом 2017 року.",
+        "title": "Труби та фітинги композит Лот № 2",
+        "minimalStep": {
+          "currency": "UAH",
+          "amount": 732.5,
+          "valueAddedTaxIncluded": true
+        },
+        "auctionPeriod": {
+          "startDate": "2017-02-03T14:44:13+02:00",
+          "endDate": "2017-02-03T15:17:16.479187+02:00"
+        },
+        "value": {
+          "currency": "UAH",
+          "amount": 73250,
+          "valueAddedTaxIncluded": true
+        },
+        "auctionUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_a99a305c246ada78a18fadf7db742812",
+        "date": "2017-03-03T15:05:48.851115+02:00",
+        "id": "a99a305c246ada78a18fadf7db742812",
+        "guarantee": {
+          "currency": "UAH",
+          "amount": 0
+        }
+      },
+      {
+        "status": "unsuccessful",
+        "description": "Кількістні та якісні вимоги до предмета закупівлі згідно Додатку № 2.Очікувана віртість предмета закупівлі визначена з урахуванням ПДВ.Реалізація договору протягом 2017 року.",
+        "title": "Труби та  фітинги  сталеві .Лот № 3",
+        "minimalStep": {
+          "currency": "UAH",
+          "amount": 1990,
+          "valueAddedTaxIncluded": true
+        },
+        "value": {
+          "currency": "UAH",
+          "amount": 199020,
+          "valueAddedTaxIncluded": true
+        },
+        "date": "2017-02-02T16:08:08.678086+02:00",
+        "id": "02996dea76705b391a8ea6da699da91e",
+        "guarantee": {
+          "currency": "UAH",
+          "amount": 0
+        }
+      }
+    ],
+    "tenderID": "UA-2017-01-05-000788-b",
+    "guarantee": {
+      "currency": "UAH",
+      "amount": 0
+    },
+    "dateModified": "2017-03-03T15:05:48.851115+02:00",
+    "status": "complete",
+    "tenderPeriod": {
+      "startDate": "2017-01-05T16:01:59.606120+02:00",
+      "endDate": "2017-02-02T16:06:59+02:00"
+    },
+    "contracts": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:91d5440a98e24aa1755db50eb76fe69f",
+            "description": "SHA1: 0dff85be11e34a3d215d9de52823f982907cf82b",
+            "title": "договор",
+            "url": "https://public.docs.openprocurement.org/get/e8d9073c06d949cd9b227c932a152fae?KeyID=52462340&Signature=xGhV15SHgnVN5SoLZe3Mtx7vyj6VXJjF%252BnwLB8Rk7JDIZyJfJRSSkFRtPJKblFyBiO1QxUHQjx1OqdqhamMzCg%253D%253D",
+            "format": "application/pdf",
+            "title_en": "договор0001.PDF",
+            "description_en": "SHA1: 0dff85be11e34a3d215d9de52823f982907cf82b",
+            "datePublished": "2017-03-03T14:50:33.454750+02:00",
+            "documentOf": "tender",
+            "title_ru": "договор0001.PDF",
+            "dateModified": "2017-03-03T14:50:33.454774+02:00",
+            "description_ru": "SHA1: 0dff85be11e34a3d215d9de52823f982907cf82b",
+            "id": "b04eb94a21b74bdfaeebd506b0086bbe"
+          },
+          {
+            "hash": "md5:9f838000d00398af9d3a3bdbf0aa85de",
+            "description": "SHA1: 042c222ef01e68ebb0dd1e76c119705d2257f37e",
+            "title": "sign.p7s",
+            "url": "https://public.docs.openprocurement.org/get/dd0f912245014f4599f0c15d85d7f457?KeyID=52462340&Signature=2r0UvaYJInd7%2Fb4aMsgYkSovwWXok5XZZqQWzL7kLgkzN4ALs%252BbErZyVya1f%2FvkaF3OIGKw4mvOreTodt7CuCQ%253D%253D",
+            "format": "application/pkcs7-signature",
+            "title_en": "sign.p7s",
+            "description_en": "SHA1: 042c222ef01e68ebb0dd1e76c119705d2257f37e",
+            "datePublished": "2017-03-03T15:05:05.926565+02:00",
+            "documentOf": "tender",
+            "title_ru": "sign.p7s",
+            "dateModified": "2017-03-03T15:05:05.926602+02:00",
+            "description_ru": "SHA1: 042c222ef01e68ebb0dd1e76c119705d2257f37e",
+            "id": "572823e39c8143f8abc551d73247aed9"
+          }
+        ],
+        "items": [
+          {
+            "relatedLot": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "description": "Труби та фітинги пластикові згідно Технічного завдання ( Додаток № 2 до тендерної документації).Лот № 1",
+            "classification": {
+              "scheme": "CPV",
+              "description": "Магістралі, трубопроводи, труби, обсадні труби, тюбінги та супутні вироби",
+              "id": "44160000-9"
+            },
+            "deliveryAddress": {
+              "postalCode": "87515",
+              "countryName": "Україна",
+              "streetAddress": "вул.Куїнджі ,92",
+              "region": "Донецька область",
+              "locality": "м.Маріуполь"
+            },
+            "deliveryDate": {
+              "startDate": "2017-02-13T16:06:59+02:00",
+              "endDate": "2017-12-31T16:06:59+02:00"
+            },
+            "id": "c9883826f42e9ccc3cd191c717e3c877",
+            "unit": {
+              "code": "H87",
+              "name": "шт"
+            },
+            "quantity": 14455
+          }
+        ],
+        "suppliers": [
+          {
+            "contactPoint": {
+              "telephone": "+380979628608",
+              "name": "Виктор Туру",
+              "email": "tv.kskd@gmail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "13511529",
+              "legalName": "ТОВ ФІРМА \"КАСКАД\""
+            },
+            "name": "ТОВ ФІРМА \"КАСКАД\"",
+            "address": {
+              "postalCode": "87004",
+              "countryName": "Україна",
+              "streetAddress": "ул. Свободы, д. 79",
+              "region": "Донецька область",
+              "locality": "пгт. Володарское"
+            }
+          }
+        ],
+        "contractNumber": "156",
+        "period": {
+          "startDate": "2017-03-03T14:49:48+02:00",
+          "endDate": "2017-12-31T23:59:59+02:00"
+        },
+        "dateSigned": "2017-03-03T14:49:48+02:00",
+        "value": {
+          "currency": "UAH",
+          "amount": 355499,
+          "valueAddedTaxIncluded": true
+        },
+        "date": "2017-03-03T15:05:42.556987+02:00",
+        "awardID": "740fa0f8f75f420b915bda0c79af9744",
+        "id": "6ba3834c861143b883da680c3839b907",
+        "contractID": "UA-2017-01-05-000788-b-c1"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:19e50a43b0eba8790ffbe4ee284d3dc6",
+            "description": "SHA1: fc2db13f0eda217f9baef4f122b9585f4ccaf016",
+            "title": "договор",
+            "url": "https://public.docs.openprocurement.org/get/bf6fbe8823de4d90bc531f21b22664a6?KeyID=52462340&Signature=DkUcO1ncmJOQ7SaVcGFMeSFow4WSZvnHsWlH0oyPlUXrTiJ%2F1Gems7SWqizpnEb325KM7FlpKT3XnNAxEh2xCg%253D%253D",
+            "format": "application/pdf",
+            "title_en": "договор0002.PDF",
+            "description_en": "SHA1: fc2db13f0eda217f9baef4f122b9585f4ccaf016",
+            "datePublished": "2017-03-03T14:51:39.271633+02:00",
+            "documentOf": "tender",
+            "title_ru": "договор0002.PDF",
+            "dateModified": "2017-03-03T14:51:39.271656+02:00",
+            "description_ru": "SHA1: fc2db13f0eda217f9baef4f122b9585f4ccaf016",
+            "id": "8b57c8be15744720963d99b96135c7d0"
+          },
+          {
+            "hash": "md5:c6e672d1521d7a1a0c1c85c710a05cb8",
+            "description": "SHA1: eb61ada16a0261fffaf20ef1b213d4ecbb090b14",
+            "title": "sign.p7s",
+            "url": "https://public.docs.openprocurement.org/get/6283801f7e41468cac5f840cf633847c?KeyID=52462340&Signature=6YCyUST%2FqEpBwWTpIhr%252Bc7w5eKZ2d59XqnRcGH2UXflE%252BPbhR%2FKc4GXMzs4yfmWE%252BxxuiRxV12ZlJ1aETxmWBg%253D%253D",
+            "format": "application/pkcs7-signature",
+            "title_en": "sign.p7s",
+            "description_en": "SHA1: eb61ada16a0261fffaf20ef1b213d4ecbb090b14",
+            "datePublished": "2017-03-03T15:05:22.573853+02:00",
+            "documentOf": "tender",
+            "title_ru": "sign.p7s",
+            "dateModified": "2017-03-03T15:05:22.573875+02:00",
+            "description_ru": "SHA1: eb61ada16a0261fffaf20ef1b213d4ecbb090b14",
+            "id": "b58eb0374ea94996b0558c435a5fd928"
+          }
+        ],
+        "items": [
+          {
+            "relatedLot": "a99a305c246ada78a18fadf7db742812",
+            "description": "Труби та фітинги композит згідно Технічного завдання ( Додаток № 3 до тендерної  документації)",
+            "classification": {
+              "scheme": "CPV",
+              "description": "Магістралі, трубопроводи, труби, обсадні труби, тюбінги та супутні вироби",
+              "id": "44160000-9"
+            },
+            "deliveryAddress": {
+              "postalCode": "87515",
+              "countryName": "Україна",
+              "streetAddress": "вул.Куїнджі ,92",
+              "region": "Донецька область",
+              "locality": "м.Маріуполь"
+            },
+            "deliveryDate": {
+              "startDate": "2017-02-13T16:06:59+02:00",
+              "endDate": "2017-12-31T16:06:59+02:00"
+            },
+            "id": "ef17380683e7a2e1da0bd59a5b80d2e1",
+            "unit": {
+              "code": "H87",
+              "name": "шт"
+            },
+            "quantity": 900
+          }
+        ],
+        "suppliers": [
+          {
+            "contactPoint": {
+              "telephone": "+380674041474",
+              "name": "Александр Казаров",
+              "email": "smartclimate@ukr.net"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "38760205",
+              "uri": "http://smartclimate.com.ua",
+              "legalName": "ТОВ \"СМАРТ КЛІМАТ ГРУП\""
+            },
+            "name": "ТОВ \"СМАРТ КЛІМАТ ГРУП\"",
+            "address": {
+              "postalCode": "03179",
+              "countryName": "Україна",
+              "streetAddress": "ВУЛИЦЯ ЛЬВІВСЬКА, будинок 59А, квартира 62",
+              "region": "Київ",
+              "locality": "м.Київ"
+            }
+          }
+        ],
+        "contractNumber": "142",
+        "period": {
+          "startDate": "2017-03-03T14:50:37+02:00",
+          "endDate": "2017-12-31T23:59:59+02:00"
+        },
+        "dateSigned": "2017-03-03T14:50:37+02:00",
+        "value": {
+          "currency": "UAH",
+          "amount": 51914,
+          "valueAddedTaxIncluded": true
+        },
+        "date": "2017-03-03T15:05:48.851115+02:00",
+        "awardID": "e947675d20e9487c84ba38eabee05a54",
+        "id": "9afda5a5d4cf465da3a70d3a9ca4f0f8",
+        "contractID": "UA-2017-01-05-000788-b-b2"
+      }
+    ],
+    "procurementMethodType": "aboveThresholdUA",
+    "awards": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:14eedd25f7a097a2b39a86caef231e01",
+            "description": "SHA1: ce48b9a258b2f348892025fd6b96348d82ecc77f",
+            "title": "протокол",
+            "url": "https://public.docs.openprocurement.org/get/4379e7e82bbe4e5da5cec1d2d3129e7c?KeyID=52462340&Signature=jMxKUHh7JMQYvV7GmDK6WFhXiVCSImM2jpQME55lKmwOLb7UkwzlI%252Bh9bMhU2IAuOFOeNCDvSLeQIBZ2UUNJAg%253D%253D",
+            "format": "application/pdf",
+            "title_en": "протокол.PDF",
+            "description_en": "SHA1: ce48b9a258b2f348892025fd6b96348d82ecc77f",
+            "datePublished": "2017-02-13T14:55:22.004609+02:00",
+            "documentOf": "tender",
+            "title_ru": "протокол.PDF",
+            "dateModified": "2017-02-13T14:55:22.004646+02:00",
+            "description_ru": "SHA1: ce48b9a258b2f348892025fd6b96348d82ecc77f",
+            "id": "92638e54c41a48f79fd4ceb8ec20f207"
+          },
+          {
+            "hash": "md5:a85d81cf2f7102d2251a039835787f22",
+            "description": "SHA1: 38de89a63cc2d64de72841a191949fe1387056dd",
+            "title": "протокол",
+            "url": "https://public.docs.openprocurement.org/get/ffc24f263db9413ba5189b440764076f?KeyID=52462340&Signature=hBNE%252BNYZHNjzKT%252Bic6KcKdwWdCepUGPVSNt0jt%2FYVsIJBv5CgO1u5GgYByB6rJs4u6wmYTACrTVk%2FwJR9x9VAA%253D%253D",
+            "format": "application/pdf",
+            "title_en": "протокол.PDF",
+            "description_en": "SHA1: 38de89a63cc2d64de72841a191949fe1387056dd",
+            "datePublished": "2017-02-14T12:02:34.085893+02:00",
+            "documentOf": "tender",
+            "title_ru": "протокол.PDF",
+            "documentType": "notice",
+            "dateModified": "2017-02-14T12:02:34.085916+02:00",
+            "description_ru": "SHA1: 38de89a63cc2d64de72841a191949fe1387056dd",
+            "id": "d85a825cdda34c39b0002f9f0569e9f3"
+          },
+          {
+            "hash": "md5:9131d5788fd0d207519a89b4a8c2f4e1",
+            "description": "SHA1: ae5083145a97ab91fbd9058df04dea1868f8221a",
+            "title": "sign.p7s",
+            "url": "https://public.docs.openprocurement.org/get/c6307e4e270343f19ec8efe84115548c?KeyID=52462340&Signature=L2nc0RhxjxV5KLV4u19rRJZapQzcVuSEr9JqBtQacREPe0TbhG1yKvk7w8SPz7RgotvoIC2wdVwtPFrFLK9VBg%253D%253D",
+            "format": "application/pkcs7-signature",
+            "title_en": "sign.p7s",
+            "description_en": "SHA1: ae5083145a97ab91fbd9058df04dea1868f8221a",
+            "datePublished": "2017-02-14T12:05:03.080601+02:00",
+            "documentOf": "tender",
+            "title_ru": "sign.p7s",
+            "dateModified": "2017-02-14T12:05:03.080656+02:00",
+            "description_ru": "SHA1: ae5083145a97ab91fbd9058df04dea1868f8221a",
+            "id": "5678e83e4f2c4a4fb2897f6e20b332dc"
+          }
+        ],
+        "complaintPeriod": {
+          "startDate": "2017-02-03T15:17:16.664804+02:00",
+          "endDate": "2017-02-25T00:00:00+02:00"
+        },
+        "suppliers": [
+          {
+            "contactPoint": {
+              "telephone": "+380979628608",
+              "name": "Виктор Туру",
+              "email": "tv.kskd@gmail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "13511529",
+              "legalName": "ТОВ ФІРМА \"КАСКАД\""
+            },
+            "name": "ТОВ ФІРМА \"КАСКАД\"",
+            "address": {
+              "postalCode": "87004",
+              "countryName": "Україна",
+              "streetAddress": "ул. Свободы, д. 79",
+              "region": "Донецька область",
+              "locality": "пгт. Володарское"
+            }
+          }
+        ],
+        "eligible": true,
+        "bid_id": "8ab9aad3a1234e1092e6d29e859febfc",
+        "value": {
+          "currency": "UAH",
+          "amount": 355499,
+          "valueAddedTaxIncluded": true
+        },
+        "qualified": true,
+        "lotID": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "date": "2017-02-14T12:06:25.784082+02:00",
+        "id": "740fa0f8f75f420b915bda0c79af9744"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:34f8f43cb00e2dbfc834b92a171d4cda",
+            "description": "SHA1: 2b192f75d2a2688d7bd85ed018d812b8828debdd",
+            "title": "протокол",
+            "url": "https://public.docs.openprocurement.org/get/a3a59d2ea88243a987db8dfcae98ba44?KeyID=52462340&Signature=26RVstHBE5NE5wvmXX5A%2FRlcD%2FO0s8s7%252B37FQ9Dw4ir5NXgT4ls3QRhUxMneXvfaaLprI2E6S6XmClp5rIojAA%253D%253D",
+            "format": "application/pdf",
+            "title_en": "протокол0001.PDF",
+            "description_en": "SHA1: 2b192f75d2a2688d7bd85ed018d812b8828debdd",
+            "datePublished": "2017-02-13T14:56:03.217743+02:00",
+            "documentOf": "tender",
+            "title_ru": "протокол0001.PDF",
+            "dateModified": "2017-02-13T14:56:03.217779+02:00",
+            "description_ru": "SHA1: 2b192f75d2a2688d7bd85ed018d812b8828debdd",
+            "id": "94fde9e012a043e0aa0ce8d563386f8c"
+          },
+          {
+            "hash": "md5:2a545d14a96165d3d0d2c8de48b74d84",
+            "description": "SHA1: 6b439ea78f085feac8e5d7d5b5071b6b7f616c6b",
+            "title": "протокол",
+            "url": "https://public.docs.openprocurement.org/get/8d4e77adda594261a1d1aefc52faa29b?KeyID=52462340&Signature=xPexB0RwbdsEzowgKJzziJL4zVn9CnuPJTgiOtR4%2FW0D28pMBWgQRFIt5xk5iFlLl5zTtzaJ9%2F1g%252BHI6XukyAw%253D%253D",
+            "format": "application/pdf",
+            "title_en": "протокол0001.PDF",
+            "description_en": "SHA1: 6b439ea78f085feac8e5d7d5b5071b6b7f616c6b",
+            "datePublished": "2017-02-14T12:02:43.943307+02:00",
+            "documentOf": "tender",
+            "title_ru": "протокол0001.PDF",
+            "dateModified": "2017-02-14T12:02:43.943330+02:00",
+            "description_ru": "SHA1: 6b439ea78f085feac8e5d7d5b5071b6b7f616c6b",
+            "id": "ebed860c3e2141ea943ae39b3370f6ed"
+          },
+          {
+            "hash": "md5:092c9b95b8e8e600c90e5b0bbf044738",
+            "description": "SHA1: 579cad2633967ef70ece60a4e3b158a5ebfa6c97",
+            "title": "sign.p7s",
+            "url": "https://public.docs.openprocurement.org/get/f6cb46e4b2ef4c82872b4d23879ddd5c?KeyID=52462340&Signature=kOKN%2FsewMv%252BB6JkLL7X5upyAS8VsoDdetR%2FEd6SxImdKv9Jh9snYkFUz1uU910RwSPP9T1rwgzV4tnIZUXHyAQ%253D%253D",
+            "format": "application/pkcs7-signature",
+            "title_en": "sign.p7s",
+            "description_en": "SHA1: 579cad2633967ef70ece60a4e3b158a5ebfa6c97",
+            "datePublished": "2017-02-14T12:06:11.392642+02:00",
+            "documentOf": "tender",
+            "title_ru": "sign.p7s",
+            "dateModified": "2017-02-14T12:06:11.392679+02:00",
+            "description_ru": "SHA1: 579cad2633967ef70ece60a4e3b158a5ebfa6c97",
+            "id": "d3bc726a03a84230bc729ddc9c7c07d6"
+          }
+        ],
+        "complaintPeriod": {
+          "startDate": "2017-02-03T15:17:16.664804+02:00",
+          "endDate": "2017-02-25T00:00:00+02:00"
+        },
+        "suppliers": [
+          {
+            "contactPoint": {
+              "telephone": "+380674041474",
+              "name": "Александр Казаров",
+              "email": "smartclimate@ukr.net"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "38760205",
+              "uri": "http://smartclimate.com.ua",
+              "legalName": "ТОВ \"СМАРТ КЛІМАТ ГРУП\""
+            },
+            "name": "ТОВ \"СМАРТ КЛІМАТ ГРУП\"",
+            "address": {
+              "postalCode": "03179",
+              "countryName": "Україна",
+              "streetAddress": "ВУЛИЦЯ ЛЬВІВСЬКА, будинок 59А, квартира 62",
+              "region": "Київ",
+              "locality": "м.Київ"
+            }
+          }
+        ],
+        "eligible": true,
+        "bid_id": "e6548b5ad029498f959458bd694e78c1",
+        "value": {
+          "currency": "UAH",
+          "amount": 51914,
+          "valueAddedTaxIncluded": true
+        },
+        "qualified": true,
+        "lotID": "a99a305c246ada78a18fadf7db742812",
+        "date": "2017-02-14T12:06:40.611594+02:00",
+        "id": "e947675d20e9487c84ba38eabee05a54"
+      }
+    ],
+    "date": "2017-03-03T15:05:48.851115+02:00",
+    "minimalStep": {
+      "currency": "UAH",
+      "amount": 732.5,
+      "valueAddedTaxIncluded": true
+    },
+    "items": [
+      {
+        "relatedLot": "6b14fb8c8ebb9411103592c75b68aaf2",
+        "description": "Труби та фітинги пластикові згідно Технічного завдання ( Додаток № 2 до тендерної документації).Лот № 1",
+        "classification": {
+          "scheme": "CPV",
+          "description": "Магістралі, трубопроводи, труби, обсадні труби, тюбінги та супутні вироби",
+          "id": "44160000-9"
+        },
+        "deliveryAddress": {
+          "postalCode": "87515",
+          "countryName": "Україна",
+          "streetAddress": "вул.Куїнджі ,92",
+          "region": "Донецька область",
+          "locality": "м.Маріуполь"
+        },
+        "deliveryDate": {
+          "startDate": "2017-02-13T16:06:59+02:00",
+          "endDate": "2017-12-31T16:06:59+02:00"
+        },
+        "id": "c9883826f42e9ccc3cd191c717e3c877",
+        "unit": {
+          "code": "H87",
+          "name": "шт"
+        },
+        "quantity": 14455
+      },
+      {
+        "relatedLot": "a99a305c246ada78a18fadf7db742812",
+        "description": "Труби та фітинги композит згідно Технічного завдання ( Додаток № 3 до тендерної  документації)",
+        "classification": {
+          "scheme": "CPV",
+          "description": "Магістралі, трубопроводи, труби, обсадні труби, тюбінги та супутні вироби",
+          "id": "44160000-9"
+        },
+        "deliveryAddress": {
+          "postalCode": "87515",
+          "countryName": "Україна",
+          "streetAddress": "вул.Куїнджі ,92",
+          "region": "Донецька область",
+          "locality": "м.Маріуполь"
+        },
+        "deliveryDate": {
+          "startDate": "2017-02-13T16:06:59+02:00",
+          "endDate": "2017-12-31T16:06:59+02:00"
+        },
+        "id": "ef17380683e7a2e1da0bd59a5b80d2e1",
+        "unit": {
+          "code": "H87",
+          "name": "шт"
+        },
+        "quantity": 900
+      },
+      {
+        "relatedLot": "02996dea76705b391a8ea6da699da91e",
+        "description": "Труби та фітинги сталеві",
+        "classification": {
+          "scheme": "CPV",
+          "description": "Магістралі, трубопроводи, труби, обсадні труби, тюбінги та супутні вироби",
+          "id": "44160000-9"
+        },
+        "deliveryAddress": {
+          "postalCode": "87515",
+          "countryName": "Україна",
+          "streetAddress": "вул.Куінджї ,92",
+          "region": "Донецька область",
+          "locality": "м.Маріуполь"
+        },
+        "deliveryDate": {
+          "startDate": "2017-02-13T16:06:59+02:00",
+          "endDate": "2017-12-31T16:06:59+02:00"
+        },
+        "id": "66cbb83e4394c3e2e1e6402d0f450c13",
+        "unit": {
+          "code": "H87",
+          "name": "шт"
+        },
+        "quantity": 3050
+      }
+    ],
+    "bids": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:2574e12683f6c08dd80ab9968032987a",
+            "format": "application/rtf",
+            "url": "https://public.docs.openprocurement.org/get/be1eb084237e49299b9aefb6cf0e9a39?KeyID=52462340&Signature=VR8tz%2FgCosNTXaZ5%252B2sCPg7rXSX4APCKCOZw6Klb51n9aMXvcTbdsHoKjh1zCAqn0idjU1NAZXJmuSnzsu07BA%253D%253D",
+            "title": "Выписка из Единого Держ реестра.rtf",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:30.535259+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:30.535280+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "99a88de5289e43519084218569349a82"
+          },
+          {
+            "hash": "md5:817cacdbd09c5fc15c8bcfd6ef729581",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/1cf074f66977474eb28c8cf0c8cc5d48?KeyID=52462340&Signature=QDRObeUlEvk0I5HMNanGpbDyT3DpnwGm%252BQshp%2FLsxEms0lDnMcPz6Ezqo24C4LwVUONfFURm2B7i95J2dh2PAQ%253D%253D",
+            "title": "Выписка из реестра НДС 2015.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:32.346481+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:32.346515+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "eecb16fdc0fa44f6858a6dd5f10cba6a"
+          },
+          {
+            "hash": "md5:1d4d685b69d2f00f15499fdd5706faba",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/1778594542244f2b82917a97be7d44f3?KeyID=52462340&Signature=haqm7KAkgbvUT9cYbHESeWUEmnMCblts%2Fi2oyPJcbR%252BNKWPEtcjCrtF1FgZC0Vq4ZoXWgFlm5KhkdRUDG7%2FmCw%253D%253D",
+            "title": "Доверенность Липунов.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:33.824997+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:33.825033+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "eba3a0860d90439a94f433182623e897"
+          },
+          {
+            "hash": "md5:6d523ab4a4286847a6b17e212f2039e5",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/e4280d9440a24caba74dcb679303b6c9?KeyID=52462340&Signature=EFrZoitcNk%252BAJVDXcJV93gE05BDt7G1pPU3plvvNuVcNh6swT%252BfcZvNtCbwxkcJdJcBFp96J5EeerNEpx%2F4qAw%253D%253D",
+            "title": "Новый Устав.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:35.253075+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:35.253107+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "69ee1c5f297d41baacc48a1157fd7ede"
+          },
+          {
+            "hash": "md5:5e66a2650b25750a88b833dd64a9c324",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/18b294299c5b4b42913ad6d1d7af399b?KeyID=52462340&Signature=72YjnLBlNGx0N%252BV0WSmhrm6MxiHqB9WLzvbvwMqnC9U%252BtKA%252B9Yr7hhTBvu%2FDlqDaPUtJq6eOpTeXtWRfUCuJCA%253D%253D",
+            "title": "приказ о назначении директора.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:36.699823+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:36.699844+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "779f07bc66c94c60ab8ba290e83311af"
+          },
+          {
+            "hash": "md5:58b0b61037eede5d5a91ca76964adb77",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/a5c4da5e66374f0a94f2cf9d9fc2b018?KeyID=52462340&Signature=Aj6Eib9WF%2FxNVgxZKHUqDJxOxV6nfsmEUCI%2Fy82NNjJhJtMPmkIfWtX2kZKz2TlvNSPy2kS4o54j6PNF%252B92fAQ%253D%253D",
+            "title": "протокол о назнач.дир-ра.JPG",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:38.412064+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:38.412101+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "46bd3f84d51e487fb92ee64dd1ae35bb"
+          },
+          {
+            "hash": "md5:389182ed8702b28225907398874228cd",
+            "format": "application/msword",
+            "url": "https://public.docs.openprocurement.org/get/8fd07eeb325449e8b49b3585f569129e?KeyID=52462340&Signature=%2FvvYrBcmz%252BCfchfulf3RFiMXiEpSA%2FD23s4by7zKGk9UsAXTTSy%2FnpGCILfX%252BH3yuq3KgH54bTAoZD%252B%2FehRNBQ%253D%253D",
+            "title": "Реквизиты ООО Фирма Каскад.doc",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:39.844144+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:39.844167+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "3ca5168c62bf45a3a1c917e25315b4d9"
+          },
+          {
+            "hash": "md5:8761f25a2f99bd2026332daff554129f",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/3930fba6080b4faebe45063aecd60d2f?KeyID=52462340&Signature=71a561KIHy5W3UJ2YdAJRNQt%252BYGpLCv7AkBduWgpRbzoHI8I%2F7Ps4mky7PHC1lU0QW%252BUX8yVugHBHPq0KV9HAQ%253D%253D",
+            "title": "Статистика 21.10.16.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:41.404474+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:41.404496+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "61bd34a868c84fc589080448702ef912"
+          },
+          {
+            "hash": "md5:674737f442ec3f645347d4bb326b4622",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/b5e0b265361d4798ab5bf848e5112c0c?KeyID=52462340&Signature=Z42zTP4KKWyVGRu7lDhp2hssOpmAy1kmF%2FlhYaxUQa9aWtGLhXjPm2a9zoY53b5RNTOEUuX6u9Y%252B4LY535tlDA%253D%253D",
+            "title": "Водопровод EVCI.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:42.991090+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-01-24T10:25:42.991127+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "73af9c5491f847bd84dd83e8c4e57694"
+          },
+          {
+            "hash": "md5:ed3e38b4faafc6af6098055422b4b9fb",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/32c41ce2504b42a99ec1ce337481a3da?KeyID=52462340&Signature=U4F8ccBMdLxPf84H695nKHcAA1o%252BUFsbI4AUFpH8On5vYKI2Y8Ioa3ycZ3BTQuHg%252BGfwZp%252BSHf0sG2N%2FfGHDDQ%253D%253D",
+            "title": "довідка.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:44.435967+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:44.435989+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "6062be8a31774f4199f6a156ced8bc6c"
+          },
+          {
+            "hash": "md5:36d4814b90aeffc46334aee15a6a0e4e",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/d1b4f5f3e47d4030842dd21c38e19e08?KeyID=52462340&Signature=AXaoYSA3W5g%2FUMYfDQ9lR1m3rUloK1d5gnnm6RaPIUNi%252BN93%252BJ%252Bv3%252BUuqhWlMltmgq9z5OHU4SODiCiRY5CwBg%253D%253D",
+            "title": "довідка2.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:45.946253+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:25:45.946275+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "4f3d9fccf09f4e3c8e066cba30ecfd68"
+          },
+          {
+            "hash": "md5:8fa86e5590f9487622bbd3b3d9068cde",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/eb834f7e3e6a46cf9986feda9076bd07?KeyID=52462340&Signature=bqsaY0xQZDcI8aZ2j3sT31QOQPMOEDMYeuNzv0Tlz0dbOIYOwcxAcPQ5FD%2FtV9VaVYnwhwh%252BJCT4vORMIfxpDg%253D%253D",
+            "title": "Коммерческое трубы лот№1.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:47.364987+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2017-01-24T10:25:47.365008+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "a87efd93fa6c48e1beba15db5d10cd5d"
+          },
+          {
+            "hash": "md5:76ddfb40114fa055c70b31db8628b5e3",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/539fdf5472d84087a2b6a88db434f7d2?KeyID=52462340&Signature=T%252BfbRtz6XKG9BHvNXtNoeMzXAPQOi33q5ekcivFWEi6fOpo%2FV%252BRsVieGuEl98G84Gn2px0pVIRtgR%252B0pV9NjCg%253D%253D",
+            "title": "Сертификат канализация нар.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:48.797797+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-01-24T10:25:48.797819+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "a2bac92668ee442286dbbbdde29ddc54"
+          },
+          {
+            "hash": "md5:9f9589f4fb459ac8f50afdfb61df6ec3",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/93a85c288950441492d60567b8dd67ba?KeyID=52462340&Signature=ZZI0JVofmYOyHbY%252B8t5x95iYRh5dPHHjTJ%252BttjyB8kxp0vVPaAUpF1pCwse14vwLj2JxFVcg2rwUM%252BtsBqNNCQ%253D%253D",
+            "title": "Сертификат Труба внутр.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:50.246241+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-01-24T10:25:50.246262+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "5bb42122eb10416f8fd56e60320d3602"
+          },
+          {
+            "hash": "md5:12933f8fea75e5764821df42c4518a44",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/a42a89315ffd4065a0567ac13e0c747b?KeyID=52462340&Signature=Btwd1u05CXFnSDCY2BF13OMm0eNGnQ5BVgIJSd77XQBhT%252BBzPwnwLmKSrIDzW9Q2hdWm3HpJDmtLqhKyooFRCw%253D%253D",
+            "title": "Технічна специфікація Лот1.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:51.677010+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-01-24T10:25:51.677032+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "7a5357c886784c7d957f954ea973a59b"
+          },
+          {
+            "hash": "md5:674737f442ec3f645347d4bb326b4622",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/1b0b69b32e9a4201917c93d377e69849?KeyID=52462340&Signature=mu2jlL%252BJ1LBy7uh8OChvbht9rYNMdONW0uQBQ22yHnP0WDUE0I%2FSoKUZqdXrCz1S4q%252B7kdVdKl2TlduvVru7Dg%253D%253D",
+            "title": "Водопровод EVCI.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:19.739021+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-01-24T10:53:19.739043+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "e9a9397c56924f62a9a5cb75fc1df7dd"
+          },
+          {
+            "hash": "md5:ed3e38b4faafc6af6098055422b4b9fb",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/39e1dcd0e9794d30b11206e24f0def32?KeyID=52462340&Signature=R4regGkkswA0IGjOnEp7fuhx90g9cbhD2exlvYQofEoGs8uz%2Fjb70nq8tXDDTqar746Z16f0AzBt9VGyxugGCg%253D%253D",
+            "title": "довідка.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:21.441805+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:21.441826+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "f386a95bb5d34d1bb521793976678864"
+          },
+          {
+            "hash": "md5:36d4814b90aeffc46334aee15a6a0e4e",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/76bbd436adcc4fe2a9dc3d8858f769d0?KeyID=52462340&Signature=BDgUvnOKrjx6U0PHvoRGtN9VQ9uLl%2F13sZ0JLfvQO%252Bu%252Btnn9P4Q6XN%2F0UCz7ya6jF%2FJGUjpm9VqdAx8wFna8Dg%253D%253D",
+            "title": "довідка2.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:23.073268+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:23.073302+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "9b24b3d9bdc04c008878cf8a69d19e3c"
+          },
+          {
+            "hash": "md5:5b00fb4d4abadb33dc269ef83485c393",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/17524af617704453852a0469b76bac19?KeyID=52462340&Signature=jV5uYiXKywxTIrvRjCq2K7EMaEsvTTENv6AeAvqZLjx51Sm%252BaMoD%252BLE3MEc7TWV%2FaUbdMQuffbZx1PHdmoykAw%253D%253D",
+            "title": "Коммерческое трубы лот№2.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:24.825543+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2017-01-24T10:53:24.825564+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "0328c87ef1804535af245a2f7c41b92b"
+          },
+          {
+            "hash": "md5:55bb472f19795c7889746bd863bd5c94",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/03ac612f865f44a8ac908a2988938abd?KeyID=52462340&Signature=yuLUSEgC8I4bxiXKCwkL3suvRycEW03s8wU%2F%252B2X%2FQiU1hJIWn8uStG4%252Bf9xWCfBkATpWlWuz5npLkxalhYcQCQ%253D%253D",
+            "title": "Тех.спецификация лот №2.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:26.370911+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-01-24T10:53:26.370932+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "9c3b58ef3109423ea4951b9f3f20fc6b"
+          },
+          {
+            "hash": "md5:2574e12683f6c08dd80ab9968032987a",
+            "format": "application/rtf",
+            "url": "https://public.docs.openprocurement.org/get/e690412b0f9e4f04afceb4032018d49f?KeyID=52462340&Signature=yxpTfWZoyEwjhTnXhUpXEqJtewIe7h%252BUSP9PYKNyrdgj%252BTgWJPorRlBjywvyRlZ4zv2L9ZoUgPVRtLu4gUxLBw%253D%253D",
+            "title": "Выписка из Единого Держ реестра.rtf",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:27.801547+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:27.801575+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "881695e9e9434e0aa8a4cfad05385312"
+          },
+          {
+            "hash": "md5:817cacdbd09c5fc15c8bcfd6ef729581",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/5040b011d54948558b39d04575862edf?KeyID=52462340&Signature=GIweZuAh1TzgeAMAhtgf7I%252BQVXBHEr4shVxIMUsMQLiCDOK8KNXGp1E3UwIqy6r%2FbbVYKFaB4pyrOKDgXKawAw%253D%253D",
+            "title": "Выписка из реестра НДС 2015.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:29.310824+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:29.310846+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "bfc2d751fc434235b9b895c2b37d312f"
+          },
+          {
+            "hash": "md5:1d4d685b69d2f00f15499fdd5706faba",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/13ddbe7be7f54621951fa2931d16d28a?KeyID=52462340&Signature=0yab2IbO8jFiZCMnhqIv9fFaaWoOoqJJ%2F63LHpuazRCdClw9Vk7b4T8lj%2FWbgTm2u%2FG5DYKFLlz6ZmQ%2F649qCA%253D%253D",
+            "title": "Доверенность Липунов.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:30.890289+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:30.890310+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "a9344e7ae1a14298b35d787bfbdfc8b9"
+          },
+          {
+            "hash": "md5:6d523ab4a4286847a6b17e212f2039e5",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/d5701a784fef4e4cad9cee5f5c227094?KeyID=52462340&Signature=lUdJMdtzHnYj58%2F4g558%252BGtJ7Sr%252By0TXRoxIvpXVUl6AaHWmEqz%2F%252BPLRs6mHkpOrH5cWK2FR1OOFNQmO4YY8Dg%253D%253D",
+            "title": "Новый Устав.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:32.434776+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:32.434798+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "86fcc82fdfd746e98c6e7243e0a31052"
+          },
+          {
+            "hash": "md5:5e66a2650b25750a88b833dd64a9c324",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/d75040ef7ab94d278351b516682ef320?KeyID=52462340&Signature=PvTLtz5IDieAqz4DZkq85rvEQ6WAp3BBCELxv0Sxb4dEFCX6AKl%2FRGJ90SF7kskvZ7nLMhopV%2FgFYRC%252B1hwKDQ%253D%253D",
+            "title": "приказ о назначении директора.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:34.427058+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:34.427080+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "5e671cd879b94ff5896aa97f9631c479"
+          },
+          {
+            "hash": "md5:58b0b61037eede5d5a91ca76964adb77",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/52e52ef863cf47f3931417f86bc31557?KeyID=52462340&Signature=Z6jC1qjLed%2FyNjwuk4ipQZp6CpQr6%252BjpB85v67%2FW72VqNq58XkOOpiEk%252Bh%252BEhRGVjrYFu1ln%252Bg3KwE7LFpCADg%253D%253D",
+            "title": "протокол о назнач.дир-ра.JPG",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:35.950945+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:35.950966+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "d437b81f39d34e8889bec68a908cfba1"
+          },
+          {
+            "hash": "md5:389182ed8702b28225907398874228cd",
+            "format": "application/msword",
+            "url": "https://public.docs.openprocurement.org/get/b6920d2adc3a454f830f455717ce27c5?KeyID=52462340&Signature=FEMk2pe1bIh9OOcFbmCBKIy2ywYW1RbfjwHCIpNOJfYFG%252BsXUlBc0kah8Mw8ybIwXXBoXj4P2x63%2Fxp%2FTe42Bg%253D%253D",
+            "title": "Реквизиты ООО Фирма Каскад.doc",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:37.705853+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:37.705874+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "8168dcea0beb47d8a00d1afb733bd39a"
+          },
+          {
+            "hash": "md5:8761f25a2f99bd2026332daff554129f",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/9b23269286ac4f97b165cb77a0780724?KeyID=52462340&Signature=hY7vo24Rvk2%2FLoCTfSjR7z49rjb2luaY%2FOJ3K4TCZMsX1njBbWcdeHLnWoU%2FfVq%2F3GPXaU5ebK0PCEKiCFMwDQ%253D%253D",
+            "title": "Статистика 21.10.16.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:53:39.252543+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-01-24T10:53:39.252566+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "25f27438a41c4c0f848134233c279efa"
+          },
+          {
+            "hash": "md5:1bbb38800ff8ac6b7dc93ae807603c42",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/868897022729448eb46915798d137316?KeyID=52462340&Signature=4SoaLbhMAi%2Fn1O4DiN6gwwWm%2FZqjBKhYgdyECuL73AHvDBgoOdK2GL4w3K3bc8HQa%252BQMu4KkHH0r3WBZ7srNBw%253D%253D",
+            "title": "Трубы комерческое.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-01-24T10:25:47.364987+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2017-02-06T11:50:52.021101+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "a87efd93fa6c48e1beba15db5d10cd5d"
+          },
+          {
+            "hash": "md5:35ed0ab604201f553097c7150c7cd7c8",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/2c38f6c8a15146da954703c2f34ceb97?KeyID=52462340&Signature=cuWHj6ch%252BVNM3Sa%252Bpr2iPOfgFayIIrWdFhiDeC6AASqi4YKbAE2Z5sexZGDet6xCXq%2FJCZl3VRp%2FnVT%252BlVfsCQ%253D%253D",
+            "title": "Проект договору.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-08T16:23:27.664646+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-08T16:23:27.664667+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "ef274bfea6764697b3badb94864b171d"
+          },
+          {
+            "hash": "md5:1373e1e40e9249cee75c6ee48a291283",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/aeecd40281604c06afc7456ec582c810?KeyID=52462340&Signature=BIU3wpPQRvt31ZvfOxpCE4RwH2Z7j5VjuRXsOR24ZMPO%2Fs9z93VqKKjmAmd5p7xR2QInt9oD5Mkbuu6uqQ3iBg%253D%253D",
+            "title": "лист к проекту договору.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-08T16:23:30.278125+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-08T16:23:30.278160+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "a8b9e11a9ad7493ebe90fa65750efafc"
+          }
+        ],
+        "selfEligible": true,
+        "lotValues": [
+          {
+            "relatedLot": "a99a305c246ada78a18fadf7db742812",
+            "date": "2017-02-03T15:04:08.363255+02:00",
+            "participationUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_a99a305c246ada78a18fadf7db742812/login?bidder_id=8ab9aad3a1234e1092e6d29e859febfc&hash=2ee05feebc14c58260bd0376ffc7842ecd9be0fc",
+            "value": {
+              "currency": "UAH",
+              "amount": 52567.5,
+              "valueAddedTaxIncluded": true
+            },
+            "subcontractingDetails": ""
+          },
+          {
+            "relatedLot": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "date": "2017-02-03T14:54:29.105682+02:00",
+            "participationUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_6b14fb8c8ebb9411103592c75b68aaf2/login?bidder_id=8ab9aad3a1234e1092e6d29e859febfc&hash=2ee05feebc14c58260bd0376ffc7842ecd9be0fc",
+            "value": {
+              "currency": "UAH",
+              "amount": 355499,
+              "valueAddedTaxIncluded": true
+            },
+            "subcontractingDetails": ""
+          }
+        ],
+        "subcontractingDetails": "",
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "contactPoint": {
+              "telephone": "+380979628608",
+              "name": "Виктор Туру",
+              "email": "tv.kskd@gmail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "13511529",
+              "legalName": "ТОВ ФІРМА \"КАСКАД\""
+            },
+            "name": "ТОВ ФІРМА \"КАСКАД\"",
+            "address": {
+              "postalCode": "87004",
+              "countryName": "Україна",
+              "streetAddress": "ул. Свободы, д. 79",
+              "region": "Донецька область",
+              "locality": "пгт. Володарское"
+            }
+          }
+        ],
+        "date": "2017-01-24T10:25:28.229595+02:00",
+        "id": "8ab9aad3a1234e1092e6d29e859febfc"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:8f275258ba1163fcf4b8f9f0be693fea",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/bd8de4727ed14129936676dc5606f409?KeyID=52462340&Signature=fEslX5q0ft3UH0sp0GT1vMs3xalFsXY%252B7wJu37wNlk0KkieCXf74ATneu%252B121NVTtvZqhDMACFnL2Kse81dlDA%253D%253D",
+            "title": "Цінова пропозиція 01.02.2017 лот1.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:18:57.917598+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2017-02-01T10:18:57.917649+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "fe06ce41ed92436997c918baca474539"
+          },
+          {
+            "hash": "md5:3c884bef6e51cf00fe3be286ad6c0fc2",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/16a79878dd6d4662a79c4f89e5477689?KeyID=52462340&Signature=qrgJGvIVETaSuC5haVcW7DvZBaPec0jU3aJK64Cl35zvsmjyVD8ak7sI08JGVtMF%252B1IFm%252B%2FpaIIxSe8CjsdCBg%253D%253D",
+            "title": "Довідка про офшори.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:00.889834+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:00.889856+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "39cca5bef7e54a91bd9367c0925d2f71"
+          },
+          {
+            "hash": "md5:d71d2b21f2bc9461a94af226c73ec3b7",
+            "format": "image/png",
+            "url": "https://public.docs.openprocurement.org/get/953e14993e304f22b47b9a54ebd33d8d?KeyID=52462340&Signature=pp2xK4K6uxI8%252Bn%252Bzij0oVnGFJH7H%2FB0pqTABWtFuvr5zpBPrchyp6oJjR03xdqnXBOz7CcVdX1QsQNzxwxeUBQ%253D%253D",
+            "title": "ДОВІДКИ ПІРЕУС БАНК0001.png",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:02.991144+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:02.991182+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "95edc54ddcbd4e70af0c30dbbf9e38f9"
+          },
+          {
+            "hash": "md5:b9c49a156f4330a2e819b6ac7d2e7368",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/918ad9080db746549a786c801231274c?KeyID=52462340&Signature=JU54LFIEE5T16MgVULSDWSGft7wl%2FJoDPSM306ytUKr9Ivw3wx24NmN9GHX1ErQjENGyiZIMR5FK2y3zg%2FBADg%253D%253D",
+            "title": "Довідка про банкрутство.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:06.758242+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:06.758263+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "1e757c1ccc5840089859050bee4302fc"
+          },
+          {
+            "hash": "md5:411f41d487614fb4d2f9910e6ee3a649",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/dfaf7dfc5c0f48c5968ef78ecdaac98f?KeyID=52462340&Signature=YlfBw5Z51ihCmzbOdx3yd23e7JoImNdBd6OJ%2FPF7I4SCPzrWFZyxmAT%2F3ABCiY2thqV3c00KhbCCeypYtqOpBg%253D%253D",
+            "title": "Довідка про особу.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:08.536923+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:08.536961+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "f68b673c1e274ea8b723cd3cd0880507"
+          },
+          {
+            "hash": "md5:c457b216fedeb7c4f722a52e3446461b",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/c1142d157434420388a199f7b61e15a2?KeyID=52462340&Signature=GGqbCoVsFzkvJiL7Na%252BBoxQj91upOUC1bsX1w4sAIr3FWZN%252BWOhUrVnOREDR8gmd0jVDqZF7YgeRvRDBGRgLBQ%253D%253D",
+            "title": "Інформація на виконання вимог ст.17.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:10.327675+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:10.327697+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "a2aa71b032d742beae02a33f59003c2a"
+          },
+          {
+            "hash": "md5:ffb15d8104eb43edb344ab9e30c6901b",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/5da8b46a94394b7bb62f97705fff0d98?KeyID=52462340&Signature=w%2FBU3cr%2Fdss%252BcGNcxgI75PXL%252B%252BrP0l8mrMjUIYit41a7z7zfGfqIuLW8TH1CCHAMS8VxSm%252BQseCkJeepQmr7Bw%253D%253D",
+            "title": "СТАТУТ 2016.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:12.328340+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:12.328377+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "832c867877684ef4b0905ca6eda55963"
+          },
+          {
+            "hash": "md5:1f225196f158c1cb66e0ffce5b9ee4a7",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/92bc55e694ff43e885a3077b3d49d74b?KeyID=52462340&Signature=LwUisPHPJlxvaBSdtGmtnR9%2FplfHw08%2FYdKvGq9xiAZFvpCDjigMT2%252BT6FDYycQDs8kui0RuhfsMvXA%2Fzge9CQ%253D%253D",
+            "title": "30.06.2015 Протокол зборів1.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:14.333023+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:14.333059+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "1d32f5064d714539bd458dbc9c3ee535"
+          },
+          {
+            "hash": "md5:7c1e3fea52e7b14068d25d00df5e3fef",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/f2d9d4310e4846e59623754f291d1849?KeyID=52462340&Signature=JyNvhOUtEllnZhEYvlh80tokqdC0ICXWsCQYHNLywCgBfU%252BJ7aTnca5kkA4wLEBIHpEok%2FLmQT3ob36Y7T6CDw%253D%253D",
+            "title": "РІШЕННЯ про призначення генерального директора.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:18.285624+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:18.285680+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "2ffde25c1b784ff69657aea37fdbff80"
+          },
+          {
+            "hash": "md5:361453ff5930633b360a249f4de04b51",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/dfbd2ee4d32f402f8166274ed087c78f?KeyID=52462340&Signature=878L72cB78hbsdonj9zVxQfqS6FZJUshAnMP35tHxwn3Yx%2FwK2R%252BSyW1DE2pie10w4hL%252B6Mwh4YYugTuq%252BGkDQ%253D%253D",
+            "title": "РІШЕННЯ про призначення першого заступника ген.директора.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:23.791583+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:23.791620+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "ea3fdadbb2ba48d5a76ec1eb37c02075"
+          },
+          {
+            "hash": "md5:509f8ddc460546fc2ea86a51e3a8c673",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/e9c1d1b171134e768dadf1114b90b6d9?KeyID=52462340&Signature=JCUiP0q9oIEEpisiePqN2xeoq47B%252BsohhSGB5eFSz6sEc1KzXAPrxrxz4Yg%252BVFra3UhIiFoO%252Byb9jHVU1%252BsXCw%253D%253D",
+            "title": "НАКАЗ ПРО ПРИЗНАЧЕННЯ ГЕНЕРАЛЬНОГО ДИРЕКТОРА ПРАТ САНТЕХКОМПЛЕКТ 2015.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:28.301322+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:28.301345+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "4aea21392f5240a085a7ba87de2e9fe9"
+          },
+          {
+            "hash": "md5:669b8f177320513ffaa6831a66f00420",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/83f7d62fd3424997805967ee5c8acb39?KeyID=52462340&Signature=xD19DB74hYdJx6gdfQhC4dffW6C45iGvm6GdJJce5jvtvcXaNzTGfQEAtB1PaC%252BSRyztfFY32Gi104HLuqmdAQ%253D%253D",
+            "title": "НАКАЗ про призначння першого заступника Генерального директора 2015.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:30.444021+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:30.444043+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "497eb34fbda042b8903527977a79145e"
+          },
+          {
+            "hash": "md5:76ea3c42dcd6f85a467f97c58061bba5",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/fcfec3e3d8c74fdea47908c7a2c84013?KeyID=52462340&Signature=VEObxtgnrfyz5FvE%252B3o7gn0O9vBKX7qvBGDYHAHfe6eijOXkCWPtWWQWApU0etc9a1lqc386DUYxJD0c1fpnCg%253D%253D",
+            "title": "ДОВІРЕНІСТЬ КРИВОБОК першому заступнику генерального директора 2015.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:32.434375+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:32.434412+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "c0b57e868a4247baa693effc521e5ad7"
+          },
+          {
+            "hash": "md5:5a8a065760957471eb117adfacf99b6a",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/cd577bc437a346dab12511ba3b288911?KeyID=52462340&Signature=gvZS6cKg5iapHzk8Au700YX8b7I6a2De6EiuoMH0dvlDjlK7QUIGK63YuJDP%2Fn3izqJsY8nVA2c2O0nf4uwTCQ%253D%253D",
+            "title": "Довідка про підприємство.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:37.382325+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:37.382347+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "bc522772bbc648e3b32726d9a14162fd"
+          },
+          {
+            "hash": "md5:920f3de8f3c9bbf1024f17dbf87e638c",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/75fade6aae3b40b99e9f038c1df31861?KeyID=52462340&Signature=ZcA%252BnmClG%2FOvncESH7f9%252BYwlcQIe6nVDvkggSyL7xhQvNar99QQhf7nDz5wcBvfkfmy7pIr9Std0LfdIguwXDw%253D%253D",
+            "title": "Довідка про бенефіціарів.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:39.530029+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:39.530064+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "9d3a33fe23664617888ea638d962849f"
+          },
+          {
+            "hash": "md5:e5d2c59d08c6fa24739711ba384e4d44",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/f8c44ba80db14f6abbd1ff6fce0f4225?KeyID=52462340&Signature=owovjOKwBEmaL66M2iT8UNQ%2FONseRwwyT5KdXnQHJLbU5Y9HbWJ2O7UTdN4Fe0ScwNMj%252BBNTaUh9JYySqCEaAg%253D%253D",
+            "title": "Снтехкомплект Витяг 19.01.17.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:41.697250+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:41.697284+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "c6ee6b0766164de4ade61666328f81ee"
+          },
+          {
+            "hash": "md5:5ec989932a7dacae4c6761082c5e408d",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/09ecdd25ff9d4947aef4c392c7b9acc9?KeyID=52462340&Signature=Zy1%252BXJCufo6JvspBc%252BNb3hSBAJcoeBnU8BJAlD37wrNUdImZxR8ZPX5XiZQOXSABWeB72%2FwYo1u5ip5%2FfupQDA%253D%253D",
+            "title": "Проект договору Лот1.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:43.960909+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:19:43.960939+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "73f530653efc47fbbb606e5449cf97bd"
+          },
+          {
+            "hash": "md5:468cda29ddaec21be7251ea807cb0b36",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/280e9d25585b4f4e82be2bee6dd7eb72?KeyID=52462340&Signature=PMF6QbKGyJlh9CYsawoQnsyLNm3ML03PxzhWpWvxasTFV9%252BS70ze%2FQCumWlYiezEHK1pjq6H3ajYCSejKBkfAg%253D%253D",
+            "title": "Хакан_дилер_рус.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:46.017609+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:19:46.017630+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "7bdd517a2f024d9c8b32e6e1f00195c8"
+          },
+          {
+            "hash": "md5:26753dd782776f5dc41a4747b0e94402",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/1cc1a9c63e784df893272c3ff8b4e280?KeyID=52462340&Signature=5NMkZV%2FV8mgTz9H1wPH5d5tZEWnA8V2x8qFK1nxUPdmTUAcohPP7Cl1%2FHMgCGv%252BmMiKXHNYZ%252BLu620J9tgYGBg%253D%253D",
+            "title": "Висновок СЕС ч1    171112.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:48.096038+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:19:48.096076+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "8a76aeffa1ee4b42b1826a0a9a2cbd8c"
+          },
+          {
+            "hash": "md5:f189b18280aae64e1323d56c932e95ad",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/a2b96cba16a44922a3e0b55965782a04?KeyID=52462340&Signature=zrS2Cj8cPTBNjyKdze7EWG1XJpresnhSnUUMGZxryUngfOJJ5ZliL7MmnMFBQqh1JZsnRc0%252Bk3rVIUoN8UbICg%253D%253D",
+            "title": "Висновок СЕС ч2    171112.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:57.283304+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:19:57.283340+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "1565db47dbe0454d8f31d6f905bf331f"
+          },
+          {
+            "hash": "md5:9938c5a8ea7c14f9ff060a3cb0fc05ae",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/74a9499228024e8daf7df67a1e4e227c?KeyID=52462340&Signature=mSEIW47tOeJo6tj1jxDZa2fjOvZipD5da6lSqgUZosmFpgXwARW6fHwDTrLuHQ1tynyHdfsCtWkKRM7BkSOxAQ%253D%253D",
+            "title": "Сертификат_ FORMUL PLASTIK.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:19:59.279007+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:19:59.279043+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "1ac45886ce194a069dc627bff1bec456"
+          },
+          {
+            "hash": "md5:2013c60967082b8aa7ff65d94f0029e2",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/da5721efcfcb45259c1d8612ec658141?KeyID=52462340&Signature=zWBxNuDgGYeqpiNIymNLWY2o76vqwWTqh4s1PtSqPWVxR%252B4B0IupxZBmE6fvugcaOZDGY12%252BOkzQD0VjBdgCCg%253D%253D",
+            "title": "Сертифікат відповідності (1).jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:20:01.745322+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:20:01.745357+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "aa935f4a32be45be8d8a2ad0ad51c284"
+          },
+          {
+            "hash": "md5:e276e040cf1aeae2a8eb9b614f55db49",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/6ddf45afeb5c47738e8cd0892fdb8606?KeyID=52462340&Signature=8sLFjdvbUgMmlcsoW%2FSvQSP%252BU3ptMDn%2Fud4HRaTln6b4d33rN0q7WcKORVKykDJZRQK8ajRIlaSOiym2xaNOAw%253D%253D",
+            "title": "СЕС поліпропілен (1).jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:20:04.276535+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:20:04.276557+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "598cd77dcabc4d118c7d2d4ff96d87bd"
+          },
+          {
+            "hash": "md5:f71b22a94f56fc83c7a7cf3334736465",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/4e46d5ab670a461794ab6c23f28697d7?KeyID=52462340&Signature=7lwdjesZz9HZUch6s5rzFsKK0ATUAWcjxn0anxSz70%2F8pPTgKeOnN25BgPmgFUslaXFx62%252BECLBgcEMnohn8BA%253D%253D",
+            "title": "СЕС поліпропілен 2 (1).jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:20:06.858457+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:20:06.858488+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "528cf395013e4787985fe81bb350e755"
+          },
+          {
+            "hash": "md5:ddd3b91f55102fee3f249e82609ce4cc",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/d5e04467e0784e869f9b33c4fba0e1ec?KeyID=52462340&Signature=NGvp9vTnqVH%2F12eYKBSMbcTkvjznP6YeOLRbqQRovu4Mse7l6tB0VcEONjGUuvlQYApnPu0iEH8uUYxjiezuAg%253D%253D",
+            "title": "Внутр канализация  Инсталпласт.JPG",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:20:09.265708+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:20:09.265729+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "45dec09be7984c7f9cef4acd1b57e555"
+          },
+          {
+            "hash": "md5:dfb5403fbd155859ccb510bcacf599c8",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/4748b103d9834003b65d51a5a7bf98dd?KeyID=52462340&Signature=IietiCqHTGBsGSCAFn9dEDRJORQ0o%2Fqk8ufjaCnsKSdzCCpENpku5YU0PY5WPGGTtWhjp%2FtEGTbsYnHuo5lEBQ%253D%253D",
+            "title": "Наружная канализация Инсталпласт.JPG",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:20:13.466174+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:20:13.466207+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "a0a1e31d84da4b11a6d2e9f4601ae14d"
+          },
+          {
+            "hash": "md5:a9e93efaaf42af2e5c25c4cf4bd8d5c3",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/ea962a7a677f40ffac5e314c59a30524?KeyID=52462340&Signature=d5x5PNi25d%252BOlD3ynvJQ3niMXOJh%2FwBPpXabCBOg2wMWcXeZLW4WTebnfFLfUvBmkCATMlTLg8HnmCuxEGgcBg%253D%253D",
+            "title": "Цінова пропозиція 01.02.2017 лот2.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:30:43.467149+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2017-02-01T10:30:43.467171+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "c44be314c72b4e04b9f305685510b482"
+          },
+          {
+            "hash": "md5:2a4552047c13b5dd4889ee52e7ff64ad",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/ded7d7bca0a845f09a2946e1d82daa39?KeyID=52462340&Signature=WBMnOe8WOEA6PntWn9QRtR%252BAQeFSRNdIg%252BqE8djj5n9BrQmnzdPdfhWcP%252BngdqtpP2dNDXi6kG%252Bafh1rJxRaCQ%253D%253D",
+            "title": "Проект договору Лот2.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:30:45.505768+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:30:45.505790+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "3b8328671ee34c508243342efe880eb7"
+          },
+          {
+            "hash": "md5:ffb15d8104eb43edb344ab9e30c6901b",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/f9fa5accae0341959d7360b7db0ba13e?KeyID=52462340&Signature=GoiMVCzOSRQrb5ymRSdxAPExa8oBqn36tYhVx6%2FJe3bInlf4No%252BCo3%2FfnoBn%252B%252BnZG5akOYOFzP7Ft131d%252B8LAQ%253D%253D",
+            "title": "СТАТУТ 2016.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:30:47.467690+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:30:47.467736+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "1c09f42414ec4ef48c457353f8d82a99"
+          },
+          {
+            "hash": "md5:1f225196f158c1cb66e0ffce5b9ee4a7",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/a894ddf3cc3045e389dceec4d5c0421a?KeyID=52462340&Signature=DVNPr%252B%2FjnChUuPmQR7V9nXUb9SBFW05zU1nqxWtc96XvkVLdyiF0QBHBD6NMKj2hjlQWXFTrECt9IycX83hdAQ%253D%253D",
+            "title": "30.06.2015 Протокол зборів1.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:30:49.493449+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:30:49.493471+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "00174477929c4c4cb85cc4ed0647801d"
+          },
+          {
+            "hash": "md5:7c1e3fea52e7b14068d25d00df5e3fef",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/0ba405ae7ec64de284364943740b570c?KeyID=52462340&Signature=9sgwwkEeyk%2FdTU76Y6OQm2Aofh3bzau%252B6wdBElYf3Awb5RH6kvrAOUfTOzXQKSfO7Byb7P9lLAS7EiBmnJpHBg%253D%253D",
+            "title": "РІШЕННЯ про призначення генерального директора.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:30:53.711478+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:30:53.711499+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "8bf65a9c9dbb4db18103306f6aff1258"
+          },
+          {
+            "hash": "md5:361453ff5930633b360a249f4de04b51",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/007ed126d02a4c8eaf85679ae278fbc0?KeyID=52462340&Signature=TWP2MGQGiimXniGD0jR6G6z%252BSEiUgb9duX4yfRkpTTBP6DMxblHVQBxa6BQOB%2FBtxmVeScJFaivMAYpQi03ZAw%253D%253D",
+            "title": "РІШЕННЯ про призначення першого заступника ген.директора.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:30:58.277124+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:30:58.277146+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "02d172e782c740bfac8d3da9b3aa1e0a"
+          },
+          {
+            "hash": "md5:509f8ddc460546fc2ea86a51e3a8c673",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/26d5421d3b104cd08164b0eac00e5581?KeyID=52462340&Signature=EDwF%252Be%252BPK4nEiCoGvgN92hcERAoo1VbDcp9CfdJ69fjYzULzT3YBvzfkgKut2ogdPsZZZ855xLj%2Foe9IzMM1Cw%253D%253D",
+            "title": "НАКАЗ ПРО ПРИЗНАЧЕННЯ ГЕНЕРАЛЬНОГО ДИРЕКТОРА ПРАТ САНТЕХКОМПЛЕКТ 2015.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:00.508786+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:00.508822+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "83d9437297c343fd8bf4dafa76b1f0c4"
+          },
+          {
+            "hash": "md5:669b8f177320513ffaa6831a66f00420",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/4d88a03ebf0144439d101bd33931f127?KeyID=52462340&Signature=F2MxBuxGp2GvqXSQaTxW6PPG%252BULyYFbWvRH8ft5EP12fIsVANODEk%252BFeOz2y5%252BRTeOltlgTj0x9EymaxVwWzBw%253D%253D",
+            "title": "НАКАЗ про призначння першого заступника Генерального директора 2015.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:02.872369+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:02.872405+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "897286da186b4cf496e138ebe9418f64"
+          },
+          {
+            "hash": "md5:76ea3c42dcd6f85a467f97c58061bba5",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/550eb710028e476d9557cb7c82327760?KeyID=52462340&Signature=MEAjo23jD4uDjtljZ1G2N1H9w155Q6ujlHsgoJTiAllAq%252B4VXU%252B7kT1LmsLM9MummkW%252BR7IfLj1P21fnREsVDQ%253D%253D",
+            "title": "ДОВІРЕНІСТЬ КРИВОБОК першому заступнику генерального директора 2015.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:06.003521+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:06.003543+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "c246982887ea4d52898917503849cafb"
+          },
+          {
+            "hash": "md5:5a8a065760957471eb117adfacf99b6a",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/e1cec12b6c8c46c198fbff6c2fd2f8e6?KeyID=52462340&Signature=TzbBQOEIXs49ARBmv4ZYtXTmzLgCdMU9CN71%2FPYjzpHZS4aNj%2FWp4Sm9EseAu2TJNjXmI4GUfH1SzobMoC0XAQ%253D%253D",
+            "title": "Довідка про підприємство.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:08.219476+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:08.219497+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "3a25ff4188644054a9ebb29698d26082"
+          },
+          {
+            "hash": "md5:c457b216fedeb7c4f722a52e3446461b",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/251b681d12fe4d1c98208c321425608e?KeyID=52462340&Signature=Q3lAwJloG3UB2ywXYgbusVnvLAjU9zODI2XM6nIKrtoN9mmEN6ipXfofkOY96vG1KaBsEog2ftCKhn%2FH8PiXAw%253D%253D",
+            "title": "Інформація на виконання вимог ст.17.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:10.747336+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:10.747375+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "8a274b89794b45a1a844608bb3fcfeff"
+          },
+          {
+            "hash": "md5:b9c49a156f4330a2e819b6ac7d2e7368",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/eb69203f860a4859ba3e09601116de74?KeyID=52462340&Signature=xu%252B0zITccQPJxJ3%2Fpv6WwGLAcCAZCRaNn6cR371Rc3G5i0l05m4nSrXZrqUupJQmmxFcRUycz9CqjMkh2QCRBA%253D%253D",
+            "title": "Довідка про банкрутство.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:12.886184+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:12.886219+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "61bf0bd9035a42f98982c61242fc5dce"
+          },
+          {
+            "hash": "md5:411f41d487614fb4d2f9910e6ee3a649",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/48ade7f0957a45518f143bb6c0fad1d3?KeyID=52462340&Signature=ZsX0n3udyk9hxv%2FoOhhIALmwE4EV8p2Flh3Zxt9qIBvEJMtTexuNfd7gd3gOXD6ss4qfQv%2F1%2Fol489aiRpJUCQ%253D%253D",
+            "title": "Довідка про особу.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:15.259250+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:15.259280+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "1f136e57f4c441c5accc1c1381711b2f"
+          },
+          {
+            "hash": "md5:920f3de8f3c9bbf1024f17dbf87e638c",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/097a00f72c214a79b96e956f6b86dde4?KeyID=52462340&Signature=gmWVzJ6h0yXdjUl6TON13GoS0hg9%252BAZo%2F0YbW%2FN3jLZU8zkDJseheCRH9ooK62AeoxaY%252BwITOdSlLopDvVH1CQ%253D%253D",
+            "title": "Довідка про бенефіціарів.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:18.051798+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:18.051839+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "a0ef5c07faf644a9a29b14542abca48e"
+          },
+          {
+            "hash": "md5:d71d2b21f2bc9461a94af226c73ec3b7",
+            "format": "image/png",
+            "url": "https://public.docs.openprocurement.org/get/e8995d01015e4f40a964b329e3dbbb4c?KeyID=52462340&Signature=%2FQz%2FnmGZF%252BqBSVdlUkGytkhIWk2omcTucBP7%252BiWWqyvdKUX9HINFmG2nfUq8cSTzN8PxlN2VyWKusdnmo5nWAw%253D%253D",
+            "title": "ДОВІДКИ ПІРЕУС БАНК0001.png",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:21.780569+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:21.780591+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "eb1b57cb238740f1be9bc02e8ecddc4c"
+          },
+          {
+            "hash": "md5:e5d2c59d08c6fa24739711ba384e4d44",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/a9e01942bca643c3809a3d4fec689e5a?KeyID=52462340&Signature=8fxseSdWDCZWRtYxwEjKDuunbCCgMdYSmjF0ubt1pAWaDUtInsXe88zyhHg3UbqcirnC8oaOE25UnPeQnS7tAA%253D%253D",
+            "title": "Снтехкомплект Витяг 19.01.17.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:24.838293+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:31:24.838325+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "15c776c758a14d279fba901cef48554e"
+          },
+          {
+            "hash": "md5:26753dd782776f5dc41a4747b0e94402",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/8512066b7df34953890d0c0d2cdf072a?KeyID=52462340&Signature=foG1DRnH0LLfEgyro69JYe1GEzvlaIupGgEp2KrKscE8XeBl5E1UvD61nVSSzqWrK4LoQ2E8R3FUkNuuBhcAAw%253D%253D",
+            "title": "Висновок СЕС ч1    171112.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:28.804004+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:31:28.804041+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "fd6812c6e0e6482fb46e0386fe0d1ee7"
+          },
+          {
+            "hash": "md5:f189b18280aae64e1323d56c932e95ad",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/bdcbe29515a44be7b579faff166fd1d7?KeyID=52462340&Signature=ffMGFSr4aP0LMU8FzVaMXijaDo5v8GtfKZrE1yBv9ZmgD%252BDvdtbCoD5aLvOZFhOe4Jzh2vrD7ii12bg6hLWvCg%253D%253D",
+            "title": "Висновок СЕС ч2    171112.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:32.503437+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:31:32.503473+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "ebef6eb4841c4006a2a14cc863c030fe"
+          },
+          {
+            "hash": "md5:9938c5a8ea7c14f9ff060a3cb0fc05ae",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/d17957df43bb4785b426d164921f6dd2?KeyID=52462340&Signature=z2dvj9Y%2F7T4LoP2xDEijBFMFz7HO5iir6JbYq39ScIR3PCExkxk6ahk6EHKGqunUauPAmIIXoZgxVxrJsyilCA%253D%253D",
+            "title": "Сертификат_ FORMUL PLASTIK.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:31:35.286915+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:31:35.286937+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "b5a8dea153b6484fb9a89ca7215b4faa"
+          },
+          {
+            "hash": "md5:8619964219920808e0e6935104ef0b3d",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/398993cf596540fd87191a240e29c226?KeyID=52462340&Signature=OAFZk0be5nzYgnuINGBNEbFjiLbksIK5cWuAUdcQ0Qp04mumYxrIW7E6PSwttWarpq%252BNPYXK%2FAbidoCaLl%2FeDA%253D%253D",
+            "title": "Цінова пропозиція 01.02.2017 лот3.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:47:37.000224+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2017-02-01T10:47:37.000245+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "d94720e34ecc4eecb0ec4e70942f514f"
+          },
+          {
+            "hash": "md5:c6132b65dd34475eb68f4db5b518f7a5",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/d90f0e358c84490eba4ca8686ed28f36?KeyID=52462340&Signature=zA2%2FJzzRGybIumI9%2FKW5eiUmjyXH2kAF5xiGcMXcaoeLTGYUqRYnpbVduxbc8w7KVeIOBDkDFkT84xZygni5AQ%253D%253D",
+            "title": "Проект договору Лот3.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:47:39.174594+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:47:39.174648+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "f6f604d574534f38b116862b07811b1c"
+          },
+          {
+            "hash": "md5:ffb15d8104eb43edb344ab9e30c6901b",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/aef5cbfe3f3c4de0af28665cbb25ea08?KeyID=52462340&Signature=2cAohac%2F9OR%252Be0x3ypEny9%252Bds9vIqM01Mpz%2Fr4vdp4zTl%2FHmrUkfj9QpLBE1Rfsh8Pig5xQuDa2ToabsVfBVCA%253D%253D",
+            "title": "СТАТУТ 2016.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:47:41.288153+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:47:41.288174+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "f81bbf4730764056a833a1004bc28066"
+          },
+          {
+            "hash": "md5:1f225196f158c1cb66e0ffce5b9ee4a7",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/603a4d998a4c438dba3db2d2445e135c?KeyID=52462340&Signature=nogM5S1xUalUiKzCIOYhBgCobFeDk4xBznKBwlJJS2ZFKTse1gqV%252BK9Y8E07rDMqn7sQnP04k4dDoH6LR9HaAw%253D%253D",
+            "title": "30.06.2015 Протокол зборів1.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:47:43.315062+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:47:43.315104+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "c1bfc482d7ba499e88f8710a30e4dc97"
+          },
+          {
+            "hash": "md5:7c1e3fea52e7b14068d25d00df5e3fef",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/a308889dad5246fca58be6a1457ea9c0?KeyID=52462340&Signature=2TrxTJdzQdaSni0TmBmSBq5rqYf%252BZebSVgDJ2FROoSNk5CeOzABPiT7MZbtSFYfBp9%252BvN49U9Nkx9%252Bna5nCBCg%253D%253D",
+            "title": "РІШЕННЯ про призначення генерального директора.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:47:45.560963+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:47:45.560985+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "bf41b8271fdc4333b7d51fbecc28bae0"
+          },
+          {
+            "hash": "md5:361453ff5930633b360a249f4de04b51",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/d1546248dc6b46a092cbb6fa3822ff27?KeyID=52462340&Signature=0W7UK5MTSsFjRrHVLXyrfdg5WWXBui6jUIu4oFe5JfA%252B1WUGOaXpQBvDUpPAdpqpfLNKA4dqOLA7fIeAQd1kBA%253D%253D",
+            "title": "РІШЕННЯ про призначення першого заступника ген.директора.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:47:48.845524+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:47:48.845546+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "5831056082ff404d9162a8a39d3910ac"
+          },
+          {
+            "hash": "md5:509f8ddc460546fc2ea86a51e3a8c673",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/aff2688ba6dc4adf9de781c9b1d088c3?KeyID=52462340&Signature=ttUjQ7F0MmfjMgz627ItWGdGGCDTBetJcwrt70bOIzuuGARAAd9PHLFe1%2F1UT1idLFMnTK2%2Fs5FzE%2F3p3AobAA%253D%253D",
+            "title": "НАКАЗ ПРО ПРИЗНАЧЕННЯ ГЕНЕРАЛЬНОГО ДИРЕКТОРА ПРАТ САНТЕХКОМПЛЕКТ 2015.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:47:52.909866+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:47:52.909888+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "de54f0785dd640ff9f6e89755f729424"
+          },
+          {
+            "hash": "md5:669b8f177320513ffaa6831a66f00420",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/5a065643b12d49948ecbad480d26408c?KeyID=52462340&Signature=ZQuBuNOU0aiv%2FA2aJJbjLb3DvETHsBdMPZY%252BkHWv0E%252BJt6xTdpTkmcZJETivyjMrSWBerhc1m33wFKXWKfQqBg%253D%253D",
+            "title": "НАКАЗ про призначння першого заступника Генерального директора 2015.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:47:55.422980+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:47:55.423016+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "10b6c8aeaa954e6dacb8e167d86b0efa"
+          },
+          {
+            "hash": "md5:76ea3c42dcd6f85a467f97c58061bba5",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/4ecfaf5208b54114bdc6ed95681afa2d?KeyID=52462340&Signature=pFA0gGq964J3aofe0NVzZUYrkHqHJ0P4KLv36RC8%2FBVi8rwm1g7D%252BuuCRzF193lvsIWdurVVqGqgg1j5ZQ1nAw%253D%253D",
+            "title": "ДОВІРЕНІСТЬ КРИВОБОК першому заступнику генерального директора 2015.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:47:58.316600+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:47:58.316622+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "684e6ce5b1104288a6b8bb9e034ee7eb"
+          },
+          {
+            "hash": "md5:5a8a065760957471eb117adfacf99b6a",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/886d93d683924abe8f261711456f9989?KeyID=52462340&Signature=z6bwkGVX8hJ17Lk7P3fUL4Cx6GLIx%252BAlop%2FLxCJ4tiERKzpp61Nu0KXxnJD8bAtAJRkDaUvStC9DAqKtNEiTAA%253D%253D",
+            "title": "Довідка про підприємство.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:03.151740+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:48:03.151762+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "2c471dea77a34b13988ecdac58af3156"
+          },
+          {
+            "hash": "md5:c457b216fedeb7c4f722a52e3446461b",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/7afd8e07e8be46f193de3ca9de811f72?KeyID=52462340&Signature=PW8OKEWfyUQDbiPfprV%2F0b%252BgpdN3EnSeHBvgBcg4bV5LxF5WLpFgQD%2Fi%2FsW8MG5OLMa2tdbOTbsJxesJyZ1QBw%253D%253D",
+            "title": "Інформація на виконання вимог ст.17.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:05.107596+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:48:05.107647+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "a6432fd3d8c049f39794962998f4fed1"
+          },
+          {
+            "hash": "md5:b9c49a156f4330a2e819b6ac7d2e7368",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/fa396e86b50046c69592113fb5399c98?KeyID=52462340&Signature=SbV00mi%252Bk1TiU7HSp7r9QyCNTYmTLwMoH2%2Fa0bgiVvgoMikhcdcDZZarbVPyrGI0oYB0%2FkTktaR0R76NAayWBA%253D%253D",
+            "title": "Довідка про банкрутство.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:07.290326+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:48:07.290347+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "051d715db49945938b099ab10019c817"
+          },
+          {
+            "hash": "md5:411f41d487614fb4d2f9910e6ee3a649",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/980f25b02c5146f39746bd32037e9863?KeyID=52462340&Signature=KNqxJ%2Fo9PQzHKUf73seNPGX5idijowY%252BQbdCdrAl6va5ElXWiN7PCvSmfdWRKw3LgDgujK65c2SgorxZT%252BWwCQ%253D%253D",
+            "title": "Довідка про особу.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:10.238088+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:48:10.238110+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "c5ff628f13de4c5c8869ba91da0a91fd"
+          },
+          {
+            "hash": "md5:920f3de8f3c9bbf1024f17dbf87e638c",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/f300a06b9794497eac0e466246165e0a?KeyID=52462340&Signature=lhShOngNMfa%252BKkDv3rsasWeKZjdzFLzyl%2FeBYDMcBdVEXQfb763fGa2vaMNIg8qenmk%2F4oA15G1B00tve9rjDw%253D%253D",
+            "title": "Довідка про бенефіціарів.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:12.954578+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:48:12.954600+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "b46c4f544e384b9792c63322b33ca168"
+          },
+          {
+            "hash": "md5:d71d2b21f2bc9461a94af226c73ec3b7",
+            "format": "image/png",
+            "url": "https://public.docs.openprocurement.org/get/bebcde3d5fa54a789429b4d2bb77a37e?KeyID=52462340&Signature=I%2FfJByExgkgFLpG3uN93AGt3wVVu4ckLBOzPlhIeVqM%252BD5mkTZSvwq6n9gr313X5sl8WIGeRkl2TzGtuIVWPDQ%253D%253D",
+            "title": "ДОВІДКИ ПІРЕУС БАНК0001.png",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:16.499446+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:48:16.499481+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "8055f3c2146747fb8d83e4112c8c3f63"
+          },
+          {
+            "hash": "md5:e5d2c59d08c6fa24739711ba384e4d44",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/291c158adcbd4bf3b67bd934cc1425d5?KeyID=52462340&Signature=dzzFNVrVxd2o0oBdBFrsuBm%252BiF1LjdsJUF43C7d4l9Xl37rJBmXSU24viu1KfQ5HuwDp%2FjpH%252BejLvP0I8VjoCw%253D%253D",
+            "title": "Снтехкомплект Витяг 19.01.17.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:19.544335+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-01T10:48:19.544357+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "ce4a080e3fea4e70915e8a8ce9068308"
+          },
+          {
+            "hash": "md5:134b3e4a746cbb4b52859a140688de1b",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/8802519c135344fbbad3355e6888f32d?KeyID=52462340&Signature=RgHXUSIDGSeyNu14v2mar%2FQuNUhyz4UKrhIpSI2eIttaqPEhAYJT7R4dPjwxGIvfbKqbedF2B5LFoR55BohIBA%253D%253D",
+            "title": "15х2,8 от 27.08.16.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:21.795939+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:48:21.795975+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "17d46d6702474c9a9c1210f79fc9c3e1"
+          },
+          {
+            "hash": "md5:5cd7940510adca595da9129af0074d27",
+            "format": "image/tiff",
+            "url": "https://public.docs.openprocurement.org/get/ba83b958af054933b39e70034bdda0c6?KeyID=52462340&Signature=K%252BWvbN2KUDlTWa%252BP4CxZNgAS38mtaKXVRK9UnbommI9%2FXfIns8%252BAaqpVGWElgr3eJa3sv9EaECRb4%2FnCFsBWBA%253D%253D",
+            "title": "25х3,2 от 05.09.16.tif",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:24.403137+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:48:24.403174+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "6a83748cd90540c9a16455a691c786e4"
+          },
+          {
+            "hash": "md5:97d39edea6b2af8ff1e3420e61ea1700",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/07f1157270374910a4ce5276cc8a04c2?KeyID=52462340&Signature=OfCrZlW3DCmMVVs4SVGkjgA%2F3RUbNXlkKkusUfzN8Ukk8gRXvWnU16zMRxV9fMtoNyrzswtaTeU0bF1mo%2Fn4Ag%253D%253D",
+            "title": "32х3,2 от 30.04.15.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:27.522239+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:48:27.522276+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "46abd2ce6af145ed94d53d3591919d4f"
+          },
+          {
+            "hash": "md5:2d7c1dcab7198557cd06c834769eead6",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/72ef4e3b2dff4c7aa3dc12b200eba861?KeyID=52462340&Signature=copEuLvIiYZWypU8idtWrXJSRndRVGGYT%2FQhrEy%2FRrru0UJ0VYXAYoWO55wSdZL0ljUXNBUR006YseygxrbMCw%253D%253D",
+            "title": "50х3,5 от 26.04.16.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:29.844077+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:48:29.844099+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "f9957a1f79ba4698a00e1d03eee2becb"
+          },
+          {
+            "hash": "md5:e713cb621de4b2fdbd1929d96c68aba9",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/d4a04ecc30fb4715be3e31a218b79d6d?KeyID=52462340&Signature=7sfe%252BY2o1PKBAu4RB8JQhwKS%252BF%2FylHcoDGVoXlq7HfoZWYaFKOnaVwD1L6v2zuYqCVojvt7%2FSUllTDOIF6j3DA%253D%253D",
+            "title": "76х3,5; 76х4; 76х5 от 03.01.17.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:32.021305+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:48:32.021344+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "6e692c9030344744bf01fa4efaaf0b49"
+          },
+          {
+            "hash": "md5:4a9a9a63bc51a286e84186549a6638a0",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/6bd1c3dca0694f05aeeee0052cc356d0?KeyID=52462340&Signature=mxPtYQl6DMcxuaklTqQWkYmKqf1jra%2FcKLNhk6%252BnO%252B7SvRYYlmHgFg2n7qak9sk1%2FRs70dOxU4R%2FRDefnqJhBQ%253D%253D",
+            "title": "89х3,5 от  10.08.16.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:34.455344+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:48:34.455379+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "cc5c97bded19463cab16172e930392a7"
+          },
+          {
+            "hash": "md5:e20cda226afd906b8530a2d33be3ca8b",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/925f12f9d3fc4ca8810059940412f7d7?KeyID=52462340&Signature=ig5t4pQXD5fP6IJD9O3SKgKjXdksZ8PMVKZORUksulHmnNuuDDQEcozE55oY1sGeBjASNrynACaVy1hOLFtiAg%253D%253D",
+            "title": "серт_фланці_Овервелл_170806.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:37.071772+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:48:37.071793+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "bb4cb672c9374610a9cc186c771de0ce"
+          },
+          {
+            "hash": "md5:87220b8904db9af2065cf85da359a483",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/725d91d0fa194616aff693a3c7bc3c4f?KeyID=52462340&Signature=C5QM%252BQsiIZRx%252B6BPIDVazWsES9i1T28uxyKdNX%2F%252B6GBgHxMf0hTlLRCt2%2Fbw4WxBAp34CoKtr8DXcb5Nvwz1BQ%253D%253D",
+            "title": "серт_фланці_Чжунно_170218.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:39.441880+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:48:39.441901+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "61aafe5dcd54419289d38cb4b02fc284"
+          },
+          {
+            "hash": "md5:21b1262dcd4346fc8d1ad4f45bf5643d",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/f6b3368b56994bdf802e73dbab960a78?KeyID=52462340&Signature=7LsQD4RkJbcCdMFZjxecTdm3qkBSrMUH252ERpvdAbRKUYm%252BGC75NDJzQS%2FMGZDOm44TxkeDY%252BppnCIdvdz9CQ%253D%253D",
+            "title": "серт_ДТ_Міньхай_170920.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-01T10:48:44.056951+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-01T10:48:44.056987+02:00",
+            "relatedItem": "02996dea76705b391a8ea6da699da91e",
+            "id": "50d5cbec1c15458ea064693b0beb6997"
+          }
+        ],
+        "selfEligible": true,
+        "lotValues": [
+          {
+            "relatedLot": "02996dea76705b391a8ea6da699da91e",
+            "date": "2017-02-01T10:18:54.649295+02:00",
+            "value": {
+              "currency": "UAH",
+              "amount": 185559,
+              "valueAddedTaxIncluded": true
+            },
+            "subcontractingDetails": ""
+          },
+          {
+            "relatedLot": "a99a305c246ada78a18fadf7db742812",
+            "date": "2017-02-01T10:30:36.502040+02:00",
+            "participationUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_a99a305c246ada78a18fadf7db742812/login?bidder_id=ea503cd4992c4d2289fa986414650829&hash=e15e466ded6222eba6a427ff115810b618a39c52",
+            "value": {
+              "currency": "UAH",
+              "amount": 65385,
+              "valueAddedTaxIncluded": true
+            },
+            "subcontractingDetails": ""
+          },
+          {
+            "relatedLot": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "date": "2017-02-03T14:52:21.044457+02:00",
+            "participationUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_6b14fb8c8ebb9411103592c75b68aaf2/login?bidder_id=ea503cd4992c4d2289fa986414650829&hash=e15e466ded6222eba6a427ff115810b618a39c52",
+            "value": {
+              "currency": "UAH",
+              "amount": 355500,
+              "valueAddedTaxIncluded": true
+            },
+            "subcontractingDetails": ""
+          }
+        ],
+        "subcontractingDetails": "",
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "contactPoint": {
+              "telephone": "+380978371319",
+              "name": "Роман Францішко",
+              "email": "franc-roman@yandex.ru"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "20038832",
+              "uri": "http://www.santehkomplekt.ua",
+              "legalName": "ПРИВАТНЕ АКЦІОНЕРНЕ ТОВАРИСТВО \"САНТЕХКОМПЛЕКТ\""
+            },
+            "name": "ПРИВАТНЕ АКЦІОНЕРНЕ ТОВАРИСТВО \"САНТЕХКОМПЛЕКТ\"",
+            "address": {
+              "postalCode": "02002",
+              "countryName": "Україна",
+              "streetAddress": "ВУЛИЦЯ ЄВГЕНА СВЕРСТЮКА, будинок 19, кімната 9-0-1",
+              "region": "Київ",
+              "locality": "м.Київ"
+            }
+          }
+        ],
+        "date": "2017-02-01T10:18:54.648751+02:00",
+        "id": "ea503cd4992c4d2289fa986414650829"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:dbf585de77546b9e4b46df696198c017",
+            "description": "SHA1: 4f9b80b59dc7ebe9fb06444dc0a576ae54a559d3",
+            "title": "Виписка з ЄДР.pdf",
+            "url": "https://public.docs.openprocurement.org/get/528727c9b16b42cca48acdd54cc4e275?KeyID=52462340&Signature=MZlMGWSOVO7XZ8MJ9rMoToD1I%2FXIYKq8UpoOa5fp7nIcHPXa6oqKU1HGH6fjeTBOhdJnIlThQchVISom6aPyCw%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Виписка з ЄДР.pdf",
+            "description_en": "SHA1: 4f9b80b59dc7ebe9fb06444dc0a576ae54a559d3",
+            "datePublished": "2017-02-02T15:36:39.464186+02:00",
+            "documentOf": "tender",
+            "title_ru": "Виписка з ЄДР.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:36:39.464222+02:00",
+            "description_ru": "SHA1: 4f9b80b59dc7ebe9fb06444dc0a576ae54a559d3",
+            "id": "4a6d5a8132b34d0baa8c183d9c54ef1b"
+          },
+          {
+            "hash": "md5:8dcc49bb87041d7e328cc9bc69ccd3a2",
+            "description": "SHA1: d1d62997354eec1ceb0eac6df1987ebe60bc8c19",
+            "title": "Витяг з ЄДР.pdf",
+            "url": "https://public.docs.openprocurement.org/get/1dd5061b8c104b5893052dca6ea9d252?KeyID=52462340&Signature=hHGUPcFaY1ETcxA2mF9OtBzJ3kPrvuQG430VgqYUBheGBOYZ9s6gYEQNIsFvYpAy5Nbw2VUT6ukEgaOxKBYLBQ%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Витяг з ЄДР.pdf",
+            "description_en": "SHA1: d1d62997354eec1ceb0eac6df1987ebe60bc8c19",
+            "datePublished": "2017-02-02T15:36:40.224675+02:00",
+            "documentOf": "tender",
+            "title_ru": "Витяг з ЄДР.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:36:40.224698+02:00",
+            "description_ru": "SHA1: d1d62997354eec1ceb0eac6df1987ebe60bc8c19",
+            "id": "d06d74a91d0e40809b27193a57b3bfd9"
+          },
+          {
+            "hash": "md5:e5c186259c765e94869114ea4f39b705",
+            "description": "SHA1: 4d05a1ccba22dd913f77a53f88a30bc12c4196c3",
+            "title": "Відомості про ТОВ ЮБТК.pdf",
+            "url": "https://public.docs.openprocurement.org/get/c946c89ce0684310ac51ae5c583c3f08?KeyID=52462340&Signature=Gg9EreMcDpaftNIyOWIKHCvjdKAhCkyQlnryBJ1FD8w9oydwaUmywLjpJNkYv4K9VU0D9KiiN1FNSeTvFsNJDA%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Відомості про ТОВ ЮБТК.pdf",
+            "description_en": "SHA1: 4d05a1ccba22dd913f77a53f88a30bc12c4196c3",
+            "datePublished": "2017-02-02T15:36:40.963471+02:00",
+            "documentOf": "tender",
+            "title_ru": "Відомості про ТОВ ЮБТК.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:36:40.963492+02:00",
+            "description_ru": "SHA1: 4d05a1ccba22dd913f77a53f88a30bc12c4196c3",
+            "id": "7b26141006394660b321058d66982c5f"
+          },
+          {
+            "hash": "md5:20d5575161b3e0f0bdd6f7da89bad5ef",
+            "description": "SHA1: 062aaf622f28892bcbda95b4ccb91dc4f0d19a45",
+            "title": "Відповідність технічним вимогам.pdf",
+            "url": "https://public.docs.openprocurement.org/get/db30295b03ef48928f566d11d93fd6e8?KeyID=52462340&Signature=tSAMA4gN6RWPYDQhoboya62trt%252BTY09cRcmEahOiNkcYa5QSVU8VNa8sJTl1bKqFHGQptf1xdGY76KcrzWokCw%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Відповідність технічним вимогам.pdf",
+            "description_en": "SHA1: 062aaf622f28892bcbda95b4ccb91dc4f0d19a45",
+            "datePublished": "2017-02-02T15:36:41.843350+02:00",
+            "documentOf": "lot",
+            "title_ru": "Відповідність технічним вимогам.pdf",
+            "documentType": "technicalSpecifications",
+            "dateModified": "2017-02-02T15:36:41.843371+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "description_ru": "SHA1: 062aaf622f28892bcbda95b4ccb91dc4f0d19a45",
+            "id": "3c911c3cfb2445cc94f893af84e06211"
+          },
+          {
+            "hash": "md5:ddca64a6c87b3726c9634e35c301297d",
+            "description": "SHA1: a9580e6ec86886f48ca6366d2c2af59990907a2f",
+            "title": "Довідка відповідно до вимог статті 17 ЗУ Про публічні закупівлі.pdf",
+            "url": "https://public.docs.openprocurement.org/get/a92f0341fb29419a97c2cd0233aac455?KeyID=52462340&Signature=CtV2HaZJCB33xTTEk6Pl%252BSWAckSG0AXOvuaeFQaqx8M4yzow9MmB%2Fl0Bkgz8m2q9dRRGS8H7Tx8eHM2o4lJ6AQ%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Довідка відповідно до вимог статті 17 ЗУ Про публічні закупівлі.pdf",
+            "description_en": "SHA1: a9580e6ec86886f48ca6366d2c2af59990907a2f",
+            "datePublished": "2017-02-02T15:36:42.631027+02:00",
+            "documentOf": "tender",
+            "title_ru": "Довідка відповідно до вимог статті 17 ЗУ Про публічні закупівлі.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:36:42.631060+02:00",
+            "description_ru": "SHA1: a9580e6ec86886f48ca6366d2c2af59990907a2f",
+            "id": "18b7275abcb8463794ee19719879708a"
+          },
+          {
+            "hash": "md5:9dce0e30d5826ee570c6c797b305f684",
+            "description": "SHA1: d5436c63ae9fff9f1ba0a9cf697df79df32810bb",
+            "title": "Довідка про відсутність заборгованості зі сплати податків або зборів.pdf",
+            "url": "https://public.docs.openprocurement.org/get/54cd74c7b12444ca84472a852b4ebd2f?KeyID=52462340&Signature=Jwy41xaTIAe62oK%252BbC6biEum2RjKkSoZiTtRnq11LiBFyfRcYOJd68dVMT%252BtWXYNHMVpUxeEU9SNxaL24TxiDA%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Довідка про відсутність заборгованості зі сплати податків або зборів.pdf",
+            "description_en": "SHA1: d5436c63ae9fff9f1ba0a9cf697df79df32810bb",
+            "datePublished": "2017-02-02T15:36:43.310718+02:00",
+            "documentOf": "tender",
+            "title_ru": "Довідка про відсутність заборгованості зі сплати податків або зборів.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:36:43.310739+02:00",
+            "description_ru": "SHA1: d5436c63ae9fff9f1ba0a9cf697df79df32810bb",
+            "id": "4c5bf16a49514cab866c098e12b8514e"
+          },
+          {
+            "hash": "md5:85ed3f3261dfbce5ef8b2fe0eeace06d",
+            "description": "SHA1: 7230a3dca396faf8274458ced0f6b15689bf3ecf",
+            "title": "Довідка про довкілля.pdf",
+            "url": "https://public.docs.openprocurement.org/get/e0a9f9b0d1bb4de495eba0d006a5f948?KeyID=52462340&Signature=M2Oq4V1IK30ffT00KH8GcW7ZO0qHctgEFzzc0Dyq81H2%252BF5piuQyJN2jLTAChW1O8W81sXj5YxX%252B9uQv3vF%252BAQ%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Довідка про довкілля.pdf",
+            "description_en": "SHA1: 7230a3dca396faf8274458ced0f6b15689bf3ecf",
+            "datePublished": "2017-02-02T15:36:44.124117+02:00",
+            "documentOf": "tender",
+            "title_ru": "Довідка про довкілля.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:36:44.124139+02:00",
+            "description_ru": "SHA1: 7230a3dca396faf8274458ced0f6b15689bf3ecf",
+            "id": "94fd7f66a0c24b3bbbdc7df28bf85b70"
+          },
+          {
+            "hash": "md5:a227e9d808417489ef8dda0540fbe1bf",
+            "description": "SHA1: cb3f8617140908d4aa0a5dd3b96a7d72b4ab1ae1",
+            "title": "Довідка про офшорні зони.pdf",
+            "url": "https://public.docs.openprocurement.org/get/7c6da0725bfa4b8380ceda3c138d9021?KeyID=52462340&Signature=yTn66YQI56zzn6fvfwecgqW9y%2FBMxZJg8d6w1%2FmcosyHCZfkYIqpXhBAbUxXdyBxRL1CluRJJGffYNd27Oy2DA%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Довідка про офшорні зони.pdf",
+            "description_en": "SHA1: cb3f8617140908d4aa0a5dd3b96a7d72b4ab1ae1",
+            "datePublished": "2017-02-02T15:36:44.868895+02:00",
+            "documentOf": "tender",
+            "title_ru": "Довідка про офшорні зони.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:36:44.868917+02:00",
+            "description_ru": "SHA1: cb3f8617140908d4aa0a5dd3b96a7d72b4ab1ae1",
+            "id": "b537cbb987054c8d8e720c8e0da79127"
+          },
+          {
+            "hash": "md5:4776812e348e4c2386de2f493421dc9a",
+            "description": "SHA1: 0fb3f887e00b27a0d0746858bebc7bec0992180f",
+            "title": "Проект договора лот №1.pdf",
+            "url": "https://public.docs.openprocurement.org/get/d98e2ee51a4542189213660bfaa38b3d?KeyID=52462340&Signature=Z%252B%2FG%2FSJFjyv%2FNGEP8ZuZJABS2zlZ3WbEEITqivUtMXv4nTXYmqIT9%252Bc31sro0EIZVL7RUE9efoM6ftFRLPTGBQ%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Проект договора лот №1.pdf",
+            "description_en": "SHA1: 0fb3f887e00b27a0d0746858bebc7bec0992180f",
+            "datePublished": "2017-02-02T15:36:45.601979+02:00",
+            "documentOf": "lot",
+            "title_ru": "Проект договора лот №1.pdf",
+            "documentType": "commercialProposal",
+            "dateModified": "2017-02-02T15:36:45.602017+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "description_ru": "SHA1: 0fb3f887e00b27a0d0746858bebc7bec0992180f",
+            "id": "00d6d203307b43bbade299c51b5a88f1"
+          },
+          {
+            "hash": "md5:566cab69a70250eff25b735ed0716f8a",
+            "description": "SHA1: 1822d0d8e92190937704b50c5350098aaeebd52d",
+            "title": "Протокол засновників ТОВ ЮБТК.pdf",
+            "url": "https://public.docs.openprocurement.org/get/df203914245d4395966dad28fc1cd029?KeyID=52462340&Signature=6rj44AfwsM3uLHgSlf%252BoHObdGnqctPmN6piPt9gBnZTpn%252BNAdTmW5BVmfipj9tMdwmLNqN9k3QVJ062pG6aZCw%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Протокол засновників ТОВ ЮБТК.pdf",
+            "description_en": "SHA1: 1822d0d8e92190937704b50c5350098aaeebd52d",
+            "datePublished": "2017-02-02T15:36:46.530071+02:00",
+            "documentOf": "tender",
+            "title_ru": "Протокол засновників ТОВ ЮБТК.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:36:46.530093+02:00",
+            "description_ru": "SHA1: 1822d0d8e92190937704b50c5350098aaeebd52d",
+            "id": "59c6e6384585468da3fa119929c35fc2"
+          },
+          {
+            "hash": "md5:42c49e289f0b83c93501c83ffe57135a",
+            "description": "SHA1: 02817dfdb2d590a49ec5fd9013f763876f40dd93",
+            "title": "Статут ТОВ ЮБТК.pdf",
+            "url": "https://public.docs.openprocurement.org/get/cf0198b5c7584d72ac3abfd90e7a3f6e?KeyID=52462340&Signature=XAVRKLqUw1e4%252BxQ0Tyd24d2%2Fo8nUHH8fbnyGL%2FvBElZY9pBD9FsenNDpai6CrNkpIzOkshO%2Fsg%2Fj971V0PvyCw%253D%253D",
+            "format": "application/pdf",
+            "title_en": "Статут ТОВ ЮБТК.pdf",
+            "description_en": "SHA1: 02817dfdb2d590a49ec5fd9013f763876f40dd93",
+            "datePublished": "2017-02-02T15:36:47.461931+02:00",
+            "documentOf": "tender",
+            "title_ru": "Статут ТОВ ЮБТК.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:36:47.461965+02:00",
+            "description_ru": "SHA1: 02817dfdb2d590a49ec5fd9013f763876f40dd93",
+            "id": "4d5e7b77aca5441fa74e30bd85041d98"
+          }
+        ],
+        "selfEligible": true,
+        "lotValues": [
+          {
+            "relatedLot": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "date": "2017-02-03T14:48:07.763598+02:00",
+            "participationUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_6b14fb8c8ebb9411103592c75b68aaf2/login?bidder_id=8732169fe7c94d84b1d93731fc593a11&hash=e659458847c4b9c41cb1cee90aa28abbc5b3c890",
+            "value": {
+              "currency": "UAH",
+              "amount": 355555,
+              "valueAddedTaxIncluded": true
+            }
+          }
+        ],
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "contactPoint": {
+              "telephone": "+380970759962",
+              "name": "Порфіленко Іван Вікторович",
+              "email": "Building.trade@ukr.net"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "40971293",
+              "legalName": "ТОВ \"ЮКРЕЙНІАН БІЛДІНГ ТРЕЙД КАМПАНІ \""
+            },
+            "name": "ТОВ \"ЮКРЕЙНІАН БІЛДІНГ ТРЕЙД КАМПАНІ \"",
+            "address": {
+              "postalCode": "87500",
+              "countryName": "Україна",
+              "streetAddress": "Провулок Мотросова, 7",
+              "region": "Донецька область",
+              "locality": "Маріуполь"
+            }
+          }
+        ],
+        "date": "2017-02-02T15:36:21.856701+02:00",
+        "id": "8732169fe7c94d84b1d93731fc593a11"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:7a54ed2480de0627a27905e1a90d79df",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/2187824bf2fd4018866ea459fd36a19f?KeyID=52462340&Signature=0%2Fpw9Viw87M9a%252BFjhah%252BBOT1R%252BBVzq0FLo%252BgvZry%252BVcHeQ6Vj%2FIUcADzfKnwJSp59GGeXESSo1Mz%252B7rGcPTOBA%253D%253D",
+            "title": "Пропозиція.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:42:06.948817+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2017-02-02T15:42:06.948854+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "a3a2c30c39bf45b2bbd5f4c9297ce21f"
+          },
+          {
+            "hash": "md5:3cc0806fc9b9a6f781affb8951a33ddb",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/e2e43fd08b8c4f9c969bcd8b65e6324c?KeyID=52462340&Signature=W49Plz8saPPcfTLut8QxEg%2FhEy0Eyh8TcwLoiAHqUqa4BCibhM8qXtUJlnZ9R4G6qK7HBfIyB06JqXhV0b6%252BBA%253D%253D",
+            "title": "Уставні документи.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:42:09.580738+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:42:09.580774+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "f470db5827ac48db9c33de0d93e6ba6c"
+          },
+          {
+            "hash": "md5:acb30f922d24649fb0897b0df44ebe38",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/993412de0cd34d42919cef0f7985e1fe?KeyID=52462340&Signature=gaM%252BCa%2Fn2mkJ%252Bpcqbn8RwvlPR5BoacEnlsPLgXoDpWtuvI9E3IEZib%252Bo8E87MgEVsLF27c3WTo2hYe7lPjX%2FBg%253D%253D",
+            "title": "Довідки.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:42:12.061345+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:42:12.061367+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "2c464a8ebe754b9b938d2fb9fef59aa4"
+          },
+          {
+            "hash": "md5:91f9a77df10ef4fa0a65a30d8d8979bc",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/30989b718c104c969a29532b35bd343b?KeyID=52462340&Signature=yIOlyJ5BrujVoBxiNfffgimWyf6QZMhIwcZI%252BBG6A1H8dkOPL6vnCjiFOwCF0tHceUfPEJVrWu3g206O%252B6lfAw%253D%253D",
+            "title": "Сертиф.  труба PN16, PN20 хол. и гор. до 2017.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:42:14.575019+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-02T15:42:14.575041+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "5be01bb6ceca44ffa519499226ff6b51"
+          },
+          {
+            "hash": "md5:2ce6bb3bc1d4e190235910df6947c6c3",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/ae66d41a0d254fcfb564c02accbe582f?KeyID=52462340&Signature=zgtu5xFCgY1rZnWHFYvJigDGtmRbpfDJxU6B5zH%2F%252B15Z4G2Afh%2FR3zZe6PIXMTX3cQ6VqNNAPSnmxBg5tgroCg%253D%253D",
+            "title": "Серт від. фітингт ППР 2017.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:42:17.132864+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-02T15:42:17.132885+02:00",
+            "relatedItem": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "id": "f7507f3b8c324bf29b10dedc973416b3"
+          },
+          {
+            "hash": "md5:acb30f922d24649fb0897b0df44ebe38",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/fa9c4267894c47d7b866b02b2b4ef16d?KeyID=52462340&Signature=BHhIUFZiH%2F4P11O%2FTNg77RuGR5icSYgosVbJy1IJZSTGfeMyF7GY3l7UZBYixUhHWNaaua44ZKR12ZEmehNQCA%253D%253D",
+            "title": "Довідки.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:56:52.348480+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:56:52.348501+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "8d158355245641038d82c392ef2c90cb"
+          },
+          {
+            "hash": "md5:3cc0806fc9b9a6f781affb8951a33ddb",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/324798a42b0a48789f8034380e7b155e?KeyID=52462340&Signature=DVgfoXE4T%2FpECkN%252BLqu5vh8VSwbRZrAEhvL5YIW1%2F6inpMo2svdTO9CUxnQIqoqOOXPnbvthwNNo2Ud92sXEAg%253D%253D",
+            "title": "Уставні документи.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:56:55.049812+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2017-02-02T15:56:55.049834+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "d5405a7927504c359f027fe205e86b8b"
+          },
+          {
+            "hash": "md5:9a52e5fc602d0a6ca58c9080d34dda7e",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/40d40a26c36841e1a9145bce928321e9?KeyID=52462340&Signature=AMH06kJqLjAbetvqd2oBZCjaKmilCmOVqCgAEZoqy5SieXpMLkk0Ocmey%252BeyhjMe7QlMmStKv6udySIFFLOHBg%253D%253D",
+            "title": "Сертиф.  труба Composit до 2017.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:56:57.974389+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2017-02-02T15:56:57.974410+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "6b99b20295b943b79b48e56eb19566bb"
+          },
+          {
+            "hash": "md5:bc79939b77828d2a89887bda6713375d",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/7d80622f138a48fea3e1573c608529ba?KeyID=52462340&Signature=wjo0eyilCPg72e37pOajsnT9HyOcGU%2FT6PZGjeV%2FwO0K6w8%2FkCPtxAYHqS87bUsouB5RDGCtTOf8ljbU6mSiCg%253D%253D",
+            "title": "Тендерна пропозиція.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:57:00.662809+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2017-02-02T15:57:00.662830+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "68e5ebff6217445cb257a38a6e3ae940"
+          }
+        ],
+        "selfEligible": true,
+        "lotValues": [
+          {
+            "relatedLot": "a99a305c246ada78a18fadf7db742812",
+            "date": "2017-02-02T15:42:03.836904+02:00",
+            "participationUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_a99a305c246ada78a18fadf7db742812/login?bidder_id=73836a6cf3d34ecab2e4466dc6fd5185&hash=26e6e54fce14dcb775e1ba0cb75cbe15b1a9d3e6",
+            "value": {
+              "currency": "UAH",
+              "amount": 71795,
+              "valueAddedTaxIncluded": true
+            },
+            "subcontractingDetails": ""
+          },
+          {
+            "relatedLot": "6b14fb8c8ebb9411103592c75b68aaf2",
+            "date": "2017-02-02T15:56:49.936753+02:00",
+            "participationUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_6b14fb8c8ebb9411103592c75b68aaf2/login?bidder_id=73836a6cf3d34ecab2e4466dc6fd5185&hash=26e6e54fce14dcb775e1ba0cb75cbe15b1a9d3e6",
+            "value": {
+              "currency": "UAH",
+              "amount": 436188.25,
+              "valueAddedTaxIncluded": true
+            },
+            "subcontractingDetails": ""
+          }
+        ],
+        "subcontractingDetails": "",
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "contactPoint": {
+              "telephone": "+380677196337",
+              "name": "Даніїл Ганицький",
+              "email": "olnaitmariupol@gmail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "24065501",
+              "legalName": "ПП \"Олнайт\""
+            },
+            "name": "ПП \"Олнайт\"",
+            "address": {
+              "postalCode": "87505",
+              "countryName": "Україна",
+              "streetAddress": "ул.Гугеля.12",
+              "region": "Донецька область",
+              "locality": "Мариуполь"
+            }
+          }
+        ],
+        "date": "2017-02-02T15:42:03.836460+02:00",
+        "id": "73836a6cf3d34ecab2e4466dc6fd5185"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:60bda3f7bd10fd9bf9c58e14c775e67d",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/75c915872aca4239bf70e64d0903b244?KeyID=52462340&Signature=osOtsUol7z0sQd%2FImnBNSVrmQOkwixNTM01yICz4c63gXoxh%252BAehafHaTVHrRmAS48zCHN%2FQXAsi4Zo3LKZyBw%253D%253D",
+            "title": "Витяг ПДВ.jpeg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:45:54.508102+02:00",
+            "dateModified": "2017-02-02T15:45:54.508139+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "49eef3fc605547eda7ab649fb3e28fee"
+          },
+          {
+            "hash": "md5:ac1e47e6a10b1e251dd878e9e2b5eb45",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/bf630bccaa4243d0a50bfe07fc9f93bb?KeyID=52462340&Signature=W74LOsRiSldFgfwbPIAssgHvt2rVKi0ZGAGoqUzxUfhmE%252Bs4ennTVGP0Q3scrv7tWk9CcBhn6hPKD2cUnn20BA%253D%253D",
+            "title": "Витяг Смарт Клімат Групп.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:45:58.648144+02:00",
+            "dateModified": "2017-02-02T15:45:58.648185+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "fff55a4204074449a681d03ad4e5cb72"
+          },
+          {
+            "hash": "md5:b158e204c1c36589ff106e3cbc104d19",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/98395d0f080a435fbef15d99a9e1f074?KeyID=52462340&Signature=fVWxDeS4zZPnIGwoPpMaB9rNtFRRaTBn%252BglNetjT%252BULPpxBl2dXucX9Ex2tMToQFJTul5tNHROmr3l30bfaFCg%253D%253D",
+            "title": "Відомості про учасника.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:02.270425+02:00",
+            "dateModified": "2017-02-02T15:46:02.270465+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "263262dd0e214ad5864e5485bf47cfdf"
+          },
+          {
+            "hash": "md5:12145674a9434798226a67bfb18a96aa",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/61555b68397444a09f19c11d32ab40c4?KeyID=52462340&Signature=bxWWb%2F9jHfnLgX3dsukor8XUUdsbEB1kV%2FQ9CfKoz%252BHUDYemtH%252B%252BaHrM4X4t436V%252BsRcDRCB5tPyUZs%2F9D8dDA%253D%253D",
+            "title": "Довідка з ЄДРПОУ.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:06.001767+02:00",
+            "dateModified": "2017-02-02T15:46:06.001788+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "02a1852d1e9a4eb0ba8d188a6d4996d6"
+          },
+          {
+            "hash": "md5:e5c81ee43a491df3af157d3462b66b64",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/8684ae7c025845acb25a3a84b4d7abe8?KeyID=52462340&Signature=q9tAlKBOiRZ3823RTUn%2FlZ9Da5L7i8Lcs64ro7ep%2FPW9oddzSDZAXejiECl2dFZUI2MFDjQLnhoA6vPOsmiiDw%253D%253D",
+            "title": "Довідка про відсутність заборгованості(У).pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:09.019260+02:00",
+            "dateModified": "2017-02-02T15:46:09.019296+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "3d3231420ba843289e972ea24a7ae5db"
+          },
+          {
+            "hash": "md5:03f7408c4198d7d0378b3f92bfb66bda",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/3564b3de085f49cd91504c74a0d454b5?KeyID=52462340&Signature=vMOBZgD2SFaXaQhNBq6O%2Flu8DCuVElZKvN6sM4bcckfiUxtL%252BUqosvcV9%2F%252Bn91dUNLWA5jYc3l0fRKI2dBqCCw%253D%253D",
+            "title": "Довідка про офшорні зони(У).pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:13.471105+02:00",
+            "dateModified": "2017-02-02T15:46:13.471144+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "ad581edc199347bea078f7735d6b08bc"
+          },
+          {
+            "hash": "md5:707e885c6b0fd0e6b23daf5996a3be25",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/8d387b354c954f1a9e718f184b5ad09a?KeyID=52462340&Signature=l6EjsMpASzfxI7FB%252BdV11DbXtgTN5lhbVZwk3DxP1m%252BQ9CQwoI1RRpv%2FXrj%252BaIytuLe%252BeSImAI1eHL3O9aqTCA%253D%253D",
+            "title": "Довідка про посадову особу.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:18.908063+02:00",
+            "dateModified": "2017-02-02T15:46:18.908093+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "970239b182934e14a2ae23067b4df2a1"
+          },
+          {
+            "hash": "md5:87a55f2c90205d28e84532d9ad076b4a",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/980cf82294984ff1814ef54b3f420927?KeyID=52462340&Signature=mAhnIzWa51GFD2%252Bm5LNv9I3Svwj6DkvbI%252BnEm7API7hdHnJc3xm7xXzLLkW7QA3dcGqY%2FQggiyT4KGPwsdG2BQ%253D%253D",
+            "title": "Довіреність Радченко М. А..jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:23.260228+02:00",
+            "dateModified": "2017-02-02T15:46:23.260264+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "72c18b9dc3584a24882e762594ba3971"
+          },
+          {
+            "hash": "md5:a01f8ca576fd702ba940ba2a3413bcbf",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/434df186e2024cc2976a93781881c9c7?KeyID=52462340&Signature=Qx79gaodi3amVbEscFL3qK5Ey5asJdioiuasl4iEJSJf%2FrOk54Gi3mJQmqDMk01aCH8favuGUAXDZ7hGLVgxAQ%253D%253D",
+            "title": "Договір.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:27.059653+02:00",
+            "dateModified": "2017-02-02T15:46:27.059690+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "ac6453fd4c0b4cae94c8cba130103902"
+          },
+          {
+            "hash": "md5:14f04b91e9972a88486ff620ac9f1016",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/1b2d569ad5c041c2add9f04705bdf219?KeyID=52462340&Signature=9tpp0EbAZ7YfOO1ukX%2FZQzo%2Finczx01AZzhgout5%2FUe0t1gbE4aluVrGdxrrdV9LoYYa%252BR6F%2FMbdHJ5HeK2pCw%253D%253D",
+            "title": "Виписка з ЄДРЮО.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:32.112685+02:00",
+            "dateModified": "2017-02-02T15:46:32.112724+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "28b5dfb4fee44e9f8ca220338ea16432"
+          },
+          {
+            "hash": "md5:60bda3f7bd10fd9bf9c58e14c775e67d",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/dbdfe4ff095444bf81339df7ff512aac?KeyID=52462340&Signature=jOsCNnVy%2FgjOeKWNr%252BUQJSbGUFs1%2FRTvAOj6wryP48i50XVzP4AKayRoXxs6rEVxuqEwxb2748Jo2U4Q9OPMBg%253D%253D",
+            "title": "Витяг ПДВ.jpeg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:36.651757+02:00",
+            "dateModified": "2017-02-02T15:46:36.651788+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "a5f888435c0b46749044a0a8ffd36ba8"
+          },
+          {
+            "hash": "md5:12145674a9434798226a67bfb18a96aa",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/2d1d784955ec48ec9b00434a40999010?KeyID=52462340&Signature=ggt%2FS33%2F36Xd6DYv5QdreWHfI6jI9%2FI5kkeqU6kgdDzZP5T9Dw1X7Ara4i7kMFcN045NP3niDt31F8Vz2LeiDw%253D%253D",
+            "title": "Довідка з ЄДРПОУ.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:40.634132+02:00",
+            "dateModified": "2017-02-02T15:46:40.634168+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "d4fd567a5a8c43afa11d683dfab52e6c"
+          },
+          {
+            "hash": "md5:09a93d46fe619aa88e5bab52431a55bb",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/2bb01f4283e547ae82e862d1825926a4?KeyID=52462340&Signature=w59KL1gQQqPpBfhQCzd%252BZdTT3ZETHXQUZa51TA%252BVFPOXoFU7JAl6pvnhnpNJIegFbp41rxC2UuzlnitbRD6tBg%253D%253D",
+            "title": "Статут.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:44.409378+02:00",
+            "dateModified": "2017-02-02T15:46:44.409415+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "e1358a8fc8f14fe5a1c87cfa0fe3dbd3"
+          },
+          {
+            "hash": "md5:3ab924cbabc74ee0702dab6ba40bdec6",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/5ba08e8a4e244a70803bc67913fea276?KeyID=52462340&Signature=ZGAEetbeah920aq8GlUN4klDzSObttNC3%2FUXLp4P%252BWCKJTKoA21z8G6sczRfaAXvPwI30ynWabWG%2FEfMReGiDQ%253D%253D",
+            "title": "Наказ №1К.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-02T15:46:47.594049+02:00",
+            "dateModified": "2017-02-02T15:46:47.594084+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "546882db6ef04a2a9ae21279fe2a6c51"
+          },
+          {
+            "hash": "md5:6d5d41070f9bd86f7b8e6291dfd0f12b",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/0d22da98fe52455989308850c0ffd68f?KeyID=52462340&Signature=fTiaIkh6bbkMHGL4oir2UBoIdEKAopLghTCBbZq7XiqYEaVPwkpy1%2Ffjuk5j3eYoEz4mIgOOKBo%252BOMX8JJaqBQ%253D%253D",
+            "title": "sertif_ASG_18.02.16.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:06:52.534903+02:00",
+            "dateModified": "2017-02-07T19:06:52.534925+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "88803d20a10345d894f7914eaae70504"
+          },
+          {
+            "hash": "md5:39e142d4c80c5c67ecd3287573fe6a62",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/c33bcbe0e6274421bee0ae8fb91082d5?KeyID=52462340&Signature=wg7qCNXyyZSC23Nx9zAWuDmG0Jd%252BXo9kJckgbj3GS7NQX9jd52oR04KWH%252BnbGiLgjhNi7S%2FFIE3JOUy7qJgEBA%253D%253D",
+            "title": "Довідка з банку.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:06:54.952689+02:00",
+            "dateModified": "2017-02-07T19:06:54.952709+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "14d18096696f411eb0ae52c11001a9b5"
+          },
+          {
+            "hash": "md5:3414a296f02580fdad9062bc7c129d37",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/23bf08d8d48b44f7b7e0077468f3160b?KeyID=52462340&Signature=MCBkLMiIYKT29GJkU8vatI6z02Lexh0KgYtsWwbaJ6PbDl75wH0B%2FPL98flH5VsAx1tSxKScbsegHIPdU0rgCg%253D%253D",
+            "title": "Довідка з податкової.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:06:57.479341+02:00",
+            "dateModified": "2017-02-07T19:06:57.479362+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "710fdceb2d834c9f83eb2a6296202745"
+          },
+          {
+            "hash": "md5:8a274fc71229bd3e6e9cf1b9e62bac96",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/8584fd22860742869c1bea3f5527b52d?KeyID=52462340&Signature=5K2v7hXVyw1aEAjMcSpBsrmuxEQh9PK3mgMyLwaKNWwj50FwJZ9q0z1SEO2ukfteWThx%252BcKmCGXxBuOtQQs8BQ%253D%253D",
+            "title": "Договір_остаточний.PDF",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:07:02.277178+02:00",
+            "dateModified": "2017-02-07T19:07:02.277199+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "4c19b176941549e1a1a8d2a9feba22e0"
+          },
+          {
+            "hash": "md5:36e52ead22601a0f71bd53ef3c662d19",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/6bf6793daf7c454d93907967128974d8?KeyID=52462340&Signature=kIwLFSueMnrYX5RfGcfhKrlN5Ss%2FdnlFCXYvYs4UlQa9XNXvgwHZsiXnn4WF70KtyT5OcVkFqhV0GerYM4P3BA%253D%253D",
+            "title": "Довідка про корупційні правопорушенння(П).pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:07:04.943221+02:00",
+            "dateModified": "2017-02-07T19:07:04.943242+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "59c59f0874414af1a4f422116d63d3bd"
+          },
+          {
+            "hash": "md5:7ab89905faffac5543dc4da5a7700cc1",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/dae5630c921b4a13b31892024e89ace4?KeyID=52462340&Signature=hugJZM3y8ftJOSh7YPJ7ETIXVOUZyQiudCUI9R8PR8%252BHauSTfgnu63Z9nTzNSysJo5n00DIis8%252B8078nnUjnBQ%253D%253D",
+            "title": "Довідка про антиконкурентні дії.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:07:10.117382+02:00",
+            "dateModified": "2017-02-07T19:07:10.117403+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "c3b6e900f61b426287bff8f31c7b057a"
+          },
+          {
+            "hash": "md5:ddcdf050e15338f33399f8b792d4d600",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/2c7034d81ade4561b8a68eecce13e699?KeyID=52462340&Signature=JSwh0hCk5cyg41nzW%2FJxoA8wBgsgqVllqwyjeUm2jnVq8xq1edZUEfnaQCjjdrciCG8LO%2FJIcxY7F3LkfxSbCg%253D%253D",
+            "title": "Довідка про відсутність ліквідаційної процедури.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:07:14.244583+02:00",
+            "dateModified": "2017-02-07T19:07:14.244604+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "b67402aabf0c4d35badceca305678c3d"
+          },
+          {
+            "hash": "md5:c48d806620de99d45eeda097251cbfbf",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/1cf30fa49459463ca0fd35192f725a26?KeyID=52462340&Signature=VcM0qbK7xP2dCUjNnuxpb%252BeINqPi%252B9dHQ06WR49uJm9Bd48aSUgnP9MLM0IP09GTaiTVTaEa9RW6B35mfY1RAg%253D%253D",
+            "title": "Довідка про перевізника.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:07:16.992940+02:00",
+            "dateModified": "2017-02-07T19:07:16.992962+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "32beca207e5c4b549142b075ac6d3ef9"
+          },
+          {
+            "hash": "md5:56d2a67f03fe5293bc6d1b7615adc64e",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/0e1c4d0fed764ac09d179877d12652c8?KeyID=52462340&Signature=cmr3fSGsm%252BybVIacyP9Jd%252BR1Vhw6qHVIr1ulVqcXc7ylSKH9m1wMKiU3pZnm4hosP39D9Psj4%2FdRwJ1CWAFKDw%253D%253D",
+            "title": "Довідка про відсутність корупційних правопорушень(П).pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:07:19.716943+02:00",
+            "dateModified": "2017-02-07T19:07:19.716978+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "8a250c40ef03466eaa47c06cde75d782"
+          },
+          {
+            "hash": "md5:36e52ead22601a0f71bd53ef3c662d19",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/af92807904954e69abb8c19cef997ee8?KeyID=52462340&Signature=S7MzMG21W%2F4YLTAPUSDu8VkuT3Fp1VwNZa8yHFdM6xP2Eo%252BDUpZROoLCoAym7xTiN%2FMhFjpG3PhLFnNnId3gCg%253D%253D",
+            "title": "Довідка про корупційні правопорушенння(П).pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-07T19:07:23.787635+02:00",
+            "dateModified": "2017-02-07T19:07:23.787671+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "dce53891e06f4e9f8ace9b86b1214782"
+          },
+          {
+            "hash": "md5:ac11eae5a18dce3b0e154dd1a66f740a",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/d608f33af52b4975b08f8dcf576d4c9a?KeyID=52462340&Signature=j%2FlM4flS4YVUsLXmLJkuBIEej%2F4thuqs%252Bldcq%252BDaHIJxcESmtZGBkTOIlgoTd9vmtN95C0kYuq2NT0342JyFAA%253D%253D",
+            "title": "Довідка про антиконкурентні дії(нова редакція).jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-09T13:37:11.156130+02:00",
+            "dateModified": "2017-02-09T13:37:11.156162+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "58c0ec2f43984cde8686e48e4b8348a1"
+          },
+          {
+            "hash": "md5:936775ca18c68b1eebb8310472859cd1",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/8e07eab4ba134592a6568488b08c1f52?KeyID=52462340&Signature=g%2F%2FMTAVlZNmnjMcnLmt6qiccslzGIfrayvm%252BBfVMVBhYMNFwlSDdrinEpPU2ckCDNrgg8FVpXUtblH%252BvjPISDA%253D%253D",
+            "title": "Отсканировано 09.02.2017 19-57.jpg",
+            "documentOf": "lot",
+            "datePublished": "2017-02-10T11:34:21.014515+02:00",
+            "dateModified": "2017-02-10T11:34:21.014547+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "8d1c48378485462099cc01d6e8114139"
+          },
+          {
+            "hash": "md5:58e2e1acd9a54ebf0731e377bf0ca4b8",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/32e93fa3096f4cf8af3e7ddcf9c99b88?KeyID=52462340&Signature=B2pXKd%2FkpI3SYOP9q%2FlWnRQ%2FtHdFAit3E1lzd87k3doBWF5yJta3nyscnDU%2FS8xcEWAZztnoA1f%2Fmn3akCBTBg%253D%253D",
+            "title": "Пояснювальна записка.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-10T11:34:24.518693+02:00",
+            "dateModified": "2017-02-10T11:34:24.518714+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "3136d58a295c4bc6b975e8a4775a2434"
+          },
+          {
+            "hash": "md5:04575107c9d106585964f63f1276155c",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/d5803719f64943f897c89f5e1a88a99f?KeyID=52462340&Signature=Q56q1yJwg%252BqN43n3yNOJmbrLIHc0voUQar0T8nPRtpS1954BNiCphEFxRjOihfNgYt1BfzxVo5%252BWhgxTIWfvAA%253D%253D",
+            "title": "Тендерна пропозиція.pdf",
+            "documentOf": "lot",
+            "datePublished": "2017-02-10T12:00:08.959181+02:00",
+            "dateModified": "2017-02-10T12:00:08.959218+02:00",
+            "relatedItem": "a99a305c246ada78a18fadf7db742812",
+            "id": "7e2a311559de46c3aebbbacd8e88dafc"
+          }
+        ],
+        "selfEligible": true,
+        "lotValues": [
+          {
+            "relatedLot": "a99a305c246ada78a18fadf7db742812",
+            "date": "2017-02-03T15:06:01.192618+02:00",
+            "participationUrl": "https://auction.openprocurement.org/tenders/40d1700dbf804c19a9d50cb9b3e0f34c_a99a305c246ada78a18fadf7db742812/login?bidder_id=e6548b5ad029498f959458bd694e78c1&hash=e969249e7ca5ca730a761ff49bb74797729e28d6",
+            "value": {
+              "currency": "UAH",
+              "amount": 51914,
+              "valueAddedTaxIncluded": true
+            },
+            "subcontractingDetails": ""
+          }
+        ],
+        "subcontractingDetails": "",
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "contactPoint": {
+              "telephone": "+380674041474",
+              "name": "Александр Казаров",
+              "email": "smartclimate@ukr.net"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "38760205",
+              "uri": "http://smartclimate.com.ua",
+              "legalName": "ТОВ \"СМАРТ КЛІМАТ ГРУП\""
+            },
+            "name": "ТОВ \"СМАРТ КЛІМАТ ГРУП\"",
+            "address": {
+              "postalCode": "03179",
+              "countryName": "Україна",
+              "streetAddress": "ВУЛИЦЯ ЛЬВІВСЬКА, будинок 59А, квартира 62",
+              "region": "Київ",
+              "locality": "м.Київ"
+            }
+          }
+        ],
+        "date": "2017-02-02T15:45:49.547216+02:00",
+        "id": "e6548b5ad029498f959458bd694e78c1"
+      }
+    ],
+    "value": {
+      "currency": "UAH",
+      "amount": 877100,
+      "valueAddedTaxIncluded": true
+    },
+    "awardCriteria": "lowestCost"
+  }
+}

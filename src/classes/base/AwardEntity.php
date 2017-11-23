@@ -12,7 +12,7 @@ namespace app\entity\base;
  *
  * @package app\entity\base
  */
-abstract class AwardEntity extends BaseEntity
+class AwardEntity extends BaseEntity
 {
     protected $id;
     protected $bid_id;
@@ -40,7 +40,7 @@ abstract class AwardEntity extends BaseEntity
     public function __construct(array $data, ?string $key = null)
     {
         parent::__construct($data, $key);
-
+        $data = $this->getDataByKey($data, $key);
         $this->complaintPeriod = new DateEntity($data, 'complaintPeriod');
     }
 

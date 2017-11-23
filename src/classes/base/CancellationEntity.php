@@ -16,7 +16,7 @@ namespace app\entity\base;
  *
  * @package app\entity\base
  */
-abstract class CancellationEntity extends BaseEntity
+class CancellationEntity extends BaseEntity
 {
     protected $id;
     protected $reason;

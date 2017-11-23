@@ -68,9 +68,17 @@ class TenderEntity extends BaseEntity
     protected $noticePublicationDate;
     protected $minValue;
 
+    /**
+     * TenderEntity constructor.
+     *
+     * @param array $data
+     * @param null $key
+     * @throws \Exception
+     */
     public function __construct(array $data, $key = null)
     {
         parent::__construct($data, $key);
+        $data = $this->getDataByKey($data, $key);
         $this->value = new ValueEntity($data, 'value');
         $this->minimalStep = new ValueEntity($data, 'minimalStep');
         $this->enquiryPeriod = new EnquiryPeriodEntity($data, 'enquiryPeriod');

@@ -27,7 +27,7 @@ class QuestionEntity extends BaseEntity
     public function __construct(array $data)
     {
         parent::__construct($data);
-
+        $data = $this->getDataByKey($data, $key);
         $this->author = new OrganizationEntity($data, 'author');
     }
 

@@ -5,7 +5,8 @@
     "autoload": {
         "psr-4": {
             "app\\entity\\": "classes/",
-            "app\\components\\": "components/"
+            "app\\components\\": "components/",
+            "app\\services\\": "services/"
         }
     }
 }

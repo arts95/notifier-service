@@ -9,6 +9,8 @@ namespace app\entity\auction;
 
 use app\entity\base\BaseEntity;
 use app\entity\base\ContractEntity;
+use app\entity\base\QuestionEntity;
+use app\entity\tender\AwardEntity;
 
 /**
  * Class AuctionEntity
@@ -34,6 +36,9 @@ class AuctionEntity extends BaseEntity
     protected $complaints;
     protected $bids;
     protected $minimalStep;
+    /**
+     * @var AwardEntity[]
+     */
     protected $awards;
     protected $contracts;
     protected $enquiryPeriod;
@@ -158,9 +163,9 @@ class AuctionEntity extends BaseEntity
     }
 
     /**
-     * @return mixed
+     * @return QuestionEntity[]
      */
-    public function getQuestions()
+    public function getQuestions(): ?array
     {
         return $this->questions;
     }
@@ -190,11 +195,26 @@ class AuctionEntity extends BaseEntity
     }
 
     /**
-     * @return mixed
+     * @return AwardEntity[]
      */
-    public function getAwards()
+    public function getAwards(): array
     {
         return $this->awards;
+    }
+
+    /**
+     * @param string $id
+     * @return AwardEntity|null
+     */
+    public function getAwardById(string $id): ?AwardEntity
+    {
+        if (empty($this->awards)) return null;
+        foreach ($this->awards as $award) {
+            if ($award->getId() == $id) {
+                return $award;
+            }
+        }
+        return null;
     }
 
     /**

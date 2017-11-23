@@ -7,7 +7,19 @@
 namespace app\entity\tender;
 
 
+/**
+ * Class AwardEntity
+ *
+ * @package app\entity\tender
+ */
 class AwardEntity extends \app\entity\base\AwardEntity
 {
+    /**
+     * @return mixed
+     */
+    public function getLotID()
+    {
+        return $this->lotID;
+    }
     protected $lotID;
 }

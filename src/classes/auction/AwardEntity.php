@@ -5,7 +5,11 @@
  */
 namespace app\entity\auction;
 
-
+/**
+ * Class AwardEntity
+ *
+ * @package app\entity\auction
+ */
 class AwardEntity extends \app\entity\base\AwardEntity
 {
 

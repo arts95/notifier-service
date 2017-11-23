@@ -34,6 +34,4 @@ class ParameterEntity
     {
         return $this->value;
     }
-
-
 }

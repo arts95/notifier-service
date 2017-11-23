@@ -22,6 +22,38 @@ class BidEntity extends BaseEntity
     protected $qualificationDocuments;
 
     /**
+     * @return mixed
+     */
+    public function getLotValues()
+    {
+        return $this->lotValues;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEligibilityDocuments()
+    {
+        return $this->eligibilityDocuments;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFinancialDocuments()
+    {
+        return $this->financialDocuments;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getQualificationDocuments()
+    {
+        return $this->qualificationDocuments;
+    }
+
+    /**
      * @param string $key
      * @return mixed|null
      */

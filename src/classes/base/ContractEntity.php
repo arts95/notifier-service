@@ -7,6 +7,11 @@
 namespace app\entity\base;
 
 
+/**
+ * Class ContractEntity
+ *
+ * @package app\entity\base
+ */
 abstract class ContractEntity extends BaseEntity
 {
     protected $id;
@@ -23,6 +28,12 @@ abstract class ContractEntity extends BaseEntity
     protected $contractID;
     protected $suppliers;
 
+    /**
+     * ContractEntity constructor.
+     *
+     * @param array $data
+     * @param null|string $key
+     */
     public function __construct(array $data, ?string $key = null)
     {
         parent::__construct($data, $key);
@@ -31,12 +42,115 @@ abstract class ContractEntity extends BaseEntity
         $this->value = new ValueEntity($data, 'value');
     }
 
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAwardID()
+    {
+        return $this->awardID;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * @return DateEntity
+     */
+    public function getPeriod(): DateEntity
+    {
+        return $this->period;
+    }
+
+    /**
+     * @return ValueEntity
+     */
+    public function getValue(): ValueEntity
+    {
+        return $this->value;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateSigned()
+    {
+        return $this->dateSigned;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getContractNumber()
+    {
+        return $this->contractNumber;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDocuments()
+    {
+        return $this->documents;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAdditionalAwardIDs()
+    {
+        return $this->additionalAwardIDs;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getContractID()
+    {
+        return $this->contractID;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSuppliers()
+    {
+        return $this->suppliers;
+    }
 
     /**
      * @param $key
      * @return mixed|null
      */
-    protected function getClassNameByKey(string $key)
+    protected function getClassNameByKey(string $key): ?string
     {
         $mapper = [
             'documents' => 'app\entity\base\DocumentEntity',

@@ -7,6 +7,11 @@
 namespace app\entity\base;
 
 
+/**
+ * Class QuestionEntity
+ *
+ * @package app\entity\base
+ */
 class QuestionEntity extends BaseEntity
 {
     protected $id;
@@ -24,6 +29,78 @@ class QuestionEntity extends BaseEntity
         parent::__construct($data);
 
         $this->author = new OrganizationEntity($data, 'author');
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return OrganizationEntity
+     */
+    public function getAuthor(): OrganizationEntity
+    {
+        return $this->author;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAnswer()
+    {
+        return $this->answer;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getQuestionOf()
+    {
+        return $this->questionOf;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRelatedItem()
+    {
+        return $this->relatedItem;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateAnswered()
+    {
+        return $this->dateAnswered;
     }
 
 

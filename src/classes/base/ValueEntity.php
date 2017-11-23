@@ -7,9 +7,20 @@
 namespace app\entity\base;
 
 
-class ValueEntity extends  BaseEntity
+/**
+ * Class ValueEntity
+ *
+ * @package app\entity\base
+ */
+class ValueEntity extends ValueBaseEntity
 {
-    protected $amount;
-    protected $currency;
     protected $valueAddedTaxIncluded;
+
+    /**
+     * @return mixed
+     */
+    public function getValueAddedTaxIncluded(): bool
+    {
+        return $this->valueAddedTaxIncluded;
+    }
 }

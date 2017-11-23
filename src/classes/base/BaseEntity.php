@@ -10,6 +10,12 @@ use ReflectionClass;
  */
 abstract class BaseEntity
 {
+    /**
+     * BaseEntity constructor.
+     *
+     * @param array $data
+     * @param null|string $key
+     */
     public function __construct(array $data, ?string $key = null)
     {
         if ($key === null) {
@@ -19,7 +25,11 @@ abstract class BaseEntity
         }
     }
 
-    protected function load($data): bool
+    /**
+     * @param array $data
+     * @return bool
+     */
+    protected function load(array $data): bool
     {
         if (!empty($data)) {
             $this->setAttributes($data);
@@ -29,6 +39,9 @@ abstract class BaseEntity
         return false;
     }
 
+    /**
+     * @param array $values
+     */
     protected function setAttributes(array $values): void
     {
         if (is_array($values)) {
@@ -39,7 +52,6 @@ abstract class BaseEntity
                     if (is_array($value)) {
                         if (($class = $this->getClassNameByKey($name)) !== null) {
                             foreach ($values[$name] as $key => $objData) {
-                                $reflection = new ReflectionClass($class);
                                 $obj = new $class($objData);
                                 $value[$key] = $obj;
                             }
@@ -52,6 +64,9 @@ abstract class BaseEntity
         }
     }
 
+    /**
+     * @return array
+     */
     protected function getAttributes(): array
     {
         $class = new ReflectionClass($this);
@@ -64,23 +79,12 @@ abstract class BaseEntity
         return $names;
     }
 
+    /**
+     * @param string $key
+     * @return null|string
+     */
     protected function getClassNameByKey(string $key): ?string
     {
-        return null;
-    }
-
-    private function isAssociative($array): bool
-    {
-        if (!is_array($array) || empty($array)) {
-            return false;
-        }
-
-        foreach ($array as $key => $value) {
-            if (!is_string($key)) {
-                return false;
-            }
-        }
-
-        return true;
+        return $key;
     }
 }

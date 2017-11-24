@@ -6,7 +6,7 @@
 
 namespace app\services;
 
-class AuctionService
+class AuctionService extends BaseService
 {
 
 }

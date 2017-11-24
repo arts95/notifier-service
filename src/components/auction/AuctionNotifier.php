@@ -29,19 +29,18 @@ class AuctionNotifier extends Notifier
      *
      * @param AuctionEntity $oAuction
      * @param AuctionEntity $nAuction
-     * @param UserEntity $owner
      */
-    public function __construct(AuctionEntity $oAuction, AuctionEntity $nAuction, UserEntity $owner)
+    public function __construct(AuctionEntity $oAuction, AuctionEntity $nAuction)
     {
         $this->oAuction = $oAuction;
         $this->nAuction = $nAuction;
-        $this->owner = $owner;
-        $this->service = new AuctionService();
+        $this->service = new AuctionService($this->nAuction->getId());
+        $this->owner = $this->service->getOwnerOfPurchase();
     }
 
-    public static function getNotifier(AuctionEntity $oAuction, AuctionEntity $nAuction, UserEntity $owner): AuctionNotifier
+    public static function getNotifier(AuctionEntity $oAuction, AuctionEntity $nAuction): AuctionNotifier
     {
-        return new AuctionNotifier($oAuction, $nAuction, $owner);
+        return new AuctionNotifier($oAuction, $nAuction);
     }
 
     protected function contractActivated()
@@ -59,12 +58,15 @@ class AuctionNotifier extends Notifier
             $bidID = $this->nAuction->getAwardById($contract->getAwardID())->getBidId();
 
             if ($bidID) {
-                /** @todo get bidder winner by id $bidder and notify */
+                /** @todo notify */
+                $bidder = $this->service->getBidderByID($bidID);
             }
 
-            /** @todo notify organizer! $this->owner */
+            /** @todo notify organizer! */
+            $this->owner;
 
             /** @todo notify other bidders from our db */
+            $bidders = $this->service->getBidders();
         }
     }
 
@@ -86,7 +88,6 @@ class AuctionNotifier extends Notifier
     protected function qualificationResult()
     {
         if ($this->nAuction->getVersion() == 'PS') {
-            /** @todo normal check */
             $this->qualificationResultPS();
         } else {
             $this->qualificationResultEA();
@@ -113,11 +114,13 @@ class AuctionNotifier extends Notifier
                 $bidIdInAward[] = $award['bid_id'];
             } elseif ($award->getStatus() == 'cancelled') {
                 /** @todo notify organizer */
+                $this->owner;
             }
 
             /** письмо про то статус квалификации участника перешел в указазаніе статусі */
             if ($check->new && ($check->entity ? $check->entity->getStatus() != $award->getStatus() : true)) {
-                /** @todo get bidder and notify */
+                /** @todo and notify */
+                $bidder = $this->service->getBidderByID($award->getBidId());
             }
 
         }
@@ -131,7 +134,8 @@ class AuctionNotifier extends Notifier
         foreach ($this->nAuction->getBids() as $bid) {
             /** отсеиваем тех, которіе первіе по счету и им уже отправили письмо о активной квалификации*/
             if ($bid->getStatus() != 'active') continue;
-            /** @todo get bidder and notify him */
+            /** @todo notify */
+            $bidder = $this->service->getBidderByID($bid->getId());
         }
     }
 
@@ -204,8 +208,9 @@ class AuctionNotifier extends Notifier
                         /** Если указаного статуса в списке нет, то будет отправляться стандартное письмо */
                 }
 
-                /** @todo notify bidder */
-
+                /** @todo notify bidder and organizer */
+                $this->owner;
+                $this->service->getBidderByID($award->getBidId());
             }
         }
     }
@@ -233,13 +238,19 @@ class AuctionNotifier extends Notifier
     protected function newQuestions($questions)
     {
         if (empty($questions)) return false;
-        /** @todo $tender, $newQuestions to $owner->email */
+        $this->owner;
+        /** @todo notify */
     }
 
     protected function newAnswerOnQuestions($questions)
     {
         if (empty($questions)) return false;
-        /** @todo $tender, $answeredQuestions to getEmailsQuestions() */
+        $requesters = $this->service->getRequesters();
+        if (empty($requesters)) return false;
+        foreach ($requesters as $requester) {
+            /** @todo notify */
+            /** @todo grab answers for one requester */
+        }
     }
 
     /**
@@ -262,9 +273,9 @@ class AuctionNotifier extends Notifier
         if (!in_array($this->nAuction->getStatus(), ['cancelled', 'unsuccessful'])) return;
         if ($this->oAuction->getStatus() == $this->nAuction->getStatus()) return;
 
-        $bidderEmail = ['email1', 'email2'];
+        $bidderEmail = $this->service->getBiddersEmail();
         /** @todo get bidders email by auction */
-        $requesterEmails = ['email1', 'email3', 'email4'];
+        $requesterEmails = $this->service->getRequestersEmail();
         /** @todo get requester emails by auction */
         if (!empty($requesterEmails)) {
             foreach ($requesterEmails as $email) {
@@ -272,6 +283,7 @@ class AuctionNotifier extends Notifier
                     /** @todo requester and bidder. title in email!!!! */
                     unset($bidderEmail[$email]);
                 }
+
                 /** @todo notify */
             }
         }
@@ -298,7 +310,7 @@ class AuctionNotifier extends Notifier
         if ($this->oAuction->getMinimalStep()->getAmount() != $this->nAuction->getMinimalStep()->getAmount()) {
             $changes['auction.minimalStep.amount'] = [$this->oAuction->getMinimalStep()->getAmount(), $this->nAuction->getMinimalStep()->getAmount()];
         }
-
+        $this->service->getBidders();
         /** @todo get bidders and notify */
     }
 }

@@ -4,7 +4,7 @@
  * Date: 23.11.17
  */
 
-namespace app\entity;
+namespace app\entity\service;
 
 /**
  * Class UserEntity
@@ -15,20 +15,17 @@ class UserEntity
 {
     protected $uid;
     protected $email;
-    protected $questionsID;
 
     /**
      * UserEntity constructor.
      *
      * @param $uid
      * @param $email
-     * @param $questionsID
      */
-    public function __construct($uid, $email, $questionsID = null)
+    public function __construct(string $uid, string $email)
     {
         $this->uid = $uid;
         $this->email = $email;
-        $this->questionsID = $questionsID;
     }
 
     /**
@@ -45,21 +42,5 @@ class UserEntity
     public function getEmail()
     {
         return $this->email;
-    }
-
-    /**
-     * @return array|null
-     */
-    public function getQuestionsID(): ?array
-    {
-        return $this->questionsID;
-    }
-
-    /**
-     * @param null $questionsID
-     */
-    public function setQuestionsID($questionsID)
-    {
-        $this->questionsID = $questionsID;
     }
 }

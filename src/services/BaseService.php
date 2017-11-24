@@ -7,9 +7,22 @@
 namespace app\services;
 
 
+use app\entity\service\BidderEntity;
+use app\entity\service\RequesterEntity;
+use app\entity\service\UserEntity;
+
+/**
+ * Class BaseService
+ *
+ * @package app\services
+ */
 class BaseService
 {
     protected $purchaseID;
+    private $_requesters = null;
+    private $_bidders = null;
+    private $_bidder = null;
+    private $_ownerOfPurchase = null;
     /** @todo make variables for multiply call functions */
     /**
      * BaseService constructor.
@@ -31,45 +44,68 @@ class BaseService
         ];
     }
 
-    public function getBidders()
+    public function getBidders(): array
     {
-
-        /** @todo make request. */
-        return [
-            ['bidID' => 1, 'userID' => 1, 'email' => 'email@email.test'],
-            ['bidID' => 2, 'userID' => 1, 'email' => 'email@email.test'],
-        ];
+        if ($this->_bidders === null) {
+            /** @todo make request. */
+            $this->_bidders = [
+                ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']],
+                ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']],
+            ];
+        }
+        if (empty($this->_bidders)) return [];
+        $data = [];
+        foreach ($this->_bidders as $bidder) {
+            $data[] = new BidderEntity($bidder['id'], $bidder['email'], $bidder['bid']);
+        }
+        return $data;
     }
 
-    public function getBidderByID($bidID)
+    public function getBidderByID($bidID): BidderEntity
     {
-        /** @todo make request. */
-        /** @todo write entity */
-        return ['bidID' => 1, 'userID' => 1, 'email' => 'email@email.test'];
+        if ($this->_bidder == null) {
+            /** @todo make request. */
+            $this->_bidder = ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']];
+        }
+        return new BidderEntity($this->_bidder['userID'], $this->_bidder['email'], $this->_bidder['bid']);
     }
 
-    public function getOwnerOfPurchase()
+    public function getOwnerOfPurchase(): UserEntity
     {
-        /** @todo make request and get owner of purchase. */
-        return ['userID' => 2, 'email' => 'email@email.test'];
+        if ($this->_ownerOfPurchase == null) {
+            /** @todo make request. */
+            $this->_ownerOfPurchase = ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']];
+        }
+        return new UserEntity($this->_ownerOfPurchase['userID'], $this->_ownerOfPurchase['email']);
     }
 
-    public function getRequestersEmail()
+    public function getRequestersEmail(): array
     {
-        $this->getRequesters();
-        /** @todo get emails */
-        return [
-            ['email' => 'email1@email.test'],
-            ['email' => 'email2@email.test'],
-        ];
+        if (empty($this->getRequesters())) return [];
+        $emails = [];
+        foreach ($this->getRequesters() as $requester) {
+            $emails[] = $requester->getEmail();
+        }
+        return $emails;
     }
 
-    public function getRequesters()
+    /**
+     * @return RequesterEntity[]
+     */
+    public function getRequesters(): array
     {
-        /** @todo make request and get requesters (analog of questions) */
-        return [
-            ['questionID' => 1, 'userID' => 1, 'email' => 'email@email.test'],
-            ['questionID' => 2, 'userID' => 1, 'email' => 'email@email.test'],
-        ];
+        if ($this->_requesters === null) {
+            /** @todo make request */
+            $this->_requesters = [
+                ['userID' => 1, 'email' => 'email@email.test', 'questions' => [['id' => 1], ['id' => 2]]],
+                ['userID' => 1, 'email' => 'email@email.test', 'questions' => [['id' => 1], ['id' => 2]]],
+            ];
+        }
+        if (empty($this->_requesters)) return [];
+        $data = [];
+        foreach ($this->_requesters as $requester) {
+            $data[] = new RequesterEntity($requester['userID'], $requester['email'], $requester['questions']);
+        }
+        return $data;
     }
 }

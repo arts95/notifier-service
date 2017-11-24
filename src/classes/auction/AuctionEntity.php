@@ -8,8 +8,11 @@ namespace app\entity\auction;
 
 
 use app\entity\base\BaseEntity;
+use app\entity\base\BidEntity;
 use app\entity\base\ContractEntity;
+use app\entity\base\DocumentEntity;
 use app\entity\base\QuestionEntity;
+use app\entity\base\ValueEntity;
 use app\entity\tender\AwardEntity;
 
 /**
@@ -32,8 +35,10 @@ class AuctionEntity extends BaseEntity
     protected $value;
     protected $items;
     protected $documents;
+    /**
+     * @var QuestionEntity[]
+     */
     protected $questions;
-    protected $complaints;
     protected $bids;
     protected $minimalStep;
     /**
@@ -139,9 +144,9 @@ class AuctionEntity extends BaseEntity
     }
 
     /**
-     * @return mixed
+     * @return ValueEntity
      */
-    public function getValue()
+    public function getValue(): ValueEntity
     {
         return $this->value;
     }
@@ -170,26 +175,19 @@ class AuctionEntity extends BaseEntity
         return $this->questions;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getComplaints()
-    {
-        return $this->complaints;
-    }
 
     /**
-     * @return mixed
+     * @return BidEntity[]
      */
-    public function getBids()
+    public function getBids(): array
     {
         return $this->bids;
     }
 
     /**
-     * @return mixed
+     * @return ValueEntity
      */
-    public function getMinimalStep()
+    public function getMinimalStep(): ValueEntity
     {
         return $this->minimalStep;
     }
@@ -372,5 +370,13 @@ class AuctionEntity extends BaseEntity
             return $mapper[$key];
         }
         return null;
+    }
+
+    public function getVersion()
+    {
+        if (strpos($this->auctionID, 'PS') !== false) {
+            return 'PS';
+        }
+        return 'EA';
     }
 }

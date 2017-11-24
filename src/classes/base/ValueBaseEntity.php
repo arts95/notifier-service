@@ -15,13 +15,14 @@ namespace app\entity\base;
 class ValueBaseEntity extends BaseEntity
 {
     protected $amount;
+    protected $currency;
 
     /**
      * @return mixed
      */
     public function getAmount()
     {
-        return $this->amount;
+        return (float)$this->amount;
     }
 
     /**
@@ -31,5 +32,4 @@ class ValueBaseEntity extends BaseEntity
     {
         return $this->currency;
     }
-    protected $currency;
 }

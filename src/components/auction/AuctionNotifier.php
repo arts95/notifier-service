@@ -44,7 +44,7 @@ class AuctionNotifier extends Notifier
         return new AuctionNotifier($oAuction, $nAuction, $owner);
     }
 
-    public function contractActivated()
+    protected function contractActivated()
     {
         if ($this->nAuction->getStatus() != 'complete') return;
         if ($this->nAuction->getStatus() == $this->oAuction->getStatus()) return;
@@ -83,7 +83,7 @@ class AuctionNotifier extends Notifier
         return new Check(null, true);
     }
 
-    public function qualificationResult()
+    protected function qualificationResult()
     {
         if ($this->nAuction->getVersion() == 'PS') {
             /** @todo normal check */
@@ -141,7 +141,7 @@ class AuctionNotifier extends Notifier
      * @param string $id
      * @return Check
      */
-    public function getAwardInfo(string $id): Check
+    protected function getAwardInfo(string $id): Check
     {
         if (empty($this->oAuction->getAwards())) return new Check(null, true);
         foreach ($this->oAuction->getAwards() as $award) {
@@ -157,13 +157,13 @@ class AuctionNotifier extends Notifier
      * Версия 2.4
      *
      */
-    public function qualificationResultEA()
+    protected function qualificationResultEA()
     {
         if (empty($this->nAuction->getAwards())) return;
         foreach ($this->nAuction->getAwards() as $award) {
             $check = $this->getAwardInfo($award->getId());
             if ($check->new && ($check->entity ? $check->entity->getStatus() != $award->getStatus() : true)) {
-                switch ($award['status']) {
+                switch ($award->getStatus()) {
                     /**
                      * Очікується завантаження та підтвердження протоколу ліквідатором.
                      */
@@ -230,13 +230,13 @@ class AuctionNotifier extends Notifier
         $this->newAnswerOnQuestions($answeredQuestions);
     }
 
-    private function newQuestions($questions)
+    protected function newQuestions($questions)
     {
         if (empty($questions)) return false;
         /** @todo $tender, $newQuestions to $owner->email */
     }
 
-    private function newAnswerOnQuestions($questions)
+    protected function newAnswerOnQuestions($questions)
     {
         if (empty($questions)) return false;
         /** @todo $tender, $answeredQuestions to getEmailsQuestions() */

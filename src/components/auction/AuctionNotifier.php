@@ -9,7 +9,6 @@ namespace app\components\auction;
 use app\components\base\Check;
 use app\components\base\Notifier;
 use app\entity\auction\AuctionEntity;
-use app\entity\UserEntity;
 use app\services\AuctionService;
 
 /**

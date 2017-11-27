@@ -8,6 +8,7 @@ namespace app\components\auction;
 
 use app\components\base\Notifier;
 use app\entity\auction\AuctionEntity;
+use app\entity\base\AwardEntity;
 use app\entity\base\ContractEntity;
 use app\services\AuctionService;
 
@@ -42,28 +43,78 @@ class AuctionNotifier extends Notifier
 
     public function analyze(): void
     {
+        $this->tender();
         $this->questions();
         $this->awards();
         $this->contracts();
     }
 
-    protected function contracts(): void
+    protected function tender(): void
     {
-        $contract = $this->getActivatedContract();
-        if (!$contract) return;
-        /** находим победителя, а точнее bid_id, для поиска в нашей базе */
-        $bidID = $this->nAuction->getAwardById($contract->getAwardID())->getBidId();
+        $this->terminateAuction();
+        $this->changes();
+    }
 
-        if ($bidID) {
-            /** @todo notify */
-            $bidder = $this->service->getBidderByID($bidID);
+    /**
+     * @return bool
+     */
+    protected function terminateAuction(): bool
+    {
+        if (!in_array($this->nAuction->getStatus(), ['cancelled', 'unsuccessful'])) return false;
+        if ($this->oAuction->getStatus() == $this->nAuction->getStatus()) return false;
+
+        $bidderEmail = $this->service->getBiddersEmail();
+        $requesterEmails = $this->service->getRequestersEmail();
+
+        if (!empty($requesterEmails)) {
+            foreach ($requesterEmails as $email) {
+                if (!empty($bidderEmail) && in_array($email, $bidderEmail)) {
+                    /** @todo requester and bidder. title in email!!!! */
+                    unset($bidderEmail[$email]);
+                }
+
+                /** @todo notify */
+            }
         }
 
-        /** @todo notify organizer! */
-        $this->service->getOwnerOfPurchase();
+        if (!empty($bidderEmail)) {
+            foreach ($bidderEmail as $email) {
+                /** @todo notify */
+            }
+        }
 
-        /** @todo notify other bidders from our db */
-        $bidders = $this->service->getBidders();
+        return true;
+    }
+
+    protected function changes(): void
+    {
+        $changes = $this->getAuctionChanges();
+        if (empty($changes)) return;
+        foreach ($this->service->getBidders() as $bidder) {
+            /** @todo notify $bidder */
+        }
+    }
+
+    /**
+     * @return array
+     */
+    protected function getAuctionChanges(): array
+    {
+        if ($this->nAuction->getVersion() != 'PS') return [];
+        if ($this->nAuction->getStatus() != 'active.tendering') return [];
+        $changes = [];
+
+
+        if ($this->oAuction->getValue()->getAmount() != $this->nAuction->getValue()->getAmount()) {
+            $changes['auction.value.amount'] = [$this->oAuction->getValue()->getAmount(), $this->nAuction->getValue()->getAmount()];
+        }
+        if ($this->oAuction->getGuarantee()->getAmount() != $this->nAuction->getGuarantee()->getAmount()) {
+            $changes['auction.guarantee.amount'] = [$this->oAuction->getGuarantee()->getAmount(), $this->nAuction->getGuarantee()->getAmount()];
+        }
+        if ($this->oAuction->getMinimalStep()->getAmount() != $this->nAuction->getMinimalStep()->getAmount()) {
+            $changes['auction.minimalStep.amount'] = [$this->oAuction->getMinimalStep()->getAmount(), $this->nAuction->getMinimalStep()->getAmount()];
+        }
+        return $changes;
     }
 
     protected function questions(): void
@@ -73,34 +124,84 @@ class AuctionNotifier extends Notifier
         $this->newAnswerOnQuestions($data['newAnswerOnQuestions']);
     }
 
+    /**
+     * @return array
+     */
+    protected function getQuestions(): array
+    {
+        $newQuestions = $answeredQuestions = [];
+        if (empty($this->nAuction->getQuestions())) {
+            return [
+                'newQuestions' => $newQuestions,
+                'newAnswerOnQuestions' => $answeredQuestions,
+            ];
+        }
+
+        foreach ($this->nAuction->getQuestions() as $question) {
+            $info = $this->getEntityInfo($this->oAuction->getQuestions(), $question->getId());
+            if ($info->new) {
+                $newQuestions[$question->getId()] = $question;
+            } else {
+                if (empty($info->entity->getAnswer()) && !empty($question->getAnswer())) {
+                    $answeredQuestions[$question->getId()] = $question;
+                }
+            }
+        }
+        return [
+            'newQuestions' => $newQuestions,
+            'newAnswerOnQuestions' => $answeredQuestions,
+        ];
+    }
+
+    /**
+     * @param $questions
+     * @return bool
+     */
+    protected function newQuestions($questions): bool
+    {
+        if (empty($questions)) return false;
+        $this->service->getOwnerOfPurchase();
+        /** @todo notify */
+        /** @todo return notify info */
+    }
+
+    protected function newAnswerOnQuestions($questions)
+    {
+        if (empty($questions)) return false;
+        $requesters = $this->service->getRequesters();
+        if (empty($requesters)) return false;
+        foreach ($requesters as $requester) {
+            /** @todo notify */
+            /** @todo grab answers for one requester */
+        }
+        /** @todo return notify info */
+    }
+
     protected function awards(): void
     {
         $this->qualificationResult();
     }
 
-    protected function getActivatedContract(): ?ContractEntity
-    {
-        if ($this->nAuction->getStatus() != 'complete') return null;
-        if ($this->nAuction->getStatus() == $this->oAuction->getStatus()) return null;
-        if (empty($this->nAuction->getContracts())) return null;
-        foreach ($this->nAuction->getContracts() as $contract) {
-            if ($contract->getStatus() != 'active') continue;
-            $check = $this->getEntityInfo($this->oAuction->getAwards(), $contract->getId());
-            if ($contract->getStatus() == $check->entity->getStatus()) continue;
-            if (!$check->new) continue;
-            return $contract;
-        }
-        return null;
-    }
-
-
-
-    protected function qualificationResult()
+    protected function qualificationResult(): void
     {
         if ($this->nAuction->getVersion() == 'PS') {
             $this->qualificationResultPS();
         } else {
-            $this->qualificationResultEA();
+            $awards = $this->qualificationResultEA();
+            if (empty($awards)) return;
+            foreach ($awards as $award) {
+                switch ($award->getStatus()) {
+                    case '':
+                        /** here is custom notification for some status */
+                        break;
+                    default:
+                        /** status doesn't exist, custom message */
+                }
+
+                /** @todo notify bidder and organizer */
+                $this->service->getOwnerOfPurchase();
+                $this->service->getBidderByID($award->getBidId());
+            }
         }
     }
 
@@ -153,117 +254,52 @@ class AuctionNotifier extends Notifier
      * Сообщение о результатах квалификации первому и второму участнику
      * Версия 2.4
      *
+     * @return AwardEntity[]
      */
-    protected function qualificationResultEA()
+    protected function qualificationResultEA(): array
     {
-        if (empty($this->nAuction->getAwards())) return;
+        if (empty($this->nAuction->getAwards())) return [];
+        $newAwards = [];
         foreach ($this->nAuction->getAwards() as $award) {
             $check = $this->getEntityInfo($this->oAuction->getAwards(), $award->getId());
             if ($check->new && ($check->entity ? $check->entity->getStatus() != $award->getStatus() : true)) {
-                switch ($award->getStatus()) {
-                    case '':
-                        /** here is custom notification for some status */
-                        break;
-                    default:
-                        /** Если указаного статуса в списке нет, то будет отправляться стандартное письмо */
-                }
-
-                /** @todo notify bidder and organizer */
-                $this->service->getOwnerOfPurchase();
-                $this->service->getBidderByID($award->getBidId());
+                $newAwards[] = $award;
             }
         }
+        return $newAwards;
     }
 
-    protected function getQuestions(): array
+    protected function contracts(): void
     {
-        $newQuestions = $answeredQuestions = [];
-        if (empty($this->nAuction->getQuestions())) {
-            return [
-                'newQuestions' => $newQuestions,
-                'newAnswerOnQuestions' => $answeredQuestions,
-            ];
+        $contract = $this->getActivatedContract();
+        if (!$contract) return;
+        /** находим победителя, а точнее bid_id, для поиска в нашей базе */
+        $bidID = $this->nAuction->getAwardById($contract->getAwardID())->getBidId();
+
+        if ($bidID) {
+            /** @todo notify */
+            $bidder = $this->service->getBidderByID($bidID);
         }
 
-        foreach ($this->nAuction->getQuestions() as $question) {
-            $info = $this->getEntityInfo($this->oAuction->getQuestions(), $question->getId());
-            if ($info->new) {
-                $newQuestions[$question->getId()] = $question;
-            } else {
-                if (empty($info->entity->getAnswer()) && !empty($question->getAnswer())) {
-                    $answeredQuestions[$question->getId()] = $question;
-                }
-            }
-        }
-        return [
-            'newQuestions' => $newQuestions,
-            'newAnswerOnQuestions' => $answeredQuestions,
-        ];
-    }
-
-    protected function newQuestions($questions)
-    {
-        if (empty($questions)) return false;
+        /** @todo notify organizer! */
         $this->service->getOwnerOfPurchase();
-        /** @todo notify */
-        /** @todo return notify info */
+
+        /** @todo notify other bidders from our db */
+        $bidders = $this->service->getBidders();
     }
 
-    protected function newAnswerOnQuestions($questions)
+    protected function getActivatedContract(): ?ContractEntity
     {
-        if (empty($questions)) return false;
-        $requesters = $this->service->getRequesters();
-        if (empty($requesters)) return false;
-        foreach ($requesters as $requester) {
-            /** @todo notify */
-            /** @todo grab answers for one requester */
+        if ($this->nAuction->getStatus() != 'complete') return null;
+        if ($this->nAuction->getStatus() == $this->oAuction->getStatus()) return null;
+        if (empty($this->nAuction->getContracts())) return null;
+        foreach ($this->nAuction->getContracts() as $contract) {
+            if ($contract->getStatus() != 'active') continue;
+            $check = $this->getEntityInfo($this->oAuction->getAwards(), $contract->getId());
+            if ($contract->getStatus() == $check->entity->getStatus()) continue;
+            if (!$check->new) continue;
+            return $contract;
         }
-        /** @todo return notify info */
-    }
-
-
-    protected function terminateAuction()
-    {
-        if (!in_array($this->nAuction->getStatus(), ['cancelled', 'unsuccessful'])) return;
-        if ($this->oAuction->getStatus() == $this->nAuction->getStatus()) return;
-
-        $bidderEmail = $this->service->getBiddersEmail();
-        $requesterEmails = $this->service->getRequestersEmail();
-        if (!empty($requesterEmails)) {
-            foreach ($requesterEmails as $email) {
-                if (!empty($bidderEmail) && in_array($email, $bidderEmail)) {
-                    /** @todo requester and bidder. title in email!!!! */
-                    unset($bidderEmail[$email]);
-                }
-
-                /** @todo notify */
-            }
-        }
-        if (!empty($bidderEmail)) {
-            foreach ($bidderEmail as $email) {
-                /** @todo notify */
-            }
-        }
-    }
-
-    protected function auctionChanges()
-    {
-        if ($this->nAuction->getVersion() != 'PS') return;
-        if ($this->nAuction->getStatus() != 'active.tendering') return;
-        $changes = [];
-
-
-        if ($this->oAuction->getValue()->getAmount() != $this->nAuction->getValue()->getAmount()) {
-            $changes['auction.value.amount'] = [$this->oAuction->getValue()->getAmount(), $this->nAuction->getValue()->getAmount()];
-        }
-        if ($this->oAuction->getGuarantee()->getAmount() != $this->nAuction->getGuarantee()->getAmount()) {
-            $changes['auction.guarantee.amount'] = [$this->oAuction->getGuarantee()->getAmount(), $this->nAuction->getGuarantee()->getAmount()];
-        }
-        if ($this->oAuction->getMinimalStep()->getAmount() != $this->nAuction->getMinimalStep()->getAmount()) {
-            $changes['auction.minimalStep.amount'] = [$this->oAuction->getMinimalStep()->getAmount(), $this->nAuction->getMinimalStep()->getAmount()];
-        }
-        foreach ($this->service->getBidders() as $bidder) {
-            /** @todo notify */
-        }
+        return null;
     }
 }

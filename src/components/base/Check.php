@@ -6,7 +6,11 @@
 
 namespace app\components\base;
 
-
+/**
+ * Class Check
+ *
+ * @package app\components\base
+ */
 class Check
 {
     public $entity;
@@ -15,10 +19,10 @@ class Check
     /**
      * Checker constructor.
      *
-     * @param object $entity
+     * @param null|object $entity
      * @param bool $new
      */
-    public function __construct(object $entity, bool $new)
+    public function __construct(?object $entity, bool $new)
     {
         $this->entity = $entity;
         $this->new = $new;

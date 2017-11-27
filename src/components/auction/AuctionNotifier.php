@@ -187,7 +187,7 @@ class AuctionNotifier extends Notifier
         if ($this->nAuction->getVersion() == 'PS') {
             $this->qualificationResultPS();
         } else {
-            $awards = $this->qualificationResultEA();
+            $awards = $this->getAwardsByQualificationResultEA();
             if (empty($awards)) return;
             foreach ($awards as $award) {
                 switch ($award->getStatus()) {
@@ -256,15 +256,14 @@ class AuctionNotifier extends Notifier
      *
      * @return AwardEntity[]
      */
-    protected function qualificationResultEA(): array
+    protected function getAwardsByQualificationResultEA(): array
     {
         if (empty($this->nAuction->getAwards())) return [];
         $newAwards = [];
         foreach ($this->nAuction->getAwards() as $award) {
             $check = $this->getEntityInfo($this->oAuction->getAwards(), $award->getId());
-            if ($check->new && ($check->entity ? $check->entity->getStatus() != $award->getStatus() : true)) {
-                $newAwards[] = $award;
-            }
+            if ($check->entity ? $check->entity->getStatus() == $award->getStatus() : !$check->new) continue;
+            $newAwards[] = $award;
         }
         return $newAwards;
     }
@@ -295,9 +294,8 @@ class AuctionNotifier extends Notifier
         if (empty($this->nAuction->getContracts())) return null;
         foreach ($this->nAuction->getContracts() as $contract) {
             if ($contract->getStatus() != 'active') continue;
-            $check = $this->getEntityInfo($this->oAuction->getAwards(), $contract->getId());
-            if ($contract->getStatus() == $check->entity->getStatus()) continue;
-            if (!$check->new) continue;
+            $check = $this->getEntityInfo($this->oAuction->getContracts(), $contract->getId());
+            if ($check->entity ? $contract->getStatus() == $check->entity->getStatus() : !$check->new) continue;
             return $contract;
         }
         return null;

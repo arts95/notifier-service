@@ -24,7 +24,13 @@ class QuestionEntity extends BaseEntity
     protected $relatedItem;
     protected $dateAnswered;
 
-    public function __construct(array $data)
+    /**
+     * QuestionEntity constructor.
+     *
+     * @param array $data
+     * @param null|string $key
+     */
+    public function __construct(array $data, ?string $key = null)
     {
         parent::__construct($data);
         $data = $this->getDataByKey($data, $key);

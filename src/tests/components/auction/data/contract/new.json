@@ -1,0 +1,494 @@
+{
+  "data": {
+    "procurementMethod": "open",
+    "auctionID": "UA-EA-2017-10-03-000031-2",
+    "awardPeriod": {
+      "startDate": "2017-10-03T15:52:52.799868+03:00",
+      "endDate": "2017-10-03T16:57:14.611836+03:00"
+    },
+    "auctionUrl": "https://auction-sandbox.ea.openprocurement.org/insider-auctions/7de0e677fa304116808c2bc042702faa",
+    "enquiryPeriod": {
+      "startDate": "2017-10-03T11:03:44.705657+03:00",
+      "endDate": "2017-10-03T14:43:42.857142+03:00"
+    },
+    "submissionMethod": "electronicAuction",
+    "dgfDecisionDate": "2017-09-25",
+    "procurementMethodType": "dgfInsider",
+    "awardCriteria": "highestCost",
+    "dgfDecisionID": "54353",
+    "owner": "dgf.byustudio.in.ua",
+    "id": "7de0e677fa304116808c2bc042702faa",
+    "eligibilityCriteria_ru": "Участником электронного аукциона, предметом продажи на которых являются права требования по кредитным договорам и договорам обеспечения, не может быть пользователь, являющийся заёмщиком (должником относительно банка) и\\или поручителем (имущественным поручителем) по таким кредитным договорам и/или договорам обеспечения.",
+    "guarantee": {
+      "currency": "UAH",
+      "amount": 2500
+    },
+    "documents": [
+      {
+        "title": "Місце та форма прийому заяв на участь в аукціоні та банківські реквізити для зарахування гарантійних внесків",
+        "url": "http://torgi.fg.gov.ua/prozorrosale",
+        "documentOf": "tender",
+        "datePublished": "2017-10-03T11:03:44.705937+03:00",
+        "documentType": "x_dgfPlatformLegalDetails",
+        "id": "f421df06c7814438885e617a8924cdd0",
+        "dateModified": "2017-10-03T11:03:44.705959+03:00"
+      },
+      {
+        "hash": "md5:852e33d24471319ccf2604422013a007",
+        "title": "audit_7de0e677fa304116808c2bc042702faa.yaml",
+        "url": "http://public.docs-sandbox.ea.openprocurement.org/get/e3e312686523412d81594183f848921c?KeyID=1816418e&Signature=HlUfHv4L6xRoT0F7KrTUbmswoT09fx3UFw69UnILZbfjjBr7MzRQ%2FvD2fIatWtypbQ6jT36vJLMGX6soKX61BA%253D%253D",
+        "format": "text/plain",
+        "documentOf": "tender",
+        "datePublished": "2017-10-03T15:52:52.474584+03:00",
+        "id": "5b2ed40507e045a488e50d433c9b20e6",
+        "dateModified": "2017-10-03T15:52:52.474606+03:00"
+      },
+      {
+        "hash": "md5:4749a475e1784bdd8d91bb779a2b0e21",
+        "title": "audit_7de0e677fa304116808c2bc042702faa.yaml",
+        "url": "http://public.docs-sandbox.ea.openprocurement.org/get/782cdbfd81b74c2b9ebf73001295d325?KeyID=1816418e&Signature=WSR1YgPj0%2FSRc53PWiCJruZ10nJpC9cOYkyZbD16a6lF5t40xmKJyTM5VZQj2GfIalZCZkE6tK0ie5T0T41uAA%253D%253D",
+        "format": "text/plain",
+        "documentOf": "tender",
+        "datePublished": "2017-10-03T15:52:52.474584+03:00",
+        "id": "5b2ed40507e045a488e50d433c9b20e6",
+        "dateModified": "2017-10-03T15:52:53.106278+03:00"
+      }
+    ],
+    "title": "[ТЕСТУВАННЯ] БВВ - 01 - Тест 16-2",
+    "eligibilityCriteria_en": "The user, who is the borrower (the debtor of the bank) and/or guarantor (property guarantor) for loan agreements and/or collateral agreements, cannot be the bidder of the electronic auction, where the items for sale are the claim rights on such loan agreements and collateral agreements.",
+    "auctionPeriod": {
+      "startDate": "2017-10-03T15:27:02+03:00",
+      "endDate": "2017-10-03T15:52:52.770888+03:00"
+    },
+    "dateModified": "2017-10-03T17:07:19.339550+03:00",
+    "status": "complete",
+    "tenderPeriod": {
+      "startDate": "2017-10-03T11:03:44.705657+03:00",
+      "endDate": "2017-10-03T15:37:02+03:00"
+    },
+    "eligibilityCriteria": "Учасником електронного аукціону, предметом продажу на яких є права вимоги за кредитними договорами та договорами забезпечення, не може бути користувач, який є позичальником (боржником відносно банку) та/або поручителем (майновим поручителем) за такими кредитними договорами та/або договорами забезпечення.",
+    "description": "йцу",
+    "contracts": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:fdc2b1f17a5ac505d022093fbd8729ac",
+            "title": "uisce defects.xlsx",
+            "url": "http://public.docs-sandbox.ea.openprocurement.org/get/ae84980dad4d454bbedbb112e8d453f1?KeyID=1816418e&Signature=03LAslh%2FM9u2baSRCXsD9zex2Mr1%252BzGjHfhRJxqJXCAuQSXArjslnQsHXzmj00Fm%2F152lZio6H1oKd7G%2FB5yCQ%253D%253D",
+            "format": "text/plain",
+            "documentOf": "tender",
+            "datePublished": "2017-10-03T16:59:41.377088+03:00",
+            "documentType": "contractAnnexe",
+            "id": "82c970c8267e48a2a56e0b50c6df97e7",
+            "dateModified": "2017-10-03T16:59:41.377113+03:00"
+          },
+          {
+            "hash": "md5:8274425de767b30b2fff1124ab54abb5",
+            "title": "New Rich Text Document.rtf",
+            "url": "http://public.docs-sandbox.ea.openprocurement.org/get/9768e1bbfb7449f7a965d72d6bf6d2de?KeyID=1816418e&Signature=ICs2UGh3T410LvoxqzsK49jwzNaLjLEZFDyrOXFuPnqCsqqtgklpvnL%2FbhcMIVGrIcRLJXxniL0Klk%2FwWwYVCA%253D%253D",
+            "format": "application/rtf",
+            "documentOf": "tender",
+            "datePublished": "2017-10-03T16:59:43.003579+03:00",
+            "documentType": "contractSigned",
+            "id": "b77738324d744e71a4429a76cf9cc3ec",
+            "dateModified": "2017-10-03T16:59:43.003601+03:00"
+          },
+          {
+            "hash": "md5:d41d8cd98f00b204e9800998ecf8427e",
+            "title": "New Text Document.txt",
+            "url": "http://public.docs-sandbox.ea.openprocurement.org/get/06ded7445e74415b829b82e78eb08227?KeyID=1816418e&Signature=FHWf9FTFGFeLU%2FFnbZmq39IC0SpzsS6KIgJVJgF4wXw78i8GCA%252BA6x1DMbrTJs7%2F6qhPy2mjQCDoJLmP9uGjDg%253D%253D",
+            "format": "text/plain",
+            "documentOf": "tender",
+            "datePublished": "2017-10-03T17:03:42.156038+03:00",
+            "documentType": "contractAnnexe",
+            "id": "d7c7cfe4d96d4e3297bc31c13a6b446e",
+            "dateModified": "2017-10-03T17:03:42.156061+03:00"
+          }
+        ],
+        "items": [
+          {
+            "description": "йцуйцу",
+            "classification": {
+              "scheme": "CAV",
+              "description": "Земельні ділянки",
+              "id": "06000000-2"
+            },
+            "address": {
+              "postalCode": "12121",
+              "countryName": "Україна",
+              "streetAddress": "Головна",
+              "region": "Дніпропетровська",
+              "locality": "Городокс"
+            },
+            "id": "952add440da9c418d1d0540f64b36ab6",
+            "unit": {
+              "code": "KMT",
+              "name": "кілометри"
+            },
+            "quantity": 15
+          }
+        ],
+        "suppliers": [
+          {
+            "additionalIdentifiers": [
+              {
+                "scheme": "UA-FIN",
+                "id": "",
+                "legalName": "Віктор 2"
+              }
+            ],
+            "contactPoint": {
+              "telephone": "+38 012 121-21-21",
+              "name": "Віктор 2-й Білостенний",
+              "email": "b.iviktorqc@gmail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "3211231231",
+              "legalName": "Віктор 2"
+            },
+            "name": "Віктор 2",
+            "address": {
+              "postalCode": "",
+              "countryName": "Україна",
+              "streetAddress": "",
+              "region": "Вінницька область",
+              "locality": ""
+            }
+          }
+        ],
+        "contractNumber": "3241",
+        "value": {
+          "currency": "UAH",
+          "amount": 50000,
+          "valueAddedTaxIncluded": true
+        },
+        "dateSigned": "2017-10-03T16:57:15+03:00",
+        "date": "2017-10-03T17:07:19.339550+03:00",
+        "awardID": "158b8b593bfd4898be6e2560ad973e8d",
+        "id": "081f44c9a02241ec92c7fd1261d064ea",
+        "contractID": "UA-EA-2017-10-03-000031-2-21"
+      }
+    ],
+    "procurementMethodDetails": "quick, accelerator=70",
+    "title_en": "[TESTING] ",
+    "awards": [
+      {
+        "status": "unsuccessful",
+        "paymentPeriod": {
+          "startDate": "2017-10-03T15:52:52.799868+03:00",
+          "endDate": "2017-10-03T22:40:14.828438+03:00"
+        },
+        "documents": [
+          {
+            "hash": "md5:2451739e4d5134cf43923de6f9d3e4c7",
+            "title": "Default.rdp",
+            "url": "http://public.docs-sandbox.ea.openprocurement.org/get/da602bae9f1043a98e938663f745b10b?KeyID=1816418e&Signature=xqCwyfwkV%252BZyMoperppR7%252ByahLV%252B%2FdB694PD7nVjz2fksaSecIKbnCVc%2Fpt7RsJtQl%252BPypwn00OLeVqLx9hdAA%253D%253D",
+            "format": "text/plain",
+            "author": "auction_owner",
+            "documentOf": "tender",
+            "datePublished": "2017-10-03T16:25:42.087402+03:00",
+            "id": "4e81c410f9a84b8587101ed474a9a3fa",
+            "dateModified": "2017-10-03T16:25:42.087425+03:00"
+          }
+        ],
+        "verificationPeriod": {
+          "startDate": "2017-10-03T15:52:52.799868+03:00",
+          "endDate": "2017-10-03T16:25:42.709371+03:00"
+        },
+        "description": " Переможець відмовився від укладення договору купівлі-продажу/відступлення права вимоги Переможець відмовився від укладення договору купівлі-продажу/відступлення права вимоги",
+        "title": "Переможець відмовився від укладення договору купівлі-продажу/відступлення права вимоги",
+        "suppliers": [
+          {
+            "additionalIdentifiers": [
+              {
+                "scheme": "UA-FIN",
+                "id": "",
+                "legalName": "Віктор 1-й Білостенний"
+              }
+            ],
+            "contactPoint": {
+              "telephone": "+38 023 344-34-34",
+              "name": "Віктор Білостенний",
+              "email": "biviktorqc@gmail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "1231231231",
+              "legalName": "Віктор 1-й Білостенний"
+            },
+            "name": "Віктор 1-й Білостенний",
+            "address": {
+              "postalCode": "12312",
+              "countryName": "Україна",
+              "streetAddress": "фіввв",
+              "region": "Вінницька область",
+              "locality": "фві"
+            }
+          }
+        ],
+        "complaintPeriod": {
+          "startDate": "2017-10-03T15:52:52.799868+03:00",
+          "endDate": "2017-10-03T16:25:42.709371+03:00"
+        },
+        "bid_id": "7eb39784d5af47f3a4bf718292f30351",
+        "value": {
+          "currency": "UAH",
+          "amount": 51000,
+          "valueAddedTaxIncluded": true
+        },
+        "date": "2017-10-03T16:25:42.729904+03:00",
+        "id": "472444ddd12148dbbb455e8a0d594758",
+        "signingPeriod": {
+          "startDate": "2017-10-03T15:52:52.799868+03:00",
+          "endDate": "2017-10-03T22:40:14.828438+03:00"
+        }
+      },
+      {
+        "status": "active",
+        "paymentPeriod": {
+          "startDate": "2017-10-03T16:25:42.717045+03:00",
+          "endDate": "2017-10-03T16:57:14.611836+03:00"
+        },
+        "documents": [
+          {
+            "hash": "md5:d41d8cd98f00b204e9800998ecf8427e",
+            "title": "New Text Document.txt",
+            "url": "http://public.docs-sandbox.ea.openprocurement.org/get/992fa631ce294d8cbaf00da23c1c45cf?KeyID=1816418e&Signature=5tmvXp1QSduQHo4p1Aq9S7vpD7fqW28maNX83rpoNLR4kkqbBuRAMyrKw69NOMQs%252Bd0PIkWAE2JgfktBYi89CA%253D%253D",
+            "format": "text/plain",
+            "author": "auction_owner",
+            "documentOf": "tender",
+            "datePublished": "2017-10-03T16:51:43.944264+03:00",
+            "documentType": "auctionProtocol",
+            "id": "6f71cd9ffe0a4018b29525c3d725fc8e",
+            "dateModified": "2017-10-03T16:51:43.944287+03:00"
+          }
+        ],
+        "verificationPeriod": {
+          "startDate": "2017-10-03T16:25:42.717045+03:00",
+          "endDate": "2017-10-03T16:51:44.497644+03:00"
+        },
+        "complaintPeriod": {
+          "startDate": "2017-10-03T15:52:52.799868+03:00",
+          "endDate": "2017-10-03T16:57:14.611836+03:00"
+        },
+        "suppliers": [
+          {
+            "additionalIdentifiers": [
+              {
+                "scheme": "UA-FIN",
+                "id": "",
+                "legalName": "Віктор 2"
+              }
+            ],
+            "contactPoint": {
+              "telephone": "+38 012 121-21-21",
+              "name": "Віктор 2-й Білостенний",
+              "email": "b.iviktorqc@gmail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "3211231231",
+              "legalName": "Віктор 2"
+            },
+            "name": "Віктор 2",
+            "address": {
+              "postalCode": "",
+              "countryName": "Україна",
+              "streetAddress": "",
+              "region": "Вінницька область",
+              "locality": ""
+            }
+          }
+        ],
+        "signingPeriod": {
+          "startDate": "2017-10-03T16:25:42.717045+03:00",
+          "endDate": "2017-10-03T23:12:36.602758+03:00"
+        },
+        "bid_id": "f634af56b30e45d2a8cb3a83733e57ac",
+        "value": {
+          "currency": "UAH",
+          "amount": 50000,
+          "valueAddedTaxIncluded": true
+        },
+        "date": "2017-10-03T16:57:14.629511+03:00",
+        "id": "158b8b593bfd4898be6e2560ad973e8d"
+      }
+    ],
+    "dgfID": "321",
+    "date": "2017-10-03T17:07:19.339550+03:00",
+    "submissionMethodDetails": "quick",
+    "items": [
+      {
+        "description": "йцуйцу",
+        "classification": {
+          "scheme": "CAV",
+          "description": "Земельні ділянки",
+          "id": "06000000-2"
+        },
+        "address": {
+          "postalCode": "12121",
+          "countryName": "Україна",
+          "streetAddress": "Головна",
+          "region": "Дніпропетровська",
+          "locality": "Городокс"
+        },
+        "id": "952add440da9c418d1d0540f64b36ab6",
+        "unit": {
+          "code": "KMT",
+          "name": "кілометри"
+        },
+        "quantity": 15
+      }
+    ],
+    "bids": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:d4bcc3ed75bf4422dccdef224067ce03",
+            "title": "New Text Document.txt",
+            "url": "http://public.docs-sandbox.ea.openprocurement.org/get/b647f15b11284b3184ce491a98ff7d89?KeyID=1816418e&Signature=2xQlWRp6%252B2IWO6pYsOjDV4v733tbsXc%252Beqv%252BYS7UIestfnlAdHYbK93PKmNS%252ByYbgDFsoZ6fTbwl9lMZnrPEBg%253D%253D",
+            "format": "text/plain",
+            "documentOf": "tender",
+            "datePublished": "2017-10-03T14:14:55.155979+03:00",
+            "documentType": "commercialProposal",
+            "id": "b87bbd6110eb437286ba62823fb3bb23",
+            "dateModified": "2017-10-03T14:14:55.156000+03:00"
+          }
+        ],
+        "eligible": true,
+        "value": {
+          "currency": "UAH",
+          "amount": 51000,
+          "valueAddedTaxIncluded": true
+        },
+        "owner": "zakupki.com.ua",
+        "qualified": true,
+        "tenderers": [
+          {
+            "additionalIdentifiers": [
+              {
+                "scheme": "UA-FIN",
+                "id": "",
+                "legalName": "Віктор 1-й Білостенний"
+              }
+            ],
+            "contactPoint": {
+              "telephone": "+38 023 344-34-34",
+              "name": "Віктор Білостенний",
+              "email": "biviktorqc@gmail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "1231231231",
+              "legalName": "Віктор 1-й Білостенний"
+            },
+            "name": "Віктор 1-й Білостенний",
+            "address": {
+              "postalCode": "12312",
+              "countryName": "Україна",
+              "streetAddress": "фіввв",
+              "region": "Вінницька область",
+              "locality": "фві"
+            }
+          }
+        ],
+        "date": "2017-10-03T15:40:54.464234+03:00",
+        "id": "7eb39784d5af47f3a4bf718292f30351",
+        "participationUrl": "https://auction-sandbox.ea.openprocurement.org/insider-auctions/7de0e677fa304116808c2bc042702faa/login?bidder_id=7eb39784d5af47f3a4bf718292f30351&signature=GRWou%2BQWp3Zw76sh0iEZ6LqEZue47Cdj22nCMXeOpP7bx9MKcCxdxbJZw%2B7cklSgkDPe%2BlrkcaBOtQZbqcRIDQ%3D%3D"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:d4bcc3ed75bf4422dccdef224067ce03",
+            "title": "New Text Document.txt",
+            "url": "http://public.docs-sandbox.ea.openprocurement.org/get/03faba19500b4d60ae491c990558f638?KeyID=1816418e&Signature=nBwYuxGzSskdwtusgyMEZkIVOrVcxfvl0a1D8JKP8H0kMkuJ%2FN1ZZD%2FC3ie3P9OjKDyDX%2Fuv7dK6Fn%252BXkhjLAA%253D%253D",
+            "format": "text/plain",
+            "documentOf": "tender",
+            "datePublished": "2017-10-03T14:15:35.804571+03:00",
+            "documentType": "financialLicense",
+            "id": "14dd659aab884ce491766bb7e69292b4",
+            "dateModified": "2017-10-03T14:15:35.804594+03:00"
+          }
+        ],
+        "eligible": true,
+        "value": {
+          "currency": "UAH",
+          "amount": 50000,
+          "valueAddedTaxIncluded": true
+        },
+        "owner": "zakupki.com.ua",
+        "qualified": true,
+        "tenderers": [
+          {
+            "additionalIdentifiers": [
+              {
+                "scheme": "UA-FIN",
+                "id": "",
+                "legalName": "Віктор 2"
+              }
+            ],
+            "contactPoint": {
+              "telephone": "+38 012 121-21-21",
+              "name": "Віктор 2-й Білостенний",
+              "email": "b.iviktorqc@gmail.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "3211231231",
+              "legalName": "Віктор 2"
+            },
+            "name": "Віктор 2",
+            "address": {
+              "postalCode": "",
+              "countryName": "Україна",
+              "streetAddress": "",
+              "region": "Вінницька область",
+              "locality": ""
+            }
+          }
+        ],
+        "date": "2017-10-03T15:27:22.317318+03:00",
+        "id": "f634af56b30e45d2a8cb3a83733e57ac",
+        "participationUrl": "https://auction-sandbox.ea.openprocurement.org/insider-auctions/7de0e677fa304116808c2bc042702faa/login?bidder_id=f634af56b30e45d2a8cb3a83733e57ac&signature=cnzvlmPMtJTF3vdF6p4qp3eF%2Br8Zj0e3xHwM8vm6Lu7KVxvxngal0siRcRkk71CN4HpikJLyY1bJdpsASpQnCA%3D%3D"
+      }
+    ],
+    "value": {
+      "currency": "UAH",
+      "amount": 50000,
+      "valueAddedTaxIncluded": true
+    },
+    "numberOfBids": 2,
+    "minimalStep": {
+      "currency": "UAH",
+      "amount": 0,
+      "valueAddedTaxIncluded": true
+    },
+    "mode": "test",
+    "title_ru": "[ТЕСТИРОВАНИЕ] ",
+    "procuringEntity": {
+      "contactPoint": {
+        "telephone": "+38(097)858-98-71",
+        "name": "Білос Ів Ві",
+        "email": "biviktorqv@gmail.com"
+      },
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "43345678",
+        "legalName": "qwe"
+      },
+      "name": "qwe",
+      "kind": "general",
+      "address": {
+        "postalCode": "78901",
+        "countryName": "Україна",
+        "streetAddress": "456",
+        "region": "Дніпропетровська область",
+        "locality": "123"
+      }
+    }
+  }
+}

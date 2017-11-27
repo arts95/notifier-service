@@ -7,13 +7,12 @@
 namespace app\entity\auction;
 
 
+use app\entity\base\AwardEntity;
 use app\entity\base\BaseEntity;
 use app\entity\base\BidEntity;
 use app\entity\base\ContractEntity;
-use app\entity\base\DocumentEntity;
 use app\entity\base\QuestionEntity;
 use app\entity\base\ValueEntity;
-use app\entity\tender\AwardEntity;
 
 /**
  * Class AuctionEntity
@@ -45,6 +44,9 @@ class AuctionEntity extends BaseEntity
      * @var AwardEntity[]
      */
     protected $awards;
+    /**
+     * @var ContractEntity[]
+     */
     protected $contracts;
     protected $enquiryPeriod;
     protected $tenderPeriod;
@@ -202,6 +204,21 @@ class AuctionEntity extends BaseEntity
 
     /**
      * @param string $id
+     * @return ContractEntity|null
+     */
+    public function getContractById(string $id): ?ContractEntity
+    {
+        if (empty($this->contracts)) return null;
+        foreach ($this->contracts as $contract) {
+            if ($contract->getId() == $id) {
+                return $contract;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * @param string $id
      * @return AwardEntity|null
      */
     public function getAwardById(string $id): ?AwardEntity
@@ -351,6 +368,14 @@ class AuctionEntity extends BaseEntity
         return $this->minNumberOfQualifiedBids;
     }
 
+    public function getVersion()
+    {
+        if (strpos($this->auctionID, 'PS') !== false) {
+            return 'PS';
+        }
+        return 'EA';
+    }
+
     /**
      * @param string $key
      * @return mixed|null
@@ -370,13 +395,5 @@ class AuctionEntity extends BaseEntity
             return $mapper[$key];
         }
         return null;
-    }
-
-    public function getVersion()
-    {
-        if (strpos($this->auctionID, 'PS') !== false) {
-            return 'PS';
-        }
-        return 'EA';
     }
 }

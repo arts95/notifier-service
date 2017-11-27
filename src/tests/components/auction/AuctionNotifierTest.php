@@ -127,4 +127,34 @@ final class AuctionNotifierTest extends BaseTestCase
         $this->assertNotEmpty($data['newAnswerOnQuestions']);
         $this->assertCount(2, $data['newAnswerOnQuestions']);
     }
+
+
+    /**
+     * @test
+     */
+    public function testTerminateAuctionChange(): void
+    {
+        $old = file_get_contents(__DIR__ . '/data/tender/cancel/status-change/old.json');
+        $new = file_get_contents(__DIR__ . '/data/tender/cancel/status-change/new.json');
+        $oAuction = new AuctionEntity(json_decode($old, 1), 'data');
+        $nAuction = new AuctionEntity(json_decode($new, 1), 'data');
+        $auctionNotifier = new AuctionNotifier($oAuction, $nAuction);
+        $data = $this->invokeMethod($auctionNotifier, 'terminateAuction');
+        $this->assertTrue($data);
+    }
+
+    /**
+     * @test
+     */
+    public function testTerminateAuctionEqual(): void
+    {
+        $old = file_get_contents(__DIR__ . '/data/tender/cancel/status-equal/old.json');
+        $new = file_get_contents(__DIR__ . '/data/tender/cancel/status-equal/new.json');
+        $oAuction = new AuctionEntity(json_decode($old, 1), 'data');
+        $nAuction = new AuctionEntity(json_decode($new, 1), 'data');
+        $auctionNotifier = new AuctionNotifier($oAuction, $nAuction);
+        $data = $this->invokeMethod($auctionNotifier, 'terminateAuction');
+        $this->assertFalse($data);
+    }
+
 }

@@ -34,14 +34,17 @@ class BaseService
         $this->purchaseID = $purchaseID;
     }
 
-    public function getBiddersEmail()
+    /**
+     * @return array
+     */
+    public function getBiddersEmail(): array
     {
-        $this->getBidders();
-        /** @todo get emails */
-        return [
-            ['email' => 'email@email.test'],
-            ['email' => 'email@email.test'],
-        ];
+        if (empty($this->getBidders())) return [];
+        $emails = [];
+        foreach ($this->getBidders() as $bidder) {
+            $emails[] = $bidder->getEmail();
+        }
+        return $emails;
     }
 
     public function getBidders(): array
@@ -56,7 +59,7 @@ class BaseService
         if (empty($this->_bidders)) return [];
         $data = [];
         foreach ($this->_bidders as $bidder) {
-            $data[] = new BidderEntity($bidder['id'], $bidder['email'], $bidder['bid']);
+            $data[] = new BidderEntity($bidder['userID'], $bidder['email'], $bidder['bid']);
         }
         return $data;
     }

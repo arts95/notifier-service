@@ -1,0 +1,98 @@
+{
+  "data": {
+    "procurementMethod": "open",
+    "auctionID": "UA-EA-2017-11-27-000013-2",
+    "enquiryPeriod": {
+      "startDate": "2017-11-27T15:52:37.031630+02:00",
+      "endDate": "2017-11-30T15:34:58.285714+02:00"
+    },
+    "submissionMethod": "electronicAuction",
+    "dgfDecisionDate": "2017-11-21",
+    "procurementMethodType": "dgfFinancialAssets",
+    "awardCriteria": "highestCost",
+    "dgfDecisionID": "324234",
+    "owner": "eauction.brizol.net",
+    "id": "575ad94e1e3e48c1a71fa8c12b45164d",
+    "eligibilityCriteria_ru": "Участником электронного аукциона, предметом продажи на которых являются права требования по кредитным договорам и договорам обеспечения, не может быть пользователь, являющийся заёмщиком (должником относительно банка) и\\или поручителем (имущественным поручителем) по таким кредитным договорам и/или договорам обеспечения.",
+    "description": "234",
+    "title": "[ТЕСТУВАННЯ] запитань",
+    "tenderAttempts": 3,
+    "eligibilityCriteria_en": "The user, who is the borrower (the debtor of the bank) and/or guarantor (property guarantor) for loan agreements and/or collateral agreements, cannot be the bidder of the electronic auction, where the items for sale are the claim rights on such loan agreements and collateral agreements.",
+    "auctionPeriod": {
+      "shouldStartAfter": "2017-11-30T15:34:58.285714+02:00"
+    },
+    "guarantee": {
+      "currency": "UAH",
+      "amount": 0.5
+    },
+    "dateModified": "2017-11-27T15:55:05.092048+02:00",
+    "status": "active.tendering",
+    "eligibilityCriteria": "Учасником електронного аукціону, предметом продажу на яких є права вимоги за кредитними договорами та договорами забезпечення, не може бути користувач, який є позичальником (боржником відносно банку) та/або поручителем (майновим поручителем) за такими кредитними договорами та/або договорами забезпечення.",
+    "tenderPeriod": {
+      "startDate": "2017-11-27T15:52:37.031630+02:00",
+      "endDate": "2017-11-30T15:34:58.285714+02:00"
+    },
+    "procurementMethodDetails": "quick, accelerator=70",
+    "title_en": "[TESTING] ",
+    "dgfID": "2",
+    "date": "2017-11-27T15:52:37.405392+02:00",
+    "submissionMethodDetails": "quick",
+    "items": [
+      {
+        "description": "1",
+        "classification": {
+          "scheme": "CAV",
+          "description": "АЗС (автоматичні заправні станції)",
+          "id": "05020000-1"
+        },
+        "address": {
+          "postalCode": "11111",
+          "countryName": "Україна",
+          "streetAddress": "2",
+          "region": "Дніпропетровська",
+          "locality": "1"
+        },
+        "id": "6160df45764b6e54324ba03131eaa4a4",
+        "unit": {
+          "code": "HAR",
+          "name": "гектар"
+        },
+        "quantity": 1
+      }
+    ],
+    "value": {
+      "currency": "UAH",
+      "amount": 10,
+      "valueAddedTaxIncluded": false
+    },
+    "minimalStep": {
+      "currency": "UAH",
+      "amount": 2,
+      "valueAddedTaxIncluded": false
+    },
+    "mode": "test",
+    "title_ru": "[ТЕСТИРОВАНИЕ] ",
+    "next_check": "2017-11-30T15:34:58.285714+02:00",
+    "procuringEntity": {
+      "contactPoint": {
+        "telephone": "+38(111)111-11-11",
+        "name": "Невідома Нова Особа",
+        "email": "buyer.brizol@yandex.com"
+      },
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "65542320",
+        "legalName": "Петррусенко Илья Викторович"
+      },
+      "name": "Петррусенко Илья Викторович",
+      "kind": "general",
+      "address": {
+        "postalCode": "01100",
+        "countryName": "Україна",
+        "streetAddress": "вул. Гарматна, 33",
+        "region": "Київ",
+        "locality": "Київ1"
+      }
+    }
+  }
+}

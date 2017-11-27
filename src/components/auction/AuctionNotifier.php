@@ -6,9 +6,9 @@
 
 namespace app\components\auction;
 
-use app\components\base\Check;
 use app\components\base\Notifier;
 use app\entity\auction\AuctionEntity;
+use app\entity\base\ContractEntity;
 use app\services\AuctionService;
 
 /**
@@ -40,47 +40,60 @@ class AuctionNotifier extends Notifier
         return new AuctionNotifier($oAuction, $nAuction);
     }
 
-    protected function contractActivated()
+    public function analyze(): void
     {
-        if ($this->nAuction->getStatus() != 'complete') return;
-        if ($this->nAuction->getStatus() == $this->oAuction->getStatus()) return;
-        if (empty($this->nAuction->getContracts())) return;
+        $this->questions();
+        $this->awards();
+        $this->contracts();
+    }
+
+    protected function contracts(): void
+    {
+        $contract = $this->getActivatedContract();
+        if (!$contract) return;
+        /** находим победителя, а точнее bid_id, для поиска в нашей базе */
+        $bidID = $this->nAuction->getAwardById($contract->getAwardID())->getBidId();
+
+        if ($bidID) {
+            /** @todo notify */
+            $bidder = $this->service->getBidderByID($bidID);
+        }
+
+        /** @todo notify organizer! */
+        $this->service->getOwnerOfPurchase();
+
+        /** @todo notify other bidders from our db */
+        $bidders = $this->service->getBidders();
+    }
+
+    protected function questions(): void
+    {
+        $data = $this->getQuestions();
+        $this->newQuestions($data['newQuestions']);
+        $this->newAnswerOnQuestions($data['newAnswerOnQuestions']);
+    }
+
+    protected function awards(): void
+    {
+        $this->qualificationResult();
+    }
+
+    protected function getActivatedContract(): ?ContractEntity
+    {
+        if ($this->nAuction->getStatus() != 'complete') return null;
+        if ($this->nAuction->getStatus() == $this->oAuction->getStatus()) return null;
+        if (empty($this->nAuction->getContracts())) return null;
         foreach ($this->nAuction->getContracts() as $contract) {
             if ($contract->getStatus() != 'active') continue;
-            $check = $this->getContractInfo($contract->getId());
+            $check = $this->getEntityInfo($this->oAuction->getAwards(), $contract->getId());
             if ($contract->getStatus() == $check->entity->getStatus()) continue;
             if (!$check->new) continue;
-
-            /** находим победителя, а точнее bid_id, для поиска в нашей базе */
-            $bidID = $this->nAuction->getAwardById($contract->getAwardID())->getBidId();
-
-            if ($bidID) {
-                /** @todo notify */
-                $bidder = $this->service->getBidderByID($bidID);
-            }
-
-            /** @todo notify organizer! */
-            $this->service->getOwnerOfPurchase();
-
-            /** @todo notify other bidders from our db */
-            $bidders = $this->service->getBidders();
+            return $contract;
         }
+        return null;
     }
 
-    /**
-     * @param string $id
-     * @return Check
-     */
-    protected function getContractInfo(string $id): Check
-    {
-        if (empty($this->oAuction->getContracts())) return new Check(null, true);
-        foreach ($this->oAuction->getContracts() as $contract) {
-            if ($contract->getId() == $id) {
-                return new Check($contract, false);
-            }
-        }
-        return new Check(null, true);
-    }
+
 
     protected function qualificationResult()
     {
@@ -104,7 +117,7 @@ class AuctionNotifier extends Notifier
         if (empty($this->nAuction->getAwards())) return;
         $bidIdInAward = [];
         foreach ($this->nAuction->getAwards() as $award) {
-            $check = $this->getAwardInfo($award->getId());
+            $check = $this->getEntityInfo($this->oAuction->getAwards(), $award->getId());
 
             if (in_array($award->getStatus(), ['pending', 'unsuccessful', 'cancelled'])) {
                 /** статусі, когда другие участники еще могут победить */
@@ -137,23 +150,6 @@ class AuctionNotifier extends Notifier
     }
 
     /**
-     * Проверяет изменился ли статус аварда, если $type = check. Если $type = status, возвращает его статус
-     *
-     * @param string $id
-     * @return Check
-     */
-    protected function getAwardInfo(string $id): Check
-    {
-        if (empty($this->oAuction->getAwards())) return new Check(null, true);
-        foreach ($this->oAuction->getAwards() as $award) {
-            if ($award->getId() == $id) {
-                return new Check($award, false);
-            }
-        }
-        return new Check(null, true);
-    }
-
-    /**
      * Сообщение о результатах квалификации первому и второму участнику
      * Версия 2.4
      *
@@ -162,44 +158,11 @@ class AuctionNotifier extends Notifier
     {
         if (empty($this->nAuction->getAwards())) return;
         foreach ($this->nAuction->getAwards() as $award) {
-            $check = $this->getAwardInfo($award->getId());
+            $check = $this->getEntityInfo($this->oAuction->getAwards(), $award->getId());
             if ($check->new && ($check->entity ? $check->entity->getStatus() != $award->getStatus() : true)) {
                 switch ($award->getStatus()) {
-                    /**
-                     * Очікується завантаження та підтвердження протоколу ліквідатором.
-                     */
-                    case 'pending.verification':
-                        /** here is custom notification */
-                        break;
-                    /**
-                     * Учасник з другою найбільшою валідною ставкою чекає поки завершиться процес кваліфікації
-                     * учасника з найвищою валідною ставкою. Він може прийняти рішення не чекати, та забрати
-                     * свій гарантійний внесок, автоматично дискваліфікувавшись.
-                     */
-                    case 'pending.waiting':
-                        /** here is custom notification */
-                        break;
-                    /**
-                     * Очікується оплата. Організатор (ліквідатор) може перевести в статус active шляхом
-                     * підтвердження оплати.
-                     */
-                    case 'pending.payment':
-                        /** here is custom notification */
-                        break;
-                    /**
-                     * Очікується підписання/активація контракту (завантажується та активується в системі
-                     * організатором). Після закінчення періоду підписання (“signingPeriod”), статус “active” стає
-                     * термінальним.
-                     */
-                    case 'active':
-                        /** here is custom notification */
-                        break;
-                    /**
-                     * Термінальний статус. Учасник з другою найвищою валідною ставкою вирішив забрати свій
-                     * гарантійний внесок та не чекати на дискваліфікацію учасника з найвищою ставкою.
-                     */
-                    case 'cancelled':
-                        /** here is custom notification */
+                    case '':
+                        /** here is custom notification for some status */
                         break;
                     default:
                         /** Если указаного статуса в списке нет, то будет отправляться стандартное письмо */
@@ -212,14 +175,18 @@ class AuctionNotifier extends Notifier
         }
     }
 
-    protected function questions()
+    protected function getQuestions(): array
     {
-        /** this function shoul prepare data */
-        if (empty($this->nAuction->getQuestions())) return;
         $newQuestions = $answeredQuestions = [];
+        if (empty($this->nAuction->getQuestions())) {
+            return [
+                'newQuestions' => $newQuestions,
+                'newAnswerOnQuestions' => $answeredQuestions,
+            ];
+        }
 
         foreach ($this->nAuction->getQuestions() as $question) {
-            $info = $this->getQuestionInfo($question->getId());
+            $info = $this->getEntityInfo($this->oAuction->getQuestions(), $question->getId());
             if ($info->new) {
                 $newQuestions[$question->getId()] = $question;
             } else {
@@ -228,8 +195,10 @@ class AuctionNotifier extends Notifier
                 }
             }
         }
-        $this->newQuestions($newQuestions);
-        $this->newAnswerOnQuestions($answeredQuestions);
+        return [
+            'newQuestions' => $newQuestions,
+            'newAnswerOnQuestions' => $answeredQuestions,
+        ];
     }
 
     protected function newQuestions($questions)
@@ -237,6 +206,7 @@ class AuctionNotifier extends Notifier
         if (empty($questions)) return false;
         $this->service->getOwnerOfPurchase();
         /** @todo notify */
+        /** @todo return notify info */
     }
 
     protected function newAnswerOnQuestions($questions)
@@ -248,22 +218,9 @@ class AuctionNotifier extends Notifier
             /** @todo notify */
             /** @todo grab answers for one requester */
         }
+        /** @todo return notify info */
     }
 
-    /**
-     * @param string $id
-     * @return Check
-     */
-    protected function getQuestionInfo(string $id): Check
-    {
-        if (empty($this->oAuction->getQuestions())) return new Check(null, true);
-        foreach ($this->oAuction->getQuestions() as $question) {
-            if ($question->getId() == $id) {
-                return new Check($question, true);
-            }
-        }
-        return new Check(null, false);
-    }
 
     protected function terminateAuction()
     {

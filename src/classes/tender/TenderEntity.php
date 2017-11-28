@@ -506,11 +506,12 @@ class TenderEntity extends BaseEntity
     }
 
     /**
-     * @param null|string $lotID
+     * @param LotEntity|null $lot
      * @return array
      */
-    public function getComplaintsQuestionsId(?string $lotID = null): array
+    public function getComplaintsQuestionsId(?LotEntity $lot = null): array
     {
+        /** @todo should add only for lot */
         $ids = [];
         if (!empty($this->questions)) {
             foreach ($this->questions as $question) {

@@ -20,7 +20,7 @@ class BaseService
 {
     protected $purchaseID;
     protected $_requesters = null;
-    private $_bidders = null;
+    protected $_bidders = null;
     private $_bidder = null;
     private $_ownerOfPurchase = null;
     /** @todo make variables for multiply call functions */
@@ -49,7 +49,6 @@ class BaseService
 
     public function getBidders(): array
     {
-        /** @todo extend in TenderService and add lotID */
         if ($this->_bidders === null) {
             /** @todo make request. */
             $this->_bidders = [

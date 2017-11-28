@@ -8,9 +8,9 @@ namespace app\components\base;
 
 
 use app\entity\auction\AuctionEntity;
+use app\entity\service\EventEntity;
 use app\entity\tender\TenderEntity;
 use app\services\AuctionService;
-use app\services\BaseService;
 use app\services\TenderService;
 
 abstract class Notifier
@@ -27,6 +27,10 @@ abstract class Notifier
      * @var AuctionService|TenderService
      */
     protected $service;
+    /**
+     * @var EventEntity[]
+     */
+    protected $events;
 
     public function notify(object $object): bool
     {
@@ -35,26 +39,15 @@ abstract class Notifier
     }
 
     /**
-     * @param array|null $data
-     * @param string $id
-     * @return Check
+     * @return EventEntity[]
      */
-    protected function getEntityInfo(?array $data, string $id): Check
-    {
-        if (empty($data)) return new Check(null, true);
-        foreach ($data as $entity) {
-            if ($entity->getId() == $id) {
-                return new Check($entity, false);
-            }
-        }
-        return new Check(null, true);
-    }
-
-    protected function questions(): void
+    protected function questions(): array
     {
         $data = $this->getQuestions();
-        $this->newQuestions($data['newQuestions']);
-        $this->newAnswerOnQuestions($data['newAnswerOnQuestions']);
+        $events = [];
+        $events += $this->newQuestions($data['newQuestions']);
+        $events += $this->newAnswerOnQuestions($data['newAnswerOnQuestions']);
+        return $events;
     }
 
     /**
@@ -87,26 +80,53 @@ abstract class Notifier
     }
 
     /**
-     * @param $questions
-     * @return bool
+     * @param array|null $data
+     * @param string $id
+     * @return Check
      */
-    protected function newQuestions($questions): bool
+    protected function getEntityInfo(?array $data, string $id): Check
     {
-        if (empty($questions)) return false;
-        $this->service->getOwnerOfPurchase();
-        /** @todo notify */
-        /** @todo return notify info */
+        if (empty($data)) return new Check(null, true);
+        foreach ($data as $entity) {
+            if ($entity->getId() == $id) {
+                return new Check($entity, false);
+            }
+        }
+        return new Check(null, true);
     }
 
-    protected function newAnswerOnQuestions($questions)
+    /**
+     * @param array $questions
+     * @return EventEntity[]
+     */
+    protected function newQuestions($questions): array
     {
-        if (empty($questions)) return false;
+        if (empty($questions)) return null;
+        $events = [];
+        /** @todo set event id */
+        $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+            'purchase' => $this->nPurchase,
+        ]);
+        return $events;
+    }
+
+    /**
+     * @param array $questions
+     * @return EventEntity[]
+     */
+    protected function newAnswerOnQuestions($questions): array
+    {
+        if (empty($questions)) return [];
         $requesters = $this->service->getRequesters();
-        if (empty($requesters)) return false;
+        if (empty($requesters)) return [];
+        $events = [];
         foreach ($requesters as $requester) {
-            /** @todo notify */
+            /** @todo set event id */
             /** @todo grab answers for one requester */
+            $events[] = new EventEntity('', $requester, [
+                'purchase' => $this->nPurchase,
+            ]);
         }
-        /** @todo return notify info */
+        return $events;
     }
 }

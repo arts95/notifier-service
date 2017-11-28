@@ -4,6 +4,8 @@
  * Date: 24.11.17
  */
 
+use app\entity\service\EventEntity;
+use app\entity\tender\lot\LotEntity;
 use app\entity\tender\TenderEntity;
 use app\services\TenderService;
 
@@ -25,6 +27,7 @@ class TenderNotifier extends \app\components\base\Notifier
         $this->oPurchase = $oTender;
         $this->nPurchase = $nTender;
         $this->service = new TenderService($this->nPurchase->getId());
+        $this->events = [];
     }
 
     public static function getNotifier(TenderEntity $oTender, TenderEntity $nTender): TenderNotifier
@@ -32,64 +35,79 @@ class TenderNotifier extends \app\components\base\Notifier
         return new TenderNotifier($oTender, $nTender);
     }
 
-    protected function terminate()
+    public function analyze(): void
     {
+        $this->events += $this->checkTerminateStatus();
+        $this->events += $this->questions();
+        $this->events += $this->checkAllComplaints();
+        $this->events += $this->checkSecondStage();
+        $this->events += $this->checkPreQualificationResult();
+        $this->events += $this->checkQualificationResult();
+    }
+
+    /**
+     * @return EventEntity[]
+     */
+    protected function checkTerminateStatus(): array
+    {
+        $events = [];
         if (in_array($this->nPurchase->getStatus(), ['cancelled', 'unsuccessful']) && $this->oPurchase->getStatus() != $this->nPurchase->getStatus()) {
-            /** @todo get bidders and notify */
-            /** $bidders = $this->service->getBidders(); */
-            $this->notifyRequesterAboutTerminateStatus();
+            $events += $this->notifyRequesterAboutTerminateStatus();
+            $events += $this->notifyBiddersAboutTerminateStatus();
         } elseif (!empty($this->nPurchase->getLots())) {
             foreach ($this->nPurchase->getLots() as $lot) {
                 if (in_array($lot->getStatus(), ['cancelled', 'unsuccessful'])) {
                     $check = $this->getEntityInfo($this->oPurchase->getLots(), $lot->getId());
                     if ($check->entity ? $lot->getStatus() == $check->entity->getStatus() : !$check->new) continue;
-                    /** $bidders = $this->service->getBidders($lotID); */
-                    /** @todo get bidders and notify */
-                    $this->notifyRequesterAboutTerminateStatus($lot->getId());
+                    $events += $this->notifyRequesterAboutTerminateStatus($lot);
+                    $events += $this->notifyBiddersAboutTerminateStatus($lot);
                 }
             }
         }
+        return $events;
     }
 
-    protected function notifyRequesterAboutTerminateStatus($lotID = null)
+    /**
+     * @todo set id of event
+     * @param LotEntity|null $lot
+     * @return EventEntity[]
+     */
+    protected function notifyRequesterAboutTerminateStatus(?LotEntity $lot = null): array
     {
+        $events = [];
         $requesters = $this->service->getRequesters();
-        $ids = $this->oPurchase->getComplaintsQuestionsId($lotID);
+        $ids = $this->oPurchase->getComplaintsQuestionsId($lot);
         if ($ids) {
             foreach ($requesters as $requester) {
-                /** @todo notify */
+                $events[] = new EventEntity('', $requester, [
+                    'purchase' => $this->nPurchase,
+                    'lot' => $lot,
+                ]);
             }
         }
+        return $events;
     }
 
-    protected function preQualificationResult()
+    /**
+     * @todo set id of event
+     * @param LotEntity|null $lot
+     * @return array
+     */
+    protected function notifyBiddersAboutTerminateStatus(?LotEntity $lot = null): array
     {
-        if ($this->nPurchase->getStatus() != 'active.pre-qualification.stand-still') return;
-        if ($this->nPurchase->getStatus() == $this->oPurchase->getStatus()) return;
-        if (empty($this->nPurchase->getQualifications())) return;
-
-        foreach ($this->nPurchase->getQualifications() as $qualification) {
-            if ($qualification->getStatus() == 'cancelled' || !$qualification->getBidID()) continue;
-            $bid = $this->service->getBidderByID($qualification->getBidID());
-            if ($bid) {
-                /** @todo notify */
-            }
+        $bidders = $this->service->getBidders($lot ? $lot->getId() : null);
+        if (empty($bidders)) return [];
+        $events = [];
+        foreach ($bidders as $bidder) {
+            $events[] = new EventEntity('', $bidder, [
+                'purchase' => $this->nPurchase,
+                'lot' => $lot,
+            ]);
         }
+        return $events;
     }
 
-    protected function qualificationResult()
-    {
-        /** @todo check purchase status */
-        if (empty($this->nPurchase->getAwards())) return;
-        foreach ($this->nPurchase->getAwards() as $award) {
-            $check = $this->getEntityInfo($this->oPurchase->getAwards(), $award->getId());
-            if ($check->entity ? $check->entity->getStatus() == $award->getStatus() : !$check->new) continue;
-            $bidder = $this->service->getBidderByID($award->getBidId());
-            /** @todo notify $bidder */
-        }
-    }
-
-    protected function complaints()
+    protected function checkAllComplaints()
     {
         /** @todo check purchase status */
         $requesters = $this->service->getRequesters();
@@ -97,33 +115,60 @@ class TenderNotifier extends \app\components\base\Notifier
         foreach ($requesters as $requester) {
             if (empty($requester->getComplaints())) continue;
             foreach ($requester->getComplaints() as $complaint) {
-                $this->purchaseComplaints($complaint->getId());
-                $this->qualificationComplaints($complaint->getId());
-                $this->awardComplaints($complaint->getId());
+                $this->checkPurchaseComplaints($complaint->getId());
+                $this->checkQualificationComplaints($complaint->getId());
+                $this->checkAwardComplaints($complaint->getId());
             }
         }
     }
 
-    protected function purchaseComplaints(string $complaintID)
+    /**
+     * @todo set id of event
+     * @param string $complaintID
+     * @return EventEntity[]
+     */
+    protected function checkPurchaseComplaints(string $complaintID): array
     {
-        if (empty($this->nPurchase->getComplaints())) return;
+        if (empty($this->nPurchase->getComplaints())) return [];
+        $events = [];
         foreach ($this->nPurchase->getComplaints() as $complaint) {
             if ($complaint->getId() != $complaintID) continue;
             $check = $this->getEntityInfo($this->oPurchase->getComplaints(), $complaint->getId());
             if ($check->entity ? $check->entity->getStatus() == $complaint->getStatus() : !$check->new) continue;
             /** @todo check status */
             if (in_array($complaint->getStatus(), ['accepted', 'satisfied', 'declined', 'invalid', 'mistaken', 'answered'])) {
-                /** @todo notify requester and organizer */
+                /** @todo set id of event */
+                $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
+                    'purchase' => $this->nPurchase,
+                    'complaint' => $complaint,
+                ]);
+                $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                    'purchase' => $this->nPurchase,
+                    'complaint' => $complaint,
+                ]);
             } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
-                /** @todo notify organizer about new complaint and requester about create */
+                /** @todo set id of event */
+                $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
+                    'purchase' => $this->nPurchase,
+                    'complaint' => $complaint,
+                ]);
+                $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                    'purchase' => $this->nPurchase,
+                    'complaint' => $complaint,
+                ]);
             }
         }
+        return $events;
     }
 
-    protected function qualificationComplaints(string $complaintID)
+    /**
+     * @param string $complaintID
+     * @return EventEntity[]
+     */
+    protected function checkQualificationComplaints(string $complaintID): array
     {
-        if (empty($this->nPurchase->getQualifications())) return;
-
+        if (empty($this->nPurchase->getQualifications())) return [];
+        $events = [];
         foreach ($this->nPurchase->getQualifications() as $qualification) {
             if (empty($qualification->getComplaints())) continue;
             foreach ($qualification->getComplaints() as $complaint) {
@@ -132,17 +177,39 @@ class TenderNotifier extends \app\components\base\Notifier
                 if ($check->entity ? $check->entity->getStatus() == $complaint->getStatus() : !$check->new) continue;
                 /** @todo check status */
                 if (in_array($complaint->getStatus(), ['accepted', 'satisfied', 'declined', 'invalid', 'mistaken'])) {
-                    /** @todo notify requester and organizer */
+                    /** @todo set id of event */
+                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
                 } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
-                    /** @todo notify organizer about new complaint and requester about create */
+                    /** @todo set id of event */
+                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
                 }
             }
         }
+        return $events;
     }
 
-    protected function awardComplaints(string $complaintID)
+    /**
+     * @param string $complaintID
+     * @return EventEntity[]
+     */
+    protected function checkAwardComplaints(string $complaintID): array
     {
-        if (empty($this->nPurchase->getAwards())) return;
+        if (empty($this->nPurchase->getAwards())) return [];
+        $events = [];
         foreach ($this->nPurchase->getAwards() as $award) {
             if (empty($award->getComplaints())) continue;
             foreach ($award->getComplaints() as $complaint) {
@@ -151,19 +218,95 @@ class TenderNotifier extends \app\components\base\Notifier
                 if ($check->entity ? $check->entity->getStatus() == $complaint->getStatus() : !$check->new) continue;
                 /** @todo check status */
                 if (in_array($complaint->getStatus(), ['accepted', 'satisfied', 'declined', 'invalid', 'mistaken', 'resolved', 'stopped', 'stopping', 'answered'])) {
-                    /** @todo notify requester and organizer */
+                    /** @todo set id of event */
+                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
                 } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
-                    /** @todo notify organizer about new complaint and requester about create */
+                    /** @todo set id of event */
+                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
                 }
             }
         }
+        return $events;
     }
 
-    protected function secondStage()
+    /**
+     * @return EventEntity[]
+     */
+    protected function checkSecondStage(): array
     {
-        if ($this->nPurchase->getStage2TenderID()) {
-            /** @todo notify about new stage */
+        if (!$this->nPurchase->getStage2TenderID()) return [];
+        if (empty($this->service->getActiveBidders())) return [];
+        $events = [];
+        foreach ($this->service->getActiveBidders() as $bidder) {
+            /** @todo set id of event */
+            $events[] = new EventEntity('', $bidder, [
+                'purchase' => $this->nPurchase,
+            ]);
         }
+        /** @todo set id of event */
+        $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+            'purchase' => $this->nPurchase,
+        ]);
+        return $events;
+    }
+
+
+    /**
+     * @return EventEntity[]
+     */
+    protected function checkPreQualificationResult(): array
+    {
+        if ($this->nPurchase->getStatus() != 'active.pre-qualification.stand-still') return [];
+        if ($this->nPurchase->getStatus() == $this->oPurchase->getStatus()) return [];
+        if (empty($this->nPurchase->getQualifications())) return [];
+        $events = [];
+        foreach ($this->nPurchase->getQualifications() as $qualification) {
+            if ($qualification->getStatus() == 'cancelled' || !$qualification->getBidID()) continue;
+            $bidder = $this->service->getBidderByID($qualification->getBidID());
+            if ($bidder) {
+                /** @todo set id of event */
+                $events[] = new EventEntity('', $bidder, [
+                    'purchase' => $this->nPurchase,
+                    'qualification' => $qualification,
+                ]);
+            }
+        }
+        return $events;
+    }
+
+    /**
+     * @return EventEntity[]
+     */
+    protected function checkQualificationResult(): array
+    {
+        /** @todo check purchase status */
+        if (empty($this->nPurchase->getAwards())) return [];
+        $events = [];
+        foreach ($this->nPurchase->getAwards() as $award) {
+            $check = $this->getEntityInfo($this->oPurchase->getAwards(), $award->getId());
+            if ($check->entity ? $check->entity->getStatus() == $award->getStatus() : !$check->new) continue;
+            $bidder = $this->service->getBidderByID($award->getBidId());
+            /** @todo set id of event */
+            $events[] = new EventEntity('', $bidder, [
+                'purchase' => $this->nPurchase,
+                'award' => $award,
+            ]);
+        }
+        return $events;
     }
 
 }

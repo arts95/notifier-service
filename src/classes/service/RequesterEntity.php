@@ -17,12 +17,23 @@ class RequesterEntity extends UserEntity
      * @var QuestionEntity[]
      */
     protected $questions;
+    /**
+     * @var ComplaintEntity[]
+     */
+    protected $complaints;
 
-    public function __construct(string $uid, string $email, array $questions)
+    public function __construct(string $uid, string $email, array $questions, array $complaints)
     {
         parent::__construct($uid, $email);
-        foreach ($questions as $question) {
-            $this->questions[] = new QuestionEntity($question['id'] ?? null);
+        if (!empty($questions)) {
+            foreach ($questions as $question) {
+                $this->questions[] = new QuestionEntity($question['id'] ?? null);
+            }
+        }
+        if (!empty($complaints)) {
+            foreach ($complaints as $complaint) {
+                $this->complaints[] = new ComplaintEntity($complaint['id'] ?? null, $complaint['status'] ?? null);
+            }
         }
     }
 
@@ -37,4 +48,19 @@ class RequesterEntity extends UserEntity
         return $qIDs;
     }
 
+    /**
+     * @return QuestionEntity[]
+     */
+    public function getQuestions(): array
+    {
+        return $this->questions;
+    }
+
+    /**
+     * @return ComplaintEntity[]
+     */
+    public function getComplaints(): array
+    {
+        return $this->complaints;
+    }
 }

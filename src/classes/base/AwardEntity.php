@@ -6,6 +6,8 @@
 
 namespace app\entity\base;
 
+use app\entity\tender\ComplaintEntity;
+
 
 /**
  * Class AwardEntity
@@ -125,7 +127,7 @@ class AwardEntity extends BaseEntity
     }
 
     /**
-     * @return mixed
+     * @return ComplaintEntity[]
      */
     public function getComplaints()
     {

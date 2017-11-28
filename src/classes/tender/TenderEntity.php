@@ -10,6 +10,7 @@ use app\entity\base\BaseEntity;
 use app\entity\base\DateEntity;
 use app\entity\base\item\ItemEntity;
 use app\entity\base\OrganizationEntity;
+use app\entity\base\QuestionEntity;
 use app\entity\base\ValueBaseEntity;
 use app\entity\base\ValueEntity;
 use app\entity\tender\lot\LotEntity;
@@ -39,10 +40,19 @@ class TenderEntity extends BaseEntity
     protected $items;
     protected $features;
     protected $documents;
+    /**
+     * @var QuestionEntity[]
+     */
     protected $questions;
+    /**
+     * @var ComplaintEntity[]
+     */
     protected $complaints;
     protected $bids;
     protected $minimalStep;
+    /**
+     * @var AwardEntity[]
+     */
     protected $awards;
     protected $contracts;
     protected $enquiryPeriod;
@@ -52,9 +62,15 @@ class TenderEntity extends BaseEntity
     protected $auctionUrl;
     protected $awardPeriod;
     protected $status;
+    /**
+     * @var LotEntity[]
+     */
     protected $lots;
     protected $cancellations;
     protected $revisions;
+    /**
+     * @var QualificationEntity[]
+     */
     protected $qualifications;
     protected $guarantee;
     protected $qualificationPeriod;
@@ -221,7 +237,7 @@ class TenderEntity extends BaseEntity
     }
 
     /**
-     * @return mixed
+     * @return ComplaintEntity[]
      */
     public function getComplaints()
     {
@@ -245,7 +261,7 @@ class TenderEntity extends BaseEntity
     }
 
     /**
-     * @return mixed
+     * @return AwardEntity[]
      */
     public function getAwards()
     {
@@ -325,7 +341,7 @@ class TenderEntity extends BaseEntity
     }
 
     /**
-     * @return mixed
+     * @return QualificationEntity[]
      */
     public function getQualifications()
     {
@@ -461,6 +477,70 @@ class TenderEntity extends BaseEntity
     }
 
     /**
+     * @param $lotID
+     * @return LotEntity|null
+     */
+    public function getLotById($lotID): ?LotEntity
+    {
+        if (empty($this->lots)) return null;
+        foreach ($this->lots as $lot) {
+            if ($lot->getId() == $lotID) {
+                return $lot;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * @param string $awardID
+     * @return ComplaintEntity[]
+     */
+    public function getComplaintsByAward(string $awardID): array
+    {
+        if (empty($this->awards)) return [];
+        foreach ($this->awards as $award) {
+            if ($awardID != $award->getId()) continue;
+            return $award->getComplaints();
+        }
+        return [];
+    }
+
+    /**
+     * @param null|string $lotID
+     * @return array
+     */
+    public function getComplaintsQuestionsId(?string $lotID = null): array
+    {
+        $ids = [];
+        if (!empty($this->questions)) {
+            foreach ($this->questions as $question) {
+                $ids[] = $question->getId();
+            }
+        }
+
+        if (!empty($this->complaints)) {
+            foreach ($this->complaints as $complaint) {
+                $ids[] = $complaint->getId();
+            }
+        }
+        return $ids;
+    }
+
+    /**
+     * @param string $qualificationID
+     * @return ComplaintEntity[]
+     */
+    public function getComplaintsByQualification(string $qualificationID): array
+    {
+        if (empty($this->qualifications)) return [];
+        foreach ($this->qualifications as $qualification) {
+            if ($qualificationID != $qualification->getId()) continue;
+            return $qualification->getComplaints();
+        }
+        return [];
+    }
+
+    /**
      * @param string $key
      * @return mixed|null
      */
@@ -484,5 +564,4 @@ class TenderEntity extends BaseEntity
         }
         return null;
     }
-
 }

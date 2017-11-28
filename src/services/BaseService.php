@@ -19,7 +19,7 @@ use app\entity\service\UserEntity;
 class BaseService
 {
     protected $purchaseID;
-    private $_requesters = null;
+    protected $_requesters = null;
     private $_bidders = null;
     private $_bidder = null;
     private $_ownerOfPurchase = null;
@@ -49,6 +49,7 @@ class BaseService
 
     public function getBidders(): array
     {
+        /** @todo extend in TenderService and add lotID */
         if ($this->_bidders === null) {
             /** @todo make request. */
             $this->_bidders = [
@@ -107,7 +108,7 @@ class BaseService
         if (empty($this->_requesters)) return [];
         $data = [];
         foreach ($this->_requesters as $requester) {
-            $data[] = new RequesterEntity($requester['userID'], $requester['email'], $requester['questions']);
+            $data[] = new RequesterEntity($requester['userID'], $requester['email'], $requester['questions'], []);
         }
         return $data;
     }

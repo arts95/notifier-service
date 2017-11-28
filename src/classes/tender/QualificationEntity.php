@@ -102,7 +102,7 @@ class QualificationEntity extends BaseEntity
     }
 
     /**
-     * @return mixed
+     * @return ComplaintEntity[]
      */
     public function getComplaints()
     {

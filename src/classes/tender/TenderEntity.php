@@ -37,6 +37,9 @@ class TenderEntity extends BaseEntity
     protected $tenderID;
     protected $procuringEntity;
     protected $value;
+    /**
+     * @var ItemEntity[]
+     */
     protected $items;
     protected $features;
     protected $documents;
@@ -511,20 +514,48 @@ class TenderEntity extends BaseEntity
      */
     public function getComplaintsQuestionsId(?LotEntity $lot = null): array
     {
-        /** @todo should add only for lot */
         $ids = [];
         if (!empty($this->questions)) {
             foreach ($this->questions as $question) {
-                $ids[] = $question->getId();
+                if ($lot === null) {
+                    $ids[] = $question->getId();
+                } else {
+                    if ($lot->getId() == $question->getRelatedItem()) {
+                        $ids[] = $question->getId();
+                    } elseif ($item = $this->getItemById($question->getRelatedItem())) {
+                        if ($lot->getId() === $item->getRelatedLot()) {
+                            $ids[] = $question->getId();
+                        }
+                    }
+                }
             }
         }
 
         if (!empty($this->complaints)) {
             foreach ($this->complaints as $complaint) {
-                $ids[] = $complaint->getId();
+                if ($lot === null) {
+                    $ids[] = $complaint->getId();
+                } elseif ($lot->getId() == $complaint->getRelatedLot()) {
+                    $ids[] = $complaint->getId();
+                }
             }
         }
         return $ids;
+    }
+
+    /**
+     * @param $relatedItem
+     * @return ItemEntity|null
+     */
+    public function getItemById($relatedItem): ?ItemEntity
+    {
+        if (empty($this->items)) return null;
+        foreach ($this->items as $item) {
+            if ($item->getId() == $relatedItem) {
+                return $item;
+            }
+        }
+        return null;
     }
 
     /**

@@ -134,8 +134,8 @@ final class AuctionNotifierTest extends BaseTestCase
      */
     public function testTerminateAuctionChange(): void
     {
-        $old = file_get_contents(__DIR__ . '/data/tender/cancel/status-change/old.json');
-        $new = file_get_contents(__DIR__ . '/data/tender/cancel/status-change/new.json');
+        $old = file_get_contents(__DIR__ . '/data/auction/cancel/status-change/old.json');
+        $new = file_get_contents(__DIR__ . '/data/auction/cancel/status-change/new.json');
         $oAuction = new AuctionEntity(json_decode($old, 1), 'data');
         $nAuction = new AuctionEntity(json_decode($new, 1), 'data');
         $auctionNotifier = new AuctionNotifier($oAuction, $nAuction);
@@ -148,8 +148,8 @@ final class AuctionNotifierTest extends BaseTestCase
      */
     public function testTerminateAuctionEqual(): void
     {
-        $old = file_get_contents(__DIR__ . '/data/tender/cancel/status-equal/old.json');
-        $new = file_get_contents(__DIR__ . '/data/tender/cancel/status-equal/new.json');
+        $old = file_get_contents(__DIR__ . '/data/auction/cancel/status-equal/old.json');
+        $new = file_get_contents(__DIR__ . '/data/auction/cancel/status-equal/new.json');
         $oAuction = new AuctionEntity(json_decode($old, 1), 'data');
         $nAuction = new AuctionEntity(json_decode($new, 1), 'data');
         $auctionNotifier = new AuctionNotifier($oAuction, $nAuction);

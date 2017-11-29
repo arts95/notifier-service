@@ -9,8 +9,6 @@ namespace app\entity\service;
 
 class BidderEntity extends UserEntity
 {
-    protected $uid;
-    protected $email;
     protected $bid;
 
     /**
@@ -23,7 +21,14 @@ class BidderEntity extends UserEntity
     public function __construct($uid, $email, $bid)
     {
         parent::__construct($uid, $email);
-        $this->bid = new BidEntity($bid['id'] ?? null, $bid['status'] ?? null);
+        $this->bid = new BidEntity($bid['id'] ?? null, $bid['status'] ?? null, $bid['lotValues'] ?? null);
     }
 
+    /**
+     * @return BidEntity
+     */
+    public function getBid(): BidEntity
+    {
+        return $this->bid;
+    }
 }

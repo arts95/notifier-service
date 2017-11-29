@@ -37,6 +37,9 @@ class RequesterEntity extends UserEntity
         }
     }
 
+    /**
+     * @return array
+     */
     public function getQuestionsId(): array
     {
         if (empty($this->questions)) return [];
@@ -46,6 +49,20 @@ class RequesterEntity extends UserEntity
             $qIDs[] = $question->getId();
         }
         return $qIDs;
+    }
+
+    /**
+     * @return array
+     */
+    public function getComplaintsId(): array
+    {
+        if (empty($this->complaints)) return [];
+        $cIDs = [];
+        foreach ($this->complaints as $complaint) {
+            if (!$complaint->getId()) continue;
+            $cIDs[] = $complaint->getId();
+        }
+        return $cIDs;
     }
 
     /**

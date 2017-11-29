@@ -13,6 +13,22 @@ use app\entity\service\RequesterEntity;
 class TenderService extends BaseService
 {
     /**
+     * @param string $complaintID
+     * @return RequesterEntity|null
+     */
+    public function getRequesterByComplaintId(string $complaintID): ?RequesterEntity
+    {
+        if (empty($this->getRequesters())) return null;
+        foreach ($this->getRequesters() as $requester) {
+            if (empty($requester->getComplaintsId())) continue;
+            if (in_array($complaintID, $requester->getComplaintsId())) {
+                return $requester;
+            }
+        }
+        return null;
+    }
+
+    /**
      * @return RequesterEntity[]
      */
     public function getRequesters(): array
@@ -32,10 +48,19 @@ class TenderService extends BaseService
         return $data;
     }
 
-    public function getRequesterByComplaintId(string $complaintID)
+    /**
+     * @param null|string $lotID
+     * @return array
+     */
+    public function getActiveBidders(?string $lotID = null): array
     {
-        /** @todo write find method !!! */
-        return new RequesterEntity('userID', 'email', [], []);
+        if (empty($this->getBidders($lotID))) return [];
+        $bidders = [];
+        foreach ($this->getBidders($lotID) as $bidder) {
+            if ($bidder->getBid()->getStatus() !== 'active') continue;
+            $bidders[] = $bidder;
+        }
+        return $bidders;
     }
 
     /**
@@ -44,25 +69,26 @@ class TenderService extends BaseService
      */
     public function getBidders(?string $lotID = null): array
     {
-        /** @todo make request with $lotID !!! */
         if ($this->_bidders === null) {
             /** @todo make request. */
             $this->_bidders = [
-                ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']],
+                ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active', 'lotValues' => ['lotID' => '12321', 'status' => 'active']]],
                 ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']],
             ];
         }
         if (empty($this->_bidders)) return [];
         $data = [];
         foreach ($this->_bidders as $bidder) {
-            $data[] = new BidderEntity($bidder['userID'], $bidder['email'], $bidder['bid']);
+            if ($lotID !== null) {
+                $bidder = new BidderEntity($bidder['userID'], $bidder['email'], $bidder['bid']);
+                if (in_array($lotID, $bidder->getBid()->getLotValues())) {
+                    $data[] = $bidder;
+                }
+                unset($bidder);
+            } else {
+                $data[] = new BidderEntity($bidder['userID'], $bidder['email'], $bidder['bid']);
+            }
         }
         return $data;
-    }
-
-    public function getActiveBidders(?string $lotID = null): array
-    {
-        /** @todo write filter !!! */
-        return $this->getBidders($lotID);
     }
 }

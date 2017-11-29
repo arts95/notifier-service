@@ -1,0 +1,207 @@
+{
+  "data": {
+    "procurementMethod": "open",
+    "complaintPeriod": {
+      "startDate": "2017-11-29T15:17:00+02:00",
+      "endDate": "2017-12-07T15:13:00+02:00"
+    },
+    "enquiryPeriod": {
+      "startDate": "2017-11-29T15:17:00+02:00",
+      "clarificationsUntil": "2017-12-07T15:10:00+02:00",
+      "endDate": "2017-12-07T15:07:00+02:00",
+      "invalidationDate": "2017-11-29T15:17:08.307462+02:00"
+    },
+    "submissionMethod": "electronicAuction",
+    "procurementMethodType": "aboveThresholdUA",
+    "awardCriteria": "lowestCost",
+    "questions": [
+      {
+        "date": "2017-11-29T15:19:16.822886+02:00",
+        "description": "question n1question n1question n1question n1question n1question n1question n1",
+        "id": "bb40369263c8433bb8b5cd36d8033059",
+        "questionOf": "tender",
+        "title": "question n1 tender"
+      },
+      {
+        "description": "question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1",
+        "title": "question n2 lot 1",
+        "relatedItem": "e229575c5f8465e25ef8dedd00895110",
+        "date": "2017-11-29T15:19:52.922404+02:00",
+        "id": "de50ea82174845439760aafe19c1cecf",
+        "questionOf": "lot"
+      },
+      {
+        "description": "question n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerv",
+        "title": "question n3 geger",
+        "relatedItem": "83b8dd11874bfb495b594f9a0662f264",
+        "date": "2017-11-29T15:20:16.585026+02:00",
+        "id": "3ff1f81faea34fc0b2f48a1e01d269f4",
+        "questionOf": "item"
+      }
+    ],
+    "owner": "brizol.net",
+    "id": "14d926e4ae944208a83d3b8e68e94185",
+    "description": "rff",
+    "title": "[\u0422\u0415\u0421\u0422\u0423\u0412\u0410\u041d\u041d\u042f] rfdrf",
+    "lots": [
+      {
+        "status": "active",
+        "description": "erferf",
+        "title": "lot1",
+        "minimalStep": {
+          "currency": "UAH",
+          "amount": 234.34,
+          "valueAddedTaxIncluded": false
+        },
+        "auctionPeriod": {
+          "shouldStartAfter": "2017-12-07T15:17:00+02:00"
+        },
+        "title_en": "",
+        "description_en": "",
+        "value": {
+          "currency": "UAH",
+          "amount": 23434.0,
+          "valueAddedTaxIncluded": false
+        },
+        "date": "2017-11-29T15:17:07.914892+02:00",
+        "id": "e229575c5f8465e25ef8dedd00895110",
+        "guarantee": {
+          "currency": "UAH",
+          "amount": 0.0
+        }
+      },
+      {
+        "status": "active",
+        "description": "erferf",
+        "title": "lot2",
+        "minimalStep": {
+          "currency": "UAH",
+          "amount": 1232.31,
+          "valueAddedTaxIncluded": false
+        },
+        "auctionPeriod": {
+          "shouldStartAfter": "2017-12-07T15:17:00+02:00"
+        },
+        "title_en": "",
+        "description_en": "",
+        "value": {
+          "currency": "UAH",
+          "amount": 123231.0,
+          "valueAddedTaxIncluded": false
+        },
+        "date": "2017-11-29T15:17:07.914892+02:00",
+        "id": "3ed67f7ade15c5be65dee3f64546b2a9",
+        "guarantee": {
+          "currency": "UAH",
+          "amount": 0.0
+        }
+      }
+    ],
+    "tenderID": "UA-2017-11-29-000089-a",
+    "guarantee": {
+      "currency": "UAH",
+      "amount": 0.0
+    },
+    "dateModified": "2017-11-29T15:20:16.612626+02:00",
+    "status": "active.tendering",
+    "tenderPeriod": {
+      "startDate": "2017-11-29T15:17:00+02:00",
+      "endDate": "2017-12-07T15:17:00+02:00"
+    },
+    "procurementMethodDetails": "quick, accelerator=1440",
+    "title_en": "[TESTING] ",
+    "description_en": "",
+    "date": "2017-11-29T15:17:08.323700+02:00",
+    "submissionMethodDetails": "quick",
+    "items": [
+      {
+        "relatedLot": "e229575c5f8465e25ef8dedd00895110",
+        "description": "drgre",
+        "classification": {
+          "scheme": "\u0414\u041a021",
+          "description": "\u0421\u0456\u043b\u044c\u0441\u044c\u043a\u043e\u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u0441\u044c\u043a\u0430, \u0444\u0435\u0440\u043c\u0435\u0440\u0441\u044c\u043a\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f, \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f \u0440\u0438\u0431\u0430\u043b\u044c\u0441\u0442\u0432\u0430, \u043b\u0456\u0441\u0456\u0432\u043d\u0438\u0446\u0442\u0432\u0430 \u0442\u0430 \u0441\u0443\u043f\u0443\u0442\u043d\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f",
+          "id": "03000000-1"
+        },
+        "description_en": "",
+        "deliveryAddress": {
+          "postalCode": "12345",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+          "streetAddress": "efrfref",
+          "region": "\u041a\u0438\u0457\u0432",
+          "locality": "referf"
+        },
+        "deliveryDate": {
+          "startDate": "2016-12-31T00:00:00+02:00",
+          "endDate": "2020-01-07T00:00:00+02:00"
+        },
+        "id": "8b134feeb14db10069228c2e42ea8295",
+        "unit": {
+          "code": "BX",
+          "name": "\u044f\u0449\u0438\u043a"
+        },
+        "quantity": 23
+      },
+      {
+        "relatedLot": "3ed67f7ade15c5be65dee3f64546b2a9",
+        "description": "gerger",
+        "classification": {
+          "scheme": "\u0414\u041a021",
+          "description": "\u0421\u0456\u043b\u044c\u0441\u044c\u043a\u043e\u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u0441\u044c\u043a\u0430, \u0444\u0435\u0440\u043c\u0435\u0440\u0441\u044c\u043a\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f, \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f \u0440\u0438\u0431\u0430\u043b\u044c\u0441\u0442\u0432\u0430, \u043b\u0456\u0441\u0456\u0432\u043d\u0438\u0446\u0442\u0432\u0430 \u0442\u0430 \u0441\u0443\u043f\u0443\u0442\u043d\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f",
+          "id": "03000000-1"
+        },
+        "description_en": "",
+        "deliveryAddress": {
+          "postalCode": "12345",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+          "streetAddress": "ergerg",
+          "region": "\u041a\u0438\u0457\u0432",
+          "locality": "ergreger"
+        },
+        "deliveryDate": {
+          "startDate": "2017-01-05T00:00:00+02:00",
+          "endDate": "2020-01-27T00:00:00+02:00"
+        },
+        "id": "83b8dd11874bfb495b594f9a0662f264",
+        "unit": {
+          "code": "BX",
+          "name": "\u044f\u0449\u0438\u043a"
+        },
+        "quantity": 234
+      }
+    ],
+    "value": {
+      "currency": "UAH",
+      "amount": 146665.0,
+      "valueAddedTaxIncluded": false
+    },
+    "minimalStep": {
+      "currency": "UAH",
+      "amount": 234.34,
+      "valueAddedTaxIncluded": false
+    },
+    "mode": "test",
+    "title_ru": "[\u0422\u0415\u0421\u0422\u0418\u0420\u041e\u0412\u0410\u041d\u0418\u0415] ",
+    "procuringEntity": {
+      "contactPoint": {
+        "telephone": "+38(123)456-78-90",
+        "name_en": "Persons[userSurname_en] Persons[userName_en] ",
+        "name": "Persons[userSurname] Persons[userName] Persons[userPatronymic]",
+        "email": "example@example.com"
+      },
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "84567891",
+        "legalName": "\u041a\u043e\u043c\u043f\u0430\u043d\u0456\u044f \"\u041e\u0420\u0413\u0410\u041d\u0406\u0417\u0410\u0422\u041e\u0420+\""
+      },
+      "name": "\u041a\u043e\u043c\u043f\u0430\u043d\u0456\u044f \"\u041e\u0420\u0413\u0410\u041d\u0406\u0417\u0410\u0422\u041e\u0420+\"",
+      "kind": "defense",
+      "address": {
+        "postalCode": "12345",
+        "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+        "streetAddress": "buyer.brizol@yandex.com",
+        "region": "\u041a\u0438\u0457\u0432",
+        "locality": "buyer.brizol@yandex.com"
+      }
+    }
+  }
+}

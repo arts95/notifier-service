@@ -96,7 +96,6 @@ abstract class BaseEntity
      */
     protected function getClassNameByKey(string $key): ?string
     {
-        var_dump($key);
         return null;
     }
 

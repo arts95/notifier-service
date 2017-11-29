@@ -4,6 +4,9 @@
  * Date: 24.11.17
  */
 
+namespace app\components\tender;
+
+use app\components\base\Notifier;
 use app\entity\service\EventEntity;
 use app\entity\tender\lot\LotEntity;
 use app\entity\tender\TenderEntity;
@@ -13,7 +16,7 @@ use app\services\TenderService;
 /**
  * Class TenderNotifier
  */
-class TenderNotifier extends \app\components\base\Notifier
+class TenderNotifier extends Notifier
 {
 
     /**
@@ -109,90 +112,52 @@ class TenderNotifier extends \app\components\base\Notifier
 
     protected function checkAllComplaints()
     {
-        /** @todo check purchase status */
-        $requesters = $this->service->getRequesters();
-        if (empty($requesters)) return;
-        foreach ($requesters as $requester) {
-            if (empty($requester->getComplaints())) continue;
-            foreach ($requester->getComplaints() as $complaint) {
-                $this->checkPurchaseComplaints($complaint->getId());
-                $this->checkQualificationComplaints($complaint->getId());
-                $this->checkAwardComplaints($complaint->getId());
-            }
-        }
+        /** @todo check purchase status in all functions */
+        $this->checkPurchaseComplaints();
+        $this->checkQualificationComplaints();
+        $this->checkAwardComplaints();
     }
 
     /**
      * @todo set id of event
-     * @param string $complaintID
      * @return EventEntity[]
      */
-    protected function checkPurchaseComplaints(string $complaintID): array
+    protected function checkPurchaseComplaints(): array
     {
         if (empty($this->nPurchase->getComplaints())) return [];
         $events = [];
         foreach ($this->nPurchase->getComplaints() as $complaint) {
-            if ($complaint->getId() != $complaintID) continue;
             $check = $this->getEntityInfo($this->oPurchase->getComplaints(), $complaint->getId());
             if ($check->entity ? $check->entity->getStatus() == $complaint->getStatus() : !$check->new) continue;
             /** @todo check status */
-            if (in_array($complaint->getStatus(), ['accepted', 'satisfied', 'declined', 'invalid', 'mistaken', 'answered'])) {
+            if (in_array($complaint->getStatus(), ['accepted', 'satisfied', 'declined', 'invalid', 'mistaken'])) {
                 /** @todo set id of event */
-                $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
-                    'purchase' => $this->nPurchase,
-                    'complaint' => $complaint,
-                ]);
+                if ($this->service->getRequesterByComplaintId($complaint->getId())) {
+                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaint->getId()), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                }
                 $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
                     'purchase' => $this->nPurchase,
                     'complaint' => $complaint,
                 ]);
             } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
                 /** @todo set id of event */
-                $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
-                    'purchase' => $this->nPurchase,
-                    'complaint' => $complaint,
-                ]);
+                if ($this->service->getRequesterByComplaintId($complaint->getId())) {
+                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaint->getId()), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                }
                 $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
                     'purchase' => $this->nPurchase,
                     'complaint' => $complaint,
                 ]);
-            }
-        }
-        return $events;
-    }
-
-    /**
-     * @param string $complaintID
-     * @return EventEntity[]
-     */
-    protected function checkQualificationComplaints(string $complaintID): array
-    {
-        if (empty($this->nPurchase->getQualifications())) return [];
-        $events = [];
-        foreach ($this->nPurchase->getQualifications() as $qualification) {
-            if (empty($qualification->getComplaints())) continue;
-            foreach ($qualification->getComplaints() as $complaint) {
-                if ($complaint->getId() != $complaintID) continue;
-                $check = $this->getEntityInfo($this->oPurchase->getComplaintsByQualification($qualification->getId()), $complaint->getId());
-                if ($check->entity ? $check->entity->getStatus() == $complaint->getStatus() : !$check->new) continue;
-                /** @todo check status */
-                if (in_array($complaint->getStatus(), ['accepted', 'satisfied', 'declined', 'invalid', 'mistaken'])) {
-                    /** @todo set id of event */
-                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
-                        'purchase' => $this->nPurchase,
-                        'complaint' => $complaint,
-                    ]);
-                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
-                        'purchase' => $this->nPurchase,
-                        'complaint' => $complaint,
-                    ]);
-                } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
-                    /** @todo set id of event */
-                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
-                        'purchase' => $this->nPurchase,
-                        'complaint' => $complaint,
-                    ]);
-                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+            } elseif (in_array($complaint->getStatus(), ['answered'])) {
+                /** @todo set id of event */
+                if ($this->service->getRequesterByComplaintId($complaint->getId())) {
+                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaint->getId()), [
                         'purchase' => $this->nPurchase,
                         'complaint' => $complaint,
                     ]);
@@ -203,40 +168,101 @@ class TenderNotifier extends \app\components\base\Notifier
     }
 
     /**
-     * @param string $complaintID
      * @return EventEntity[]
      */
-    protected function checkAwardComplaints(string $complaintID): array
+    protected function checkQualificationComplaints(): array
     {
-        if (empty($this->nPurchase->getAwards())) return [];
+        if (empty($this->nPurchase->getQualifications())) return [];
         $events = [];
-        foreach ($this->nPurchase->getAwards() as $award) {
-            if (empty($award->getComplaints())) continue;
-            foreach ($award->getComplaints() as $complaint) {
-                if ($complaint->getId() != $complaintID) continue;
-                $check = $this->getEntityInfo($this->oPurchase->getComplaintsByAward($award->getId()), $complaint->getId());
+        foreach ($this->nPurchase->getQualifications() as $qualification) {
+            if (empty($qualification->getComplaints())) continue;
+            foreach ($qualification->getComplaints() as $complaint) {
+                $check = $this->getEntityInfo($this->oPurchase->getComplaintsByQualification($qualification->getId()), $complaint->getId());
                 if ($check->entity ? $check->entity->getStatus() == $complaint->getStatus() : !$check->new) continue;
                 /** @todo check status */
-                if (in_array($complaint->getStatus(), ['accepted', 'satisfied', 'declined', 'invalid', 'mistaken', 'resolved', 'stopped', 'stopping', 'answered'])) {
+                if (in_array($complaint->getStatus(), ['accepted', 'satisfied', 'declined', 'invalid', 'mistaken'])) {
                     /** @todo set id of event */
-                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
-                        'purchase' => $this->nPurchase,
-                        'complaint' => $complaint,
-                    ]);
+                    if ($this->service->getRequesterByComplaintId($complaint->getId())) {
+                        $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaint->getId()), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
                     $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
                         'purchase' => $this->nPurchase,
                         'complaint' => $complaint,
                     ]);
                 } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
                     /** @todo set id of event */
-                    $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaintID), [
-                        'purchase' => $this->nPurchase,
-                        'complaint' => $complaint,
-                    ]);
+                    if ($this->service->getRequesterByComplaintId($complaint->getId())) {
+                        $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaint->getId()), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
                     $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
                         'purchase' => $this->nPurchase,
                         'complaint' => $complaint,
                     ]);
+                } elseif (in_array($complaint->getStatus(), ['answered'])) {
+                    /** @todo set id of event */
+                    if ($this->service->getRequesterByComplaintId($complaint->getId())) {
+                        $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaint->getId()), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
+                }
+            }
+        }
+        return $events;
+    }
+
+    /**
+     * @return EventEntity[]
+     */
+    protected function checkAwardComplaints(): array
+    {
+        if (empty($this->nPurchase->getAwards())) return [];
+        $events = [];
+        foreach ($this->nPurchase->getAwards() as $award) {
+            if (empty($award->getComplaints())) continue;
+            foreach ($award->getComplaints() as $complaint) {
+                $check = $this->getEntityInfo($this->oPurchase->getComplaintsByAward($award->getId()), $complaint->getId());
+                if ($check->entity ? $check->entity->getStatus() == $complaint->getStatus() : !$check->new) continue;
+                /** @todo check status */
+                if (in_array($complaint->getStatus(), ['accepted', 'satisfied', 'declined', 'invalid', 'mistaken', 'resolved', 'stopped', 'stopping'])) {
+                    /** @todo set id of event */
+                    if ($this->service->getRequesterByComplaintId($complaint->getId())) {
+                        $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaint->getId()), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
+                    /** @todo set id of event */
+                    if ($this->service->getRequesterByComplaintId($complaint->getId())) {
+                        $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaint->getId()), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                } elseif (in_array($complaint->getStatus(), ['answered'])) {
+                    /** @todo set id of event */
+                    if ($this->service->getRequesterByComplaintId($complaint->getId())) {
+                        $events[] = new EventEntity('', $this->service->getRequesterByComplaintId($complaint->getId()), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
                 }
             }
         }

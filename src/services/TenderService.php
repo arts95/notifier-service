@@ -34,11 +34,7 @@ class TenderService extends BaseService
     public function getRequesters(): array
     {
         if ($this->_requesters === null) {
-            /** @todo make request */
-            $this->_requesters = [
-                ['userID' => 1, 'email' => 'email@email.test', 'questions' => [['id' => 1], ['id' => 2]], 'complaints' => [['id' => 1, 'status' => 'pending'], ['id' => 2, 'status' => 'claim']]],
-                ['userID' => 1, 'email' => 'email@email.test', 'questions' => [['id' => 1], ['id' => 2]], 'complaints' => [['id' => 1, 'status' => 'stopping'], ['id' => 2, 'status' => 'pending']]],
-            ];
+            $this->_requesters = $this->requesterService->getRequesters();
         }
         if (empty($this->_requesters)) return [];
         $data = [];
@@ -70,11 +66,8 @@ class TenderService extends BaseService
     public function getBidders(?string $lotID = null): array
     {
         if ($this->_bidders === null) {
-            /** @todo make request. */
-            $this->_bidders = [
-                ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active', 'lotValues' => ['lotID' => '12321', 'status' => 'active']]],
-                ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']],
-            ];
+
+            $this->_bidders = $this->requesterService->getBidders();
         }
         if (empty($this->_bidders)) return [];
         $data = [];

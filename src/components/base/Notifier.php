@@ -32,7 +32,7 @@ abstract class Notifier
      */
     protected $events;
 
-    public function notify(object $object): bool
+    public function notify(): bool
     {
         /** @todo make email, cabinet, phone notify */
         return true;

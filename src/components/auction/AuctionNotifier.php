@@ -29,7 +29,7 @@ class AuctionNotifier extends Notifier
     {
         $this->oPurchase = $oAuction;
         $this->nPurchase = $nAuction;
-        $this->service = new AuctionService($this->nPurchase->getId());
+        $this->service = new AuctionService($this->nPurchase->getId(), []);
     }
 
     public static function getNotifier(AuctionEntity $oAuction, AuctionEntity $nAuction): AuctionNotifier

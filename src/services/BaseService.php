@@ -18,20 +18,21 @@ use app\entity\service\UserEntity;
  */
 class BaseService
 {
-    protected $purchaseID;
+    public $requesterService;
     protected $_requesters = null;
     protected $_bidders = null;
     private $_bidder = null;
     private $_ownerOfPurchase = null;
-    /** @todo make variables for multiply call functions */
+
     /**
      * BaseService constructor.
      *
-     * @param $purchaseID
+     * @param string $purchaseID
+     * @param array $requesterConfig
      */
-    public function __construct($purchaseID)
+    public function __construct(string $purchaseID, $requesterConfig)
     {
-        $this->purchaseID = $purchaseID;
+        $this->requesterService = new RequesterService($purchaseID, $requesterConfig);
     }
 
     /**
@@ -50,11 +51,7 @@ class BaseService
     public function getBidders(): array
     {
         if ($this->_bidders === null) {
-            /** @todo make request. */
-            $this->_bidders = [
-                ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']],
-                ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']],
-            ];
+            $this->_bidders = $this->requesterService->getBidders();
         }
         if (empty($this->_bidders)) return [];
         $data = [];
@@ -67,8 +64,7 @@ class BaseService
     public function getBidderByID($bidID): BidderEntity
     {
         if ($this->_bidder == null) {
-            /** @todo make request. */
-            $this->_bidder = ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']];
+            $this->_bidder = $this->requesterService->getBidderByBidID($bidID);
         }
         return new BidderEntity($this->_bidder['userID'], $this->_bidder['email'], $this->_bidder['bid']);
     }
@@ -76,8 +72,7 @@ class BaseService
     public function getOwnerOfPurchase(): UserEntity
     {
         if ($this->_ownerOfPurchase == null) {
-            /** @todo make request. */
-            $this->_ownerOfPurchase = ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']];
+            $this->_ownerOfPurchase = $this->requesterService->getOwnerOfPurchase();
         }
         return new UserEntity($this->_ownerOfPurchase['userID'], $this->_ownerOfPurchase['email']);
     }
@@ -98,11 +93,7 @@ class BaseService
     public function getRequesters(): array
     {
         if ($this->_requesters === null) {
-            /** @todo make request */
-            $this->_requesters = [
-                ['userID' => 1, 'email' => 'email@email.test', 'questions' => [['id' => 1], ['id' => 2]]],
-                ['userID' => 1, 'email' => 'email@email.test', 'questions' => [['id' => 1], ['id' => 2]]],
-            ];
+            $this->_requesters = $this->requesterService->getRequesters();
         }
         if (empty($this->_requesters)) return [];
         $data = [];

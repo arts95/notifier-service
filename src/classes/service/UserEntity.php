@@ -13,27 +13,27 @@ namespace app\entity\service;
  */
 class UserEntity
 {
-    protected $uid;
+    protected $id;
     protected $email;
 
     /**
      * UserEntity constructor.
      *
-     * @param $uid
+     * @param $id
      * @param $email
      */
-    public function __construct(string $uid, string $email)
+    public function __construct(string $id, string $email)
     {
-        $this->uid = $uid;
+        $this->id = $id;
         $this->email = $email;
     }
 
     /**
      * @return mixed
      */
-    public function getUid()
+    public function getId()
     {
-        return $this->uid;
+        return $this->id;
     }
 
     /**

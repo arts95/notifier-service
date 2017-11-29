@@ -1,25 +1,24 @@
 {
   "tender": {
-    "14d926e4ae944208a83d3b8e68e94185": {
+    "tenderID": {
       "owner": {
         "id": 1,
         "email": "akievtest@gmail.com"
       },
       "bidders": [
         {
-          "id": 2,
+          "id": "userID",
           "email": "akievtest@gmail.com",
-          "bidID": "bidID",
           "bid": {
             "id": "bidID",
             "status": "active",
             "lotValues": [
               {
-                "lotID": "e229575c5f8465e25ef8dedd00895110",
+                "lotID": "lotID",
                 "status": "active"
               },
               {
-                "lotID": "3ed67f7ade15c5be65dee3f64546b2a9",
+                "lotID": "lotID",
                 "status": "active"
               }
             ]
@@ -32,37 +31,31 @@
           "email": "akievtest@gmail.com",
           "questions": [
             {
-              "id": "bb40369263c8433bb8b5cd36d8033059"
+              "id": "questionID"
             },
             {
-              "id": "de50ea82174845439760aafe19c1cecf"
+              "id": "questionID"
             },
             {
-              "id": "3ff1f81faea34fc0b2f48a1e01d269f4"
+              "id": "questionID"
             }
           ],
           "complaints": [
             {
-              "id": "5866c906a99148d5b1ce6b42f8a5e376",
-              "status": "claim"
-            },
-            {
-              "relatedLot": "3ed67f7ade15c5be65dee3f64546b2a9",
-              "id": "32b2d8299dcd4554b95b465e21ae2c48",
+              "id": "complaintID",
               "status": "active"
             },
             {
-              "status": "pending",
-              "complaintID": "UA-2017-11-29-000089-a.a3"
+              "id": "complaintID",
+              "status": "active"
             },
             {
-              "relatedLot": "e229575c5f8465e25ef8dedd00895110",
-              "status": "pending",
-              "id": "7e656bb488fc4bdcac93a2329e6398d1"
+              "id": "complaintID",
+              "status": "active"
             },
             {
-              "status": "stopping",
-              "id": "848160992cea449ea830b4cd53e5310f"
+              "id": "complaintID",
+              "status": "active"
             }
           ]
         }
@@ -72,7 +65,7 @@
   "auction": {
     "tenderID": {
       "owner": {
-        "id": 2,
+        "id": 1,
         "email": "akievtest@gmail.com"
       },
       "bidders": [

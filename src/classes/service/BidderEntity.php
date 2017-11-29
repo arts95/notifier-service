@@ -14,13 +14,13 @@ class BidderEntity extends UserEntity
     /**
      * BidderEntity constructor.
      *
-     * @param string $uid
+     * @param string $id
      * @param string $email
      * @param $bid
      */
-    public function __construct($uid, $email, $bid)
+    public function __construct($id, $email, $bid)
     {
-        parent::__construct($uid, $email);
+        parent::__construct($id, $email);
         $this->bid = new BidEntity($bid['id'] ?? null, $bid['status'] ?? null, $bid['lotValues'] ?? null);
     }
 

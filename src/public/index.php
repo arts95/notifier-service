@@ -26,42 +26,44 @@ $app->get('/', function (Request $request, Response $response) {
     $response->getBody()->write("It is notifier service");
     return $response;
 });
-$app->get('/test/bidders', function (Request $request, Response $response) {
+$app->get('/test/{type}/{purchaseID}/bidders', function (Request $request, Response $response) {
     $db = json_decode(file_get_contents('db.json'), 1);
-    $data = $request->getParsedBody();
-    $bidders = $db[$data['type']][$data['purchaseID']]['bidders'];
-    if (isset($data['bidID'])) {
-        foreach ($bidders as $bidder) {
-            if ($bidder['bidID'] == $data['bidID']) {
-                $response->getBody()->write(json_encode($bidder));
-            }
+    $type = $request->getAttribute('type');
+    $purchaseID = $request->getAttribute('purchaseID');
+    $bidders = $db[$type][$purchaseID]['bidders'];
+    $response->getBody()->write(json_encode($bidders));
+    return $response;
+});
+
+$app->get('/test/{type}/{purchaseID}/bidders/{bidID}', function (Request $request, Response $response) {
+    $db = json_decode(file_get_contents('db.json'), 1);
+    $type = $request->getAttribute('type');
+    $purchaseID = $request->getAttribute('purchaseID');
+    $bidID = $request->getAttribute('bidID');
+    $bidders = $db[$type][$purchaseID]['bidders'];
+    foreach ($bidders as $bidder) {
+        if ($bidder['bidID'] == $bidID) {
+            $response->getBody()->write(json_encode($bidder));
         }
-    } else {
-        $response->getBody()->write(json_encode($bidders));
     }
     return $response;
 });
 
-$app->get('/test/requesters', function (Request $request, Response $response) {
+$app->get('/test/{type}/{purchaseID}/requesters', function (Request $request, Response $response) {
     $db = json_decode(file_get_contents('db.json'), 1);
-    $data = $request->getParsedBody();
-    $requesters = $db[$data['type']][$data['purchaseID']]['requesters'];
+    $type = $request->getAttribute('type');
+    $purchaseID = $request->getAttribute('purchaseID');
+    $requesters = $db[$type][$purchaseID]['requesters'];
     $response->getBody()->write(json_encode($requesters));
     return $response;
 });
 
-$app->get('/test/owner', function (Request $request, Response $response) {
+$app->get('/test/{type}/{purchaseID}/owner', function (Request $request, Response $response) {
     $db = json_decode(file_get_contents('db.json'), 1);
-    $data = $request->getParsedBody();
-    $requesters = $db[$data['type']][$data['purchaseID']]['owner'];
-    $response->getBody()->write(json_encode($requesters));
+    $type = $request->getAttribute('type');
+    $purchaseID = $request->getAttribute('purchaseID');
+    $owner = $db[$type][$purchaseID]['owner'];
+    $response->getBody()->write(json_encode($owner));
     return $response;
-});
-
-$app->post('/notify', function (Request $request, Response $response) {
-    $data = $request->getParsedBody();
-    $ticket_data = [];
-    $ticket_data['title'] = filter_var($data['title'], FILTER_SANITIZE_STRING);
-    $ticket_data['description'] = filter_var($data['description'], FILTER_SANITIZE_STRING);
 });
 $app->run();

@@ -22,9 +22,9 @@ class RequesterEntity extends UserEntity
      */
     protected $complaints;
 
-    public function __construct(string $uid, string $email, array $questions, array $complaints)
+    public function __construct(string $id, string $email, array $questions, array $complaints)
     {
-        parent::__construct($uid, $email);
+        parent::__construct($id, $email);
         if (!empty($questions)) {
             foreach ($questions as $question) {
                 $this->questions[] = new QuestionEntity($question['id'] ?? null);

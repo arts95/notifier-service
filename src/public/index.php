@@ -4,7 +4,6 @@
  * Date: 16.11.17
  */
 
-use app\entity\tender\TenderEntity;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
@@ -25,7 +24,37 @@ $app->get('/', function (Request $request, Response $response) {
     echo "<pre>";
     var_dump($tender->getContracts());
     $response->getBody()->write("It is notifier service");
+    return $response;
+});
+$app->get('/test/bidders', function (Request $request, Response $response) {
+    $db = json_decode(file_get_contents('db.json'), 1);
+    $data = $request->getParsedBody();
+    $bidders = $db[$data['type']][$data['purchaseID']]['bidders'];
+    if (isset($data['bidID'])) {
+        foreach ($bidders as $bidder) {
+            if ($bidder['bidID'] == $data['bidID']) {
+                $response->getBody()->write(json_encode($bidder));
+            }
+        }
+    } else {
+        $response->getBody()->write(json_encode($bidders));
+    }
+    return $response;
+});
 
+$app->get('/test/requesters', function (Request $request, Response $response) {
+    $db = json_decode(file_get_contents('db.json'), 1);
+    $data = $request->getParsedBody();
+    $requesters = $db[$data['type']][$data['purchaseID']]['requesters'];
+    $response->getBody()->write(json_encode($requesters));
+    return $response;
+});
+
+$app->get('/test/owner', function (Request $request, Response $response) {
+    $db = json_decode(file_get_contents('db.json'), 1);
+    $data = $request->getParsedBody();
+    $requesters = $db[$data['type']][$data['purchaseID']]['owner'];
+    $response->getBody()->write(json_encode($requesters));
     return $response;
 });
 

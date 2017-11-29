@@ -66,6 +66,7 @@ class BaseService
 
     public function getBidderByID($bidID): BidderEntity
     {
+        /** @todo rewrite this */
         if ($this->_bidder == null) {
             $this->_bidder = $this->requesterService->getBidderByBidID($bidID);
         }

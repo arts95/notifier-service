@@ -139,8 +139,8 @@ final class AuctionNotifierTest extends BaseTestCase
         $oAuction = new AuctionEntity(json_decode($old, 1), 'data');
         $nAuction = new AuctionEntity(json_decode($new, 1), 'data');
         $auctionNotifier = new AuctionNotifier($oAuction, $nAuction);
-        $data = $this->invokeMethod($auctionNotifier, 'terminateAuction');
-        $this->assertTrue($data);
+        $data = $this->invokeMethod($auctionNotifier, 'checkTerminateAuction');
+        $this->assertNotEmpty($data);
     }
 
     /**
@@ -153,8 +153,8 @@ final class AuctionNotifierTest extends BaseTestCase
         $oAuction = new AuctionEntity(json_decode($old, 1), 'data');
         $nAuction = new AuctionEntity(json_decode($new, 1), 'data');
         $auctionNotifier = new AuctionNotifier($oAuction, $nAuction);
-        $data = $this->invokeMethod($auctionNotifier, 'terminateAuction');
-        $this->assertFalse($data);
+        $data = $this->invokeMethod($auctionNotifier, 'checkTerminateAuction');
+        $this->assertEmpty($data);
     }
 
 }

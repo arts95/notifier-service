@@ -48,6 +48,9 @@ class BaseService
         return $emails;
     }
 
+    /**
+     * @return BidderEntity[]
+     */
     public function getBidders(): array
     {
         if ($this->_bidders === null) {

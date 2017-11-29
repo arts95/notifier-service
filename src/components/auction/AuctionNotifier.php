@@ -10,6 +10,7 @@ use app\components\base\Notifier;
 use app\entity\auction\AuctionEntity;
 use app\entity\base\AwardEntity;
 use app\entity\base\ContractEntity;
+use app\entity\service\EventEntity;
 use app\services\AuctionService;
 
 /**
@@ -39,56 +40,63 @@ class AuctionNotifier extends Notifier
 
     public function analyze(): void
     {
-        $this->tender();
-        $this->questions();
-        $this->awards();
-        $this->contracts();
-    }
-
-    protected function tender(): void
-    {
-        $this->terminateAuction();
-        $this->changes();
+        $this->events += $this->checkTerminateAuction();
+        $this->events += $this->changes();
+        $this->events += $this->questions();
+        $this->events += $this->checkQualificationResult();;
+        $this->events += $this->contracts();
     }
 
     /**
-     * @return bool
+     * @return EventEntity[]
      */
-    protected function terminateAuction(): bool
+    protected function checkTerminateAuction(): array
     {
-        if (!in_array($this->nPurchase->getStatus(), ['cancelled', 'unsuccessful'])) return false;
-        if ($this->oPurchase->getStatus() == $this->nPurchase->getStatus()) return false;
+        if (!in_array($this->nPurchase->getStatus(), ['cancelled', 'unsuccessful'])) return [];
+        if ($this->oPurchase->getStatus() == $this->nPurchase->getStatus()) return [];
 
         $bidderEmail = $this->service->getBiddersEmail();
-        $requesterEmails = $this->service->getRequestersEmail();
+        $requesters = $this->service->getRequesters();
+        $events = [];
 
-        if (!empty($requesterEmails)) {
-            foreach ($requesterEmails as $email) {
-                if (!empty($bidderEmail) && in_array($email, $bidderEmail)) {
+        if (!empty($requesters)) {
+            foreach ($requesters as $requester) {
+                if (!empty($bidderEmail) && in_array($requester->getEmail(), $bidderEmail)) {
                     /** @todo requester and bidder. title in email!!!! */
-                    unset($bidderEmail[$email]);
+                    unset($bidderEmail[$requester->getEmail()]);
                 }
-
-                /** @todo notify */
+                $events[] = new EventEntity('', $requester, [
+                    'purchase' => $this->nPurchase,
+                ]);
             }
         }
 
-        if (!empty($bidderEmail)) {
-            foreach ($bidderEmail as $email) {
-                /** @todo notify */
+        if (!empty($this->service->getBidders())) {
+            foreach ($this->service->getBidders() as $bidder) {
+                if (!in_array($bidder->getEmail(), $bidderEmail)) continue;
+                $events[] = new EventEntity('', $bidder, [
+                    'purchase' => $this->nPurchase,
+                ]);
             }
         }
 
-        return true;
+        return $events;
     }
 
-    protected function changes(): void
+    /**
+     * @return EventEntity[]
+     */
+    protected function changes(): array
     {
         $changes = $this->getAuctionChanges();
-        if (empty($changes)) return;
+        if (empty($changes)) return [];
+        $events = [];
         foreach ($this->service->getBidders() as $bidder) {
-            /** @todo notify $bidder */
+            $events[] = new EventEntity('', $bidder, [
+                'purchase' => $this->nPurchase,
+            ]);
         }
+        return $events;
     }
 
     /**
@@ -99,7 +107,6 @@ class AuctionNotifier extends Notifier
         if ($this->nPurchase->getVersion() != 'PS') return [];
         if ($this->nPurchase->getStatus() != 'active.tendering') return [];
         $changes = [];
-
 
         if ($this->oPurchase->getValue()->getAmount() != $this->nPurchase->getValue()->getAmount()) {
             $changes['auction.value.amount'] = [$this->oPurchase->getValue()->getAmount(), $this->nPurchase->getValue()->getAmount()];
@@ -113,18 +120,14 @@ class AuctionNotifier extends Notifier
         return $changes;
     }
 
-    protected function awards(): void
-    {
-        $this->qualificationResult();
-    }
-
-    protected function qualificationResult(): void
+    protected function checkQualificationResult(): array
     {
         if ($this->nPurchase->getVersion() == 'PS') {
-            $this->qualificationResultPS();
+            return $this->qualificationResultPS();
         } else {
             $awards = $this->getAwardsByQualificationResultEA();
-            if (empty($awards)) return;
+            if (empty($awards)) return [];
+            $events = [];
             foreach ($awards as $award) {
                 switch ($award->getStatus()) {
                     case '':
@@ -134,10 +137,19 @@ class AuctionNotifier extends Notifier
                         /** status doesn't exist, custom message */
                 }
 
-                /** @todo notify bidder and organizer */
-                $this->service->getOwnerOfPurchase();
-                $this->service->getBidderByID($award->getBidId());
+                /** @todo set event id */
+                if ($this->service->getOwnerOfPurchase()) {
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                    ]);
+                }
+                if ($this->service->getBidderByID($award->getBidId())) {
+                    $events[] = new EventEntity('', $this->service->getBidderByID($award->getBidId()), [
+                        'purchase' => $this->nPurchase,
+                    ]);
+                }
             }
+            return $events;
         }
     }
 
@@ -145,14 +157,12 @@ class AuctionNotifier extends Notifier
      * Сообщение о результатах квалификации
      * Версия 2.3
      *
-     * Отсілаем письмо, если статусі квалификации поменялись.
-     * Отсілаем письмо вторім-третим-десятім участникам о возможности победить
-     *
+     * @return EventEntity[]
      */
-    protected function qualificationResultPS()
+    protected function qualificationResultPS(): array
     {
-        if (empty($this->nPurchase->getAwards())) return;
-        $bidIdInAward = [];
+        if (empty($this->nPurchase->getAwards())) return [];
+        $bidIdInAward = $events = [];
         foreach ($this->nPurchase->getAwards() as $award) {
             $check = $this->getEntityInfo($this->oPurchase->getAwards(), $award->getId());
 
@@ -160,30 +170,48 @@ class AuctionNotifier extends Notifier
                 /** статусі, когда другие участники еще могут победить */
                 $bidIdInAward[] = $award['bid_id'];
             } elseif ($award->getStatus() == 'cancelled') {
-                /** @todo notify organizer */
-                $this->service->getOwnerOfPurchase();
+                if ($this->service->getOwnerOfPurchase()) {
+                    /** @todo set event id */
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                    ]);
+                }
             }
 
             /** письмо про то статус квалификации участника перешел в указазаніе статусі */
             if ($check->new && ($check->entity ? $check->entity->getStatus() != $award->getStatus() : true)) {
                 /** @todo and notify */
                 $bidder = $this->service->getBidderByID($award->getBidId());
+                if ($bidder) {
+                    /** @todo set event id */
+                    $events[] = new EventEntity('', $bidder, [
+                        'purchase' => $this->nPurchase,
+                    ]);
+                    unset($bidder);
+                }
             }
 
         }
         /** отправляем письмо только один раз, сразу после того, как закончился аукцион */
-        if ($this->nPurchase->getStatus() != 'active.qualification') return;
-        if ($this->nPurchase->getStatus() == $this->oPurchase->getStatus()) return;
-        if (empty($this->nPurchase->getBids())) return;
-        if (empty($bidIdInAward)) return;
+        if ($this->nPurchase->getStatus() != 'active.qualification') return $events;
+        if ($this->nPurchase->getStatus() == $this->oPurchase->getStatus()) return $events;
+        if (empty($this->nPurchase->getBids())) return $events;
+        if (empty($bidIdInAward)) return $events;
 
         /** теперь вібираем участников которіе не первіе в очереди */
         foreach ($this->nPurchase->getBids() as $bid) {
             /** отсеиваем тех, которіе первіе по счету и им уже отправили письмо о активной квалификации*/
             if ($bid->getStatus() != 'active') continue;
-            /** @todo notify */
             $bidder = $this->service->getBidderByID($bid->getId());
+            if ($bidder) {
+                /** @todo set event id */
+                $events[] = new EventEntity('', $bidder, [
+                    'purchase' => $this->nPurchase,
+                ]);
+                unset($bidder);
+            }
         }
+        return $events;
     }
 
     /**
@@ -204,23 +232,44 @@ class AuctionNotifier extends Notifier
         return $newAwards;
     }
 
-    protected function contracts(): void
+    /**
+     * @return EventEntity[]
+     */
+    protected function contracts(): array
     {
         $contract = $this->getActivatedContract();
-        if (!$contract) return;
+        if (!$contract) return [];
+        $events = [];
         /** находим победителя, а точнее bid_id, для поиска в нашей базе */
         $bidID = $this->nPurchase->getAwardById($contract->getAwardID())->getBidId();
 
         if ($bidID) {
-            /** @todo notify */
             $bidder = $this->service->getBidderByID($bidID);
+            if ($bidder) {
+                /** @todo set event id */
+                $events[] = new EventEntity('', $bidder, [
+                    'purchase' => $this->nPurchase,
+                ]);
+                unset($bidder);
+            }
         }
 
-        /** @todo notify organizer! */
-        $this->service->getOwnerOfPurchase();
+        if ($this->service->getOwnerOfPurchase()) {
+            /** @todo set event id */
+            $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                'purchase' => $this->nPurchase,
+            ]);
+        }
 
-        /** @todo notify other bidders from our db */
         $bidders = $this->service->getBidders();
+        if (empty($bidders)) return $events;
+        foreach ($bidders as $bidder) {
+            /** @todo set event id */
+            $events[] = new EventEntity('', $bidder, [
+                'purchase' => $this->nPurchase,
+            ]);
+        }
+        return $events;
     }
 
     protected function getActivatedContract(): ?ContractEntity

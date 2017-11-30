@@ -79,7 +79,7 @@ class TenderService extends BaseService
                 }
                 unset($bidder);
             } else {
-                $data[] = new BidderEntity($bidder['userID'], $bidder['email'], $bidder['bid']);
+                $data[] = new BidderEntity($bidder['id'], $bidder['email'], $bidder['bid']);
             }
         }
         return $data;

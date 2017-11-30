@@ -1,0 +1,478 @@
+{
+  "data": {
+    "procurementMethod": "open",
+    "features": [
+      {
+        "code": "0596378bf4444549a6cb91836cbe8f87",
+        "description": "",
+        "title": "tender",
+        "enum": [
+          {
+            "title_en": "",
+            "value": 0.0,
+            "title": "1"
+          }
+        ],
+        "title_en": "",
+        "description_en": "",
+        "featureOf": "tenderer"
+      },
+      {
+        "code": "f358c002c2744bd482419860d62325a5",
+        "description": "",
+        "title": "lot 1",
+        "enum": [
+          {
+            "title_en": "",
+            "value": 0.0,
+            "title": "4"
+          }
+        ],
+        "title_en": "",
+        "description_en": "",
+        "relatedItem": "e229575c5f8465e25ef8dedd00895110",
+        "featureOf": "lot"
+      },
+      {
+        "code": "55f72402fe8a4b548f92cbf7f76c1555",
+        "description": "",
+        "title": "lot 1 tovar",
+        "enum": [
+          {
+            "title_en": "",
+            "value": 0.0,
+            "title": "3"
+          }
+        ],
+        "title_en": "",
+        "description_en": "",
+        "relatedItem": "8b134feeb14db10069228c2e42ea8295",
+        "featureOf": "item"
+      },
+      {
+        "code": "4d721e97677e4095b6e4923b0992b3d2",
+        "description": "",
+        "title": "lot 2",
+        "enum": [
+          {
+            "title_en": "",
+            "value": 0.0,
+            "title": "2"
+          }
+        ],
+        "title_en": "",
+        "description_en": "",
+        "relatedItem": "3ed67f7ade15c5be65dee3f64546b2a9",
+        "featureOf": "lot"
+      },
+      {
+        "code": "da2edd45db154da4a863269adcc7e834",
+        "description": "",
+        "title": "lot 2 tovar",
+        "enum": [
+          {
+            "title_en": "",
+            "value": 0.0,
+            "title": "2"
+          }
+        ],
+        "title_en": "",
+        "description_en": "",
+        "relatedItem": "83b8dd11874bfb495b594f9a0662f264",
+        "featureOf": "item"
+      }
+    ],
+    "questions": [
+      {
+        "date": "2017-11-29T15:19:16.822886+02:00",
+        "description": "question n1question n1question n1question n1question n1question n1question n1",
+        "id": "bb40369263c8433bb8b5cd36d8033059",
+        "questionOf": "tender",
+        "title": "question n1 tender"
+      },
+      {
+        "description": "question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1",
+        "title": "question n2 lot 1",
+        "relatedItem": "e229575c5f8465e25ef8dedd00895110",
+        "date": "2017-11-29T15:19:52.922404+02:00",
+        "id": "de50ea82174845439760aafe19c1cecf",
+        "questionOf": "lot"
+      },
+      {
+        "description": "question n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerv",
+        "title": "question n3 geger",
+        "relatedItem": "83b8dd11874bfb495b594f9a0662f264",
+        "date": "2017-11-29T15:20:16.585026+02:00",
+        "id": "3ff1f81faea34fc0b2f48a1e01d269f4",
+        "questionOf": "item"
+      }
+    ],
+    "complaints": [
+      {
+        "status": "claim",
+        "description": "claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1v",
+        "title": "claim n1 tender",
+        "dateSubmitted": "2017-11-29T15:24:39.408498+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a1",
+        "date": "2017-11-29T15:24:39.408376+02:00",
+        "type": "claim",
+        "id": "5866c906a99148d5b1ce6b42f8a5e376"
+      },
+      {
+        "relatedLot": "3ed67f7ade15c5be65dee3f64546b2a9",
+        "status": "claim",
+        "description": "claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot vv",
+        "title": "claim n2 lot  2",
+        "dateSubmitted": "2017-11-29T15:25:00.113747+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a2",
+        "date": "2017-11-29T15:25:00.113644+02:00",
+        "type": "claim",
+        "id": "32b2d8299dcd4554b95b465e21ae2c48"
+      },
+      {
+        "status": "pending",
+        "description": "complaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tenderv",
+        "title": "complaint n1 tender",
+        "author": {
+          "contactPoint": {
+            "telephone": "+38(111)111-11-11",
+            "name": "asdasd asdbas basdbasd",
+            "email": "sasdasd@smail.com"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "01234561",
+            "legalName": "test@i.d"
+          },
+          "name": "test@i.d",
+          "address": {
+            "postalCode": "12345",
+            "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+            "streetAddress": "123",
+            "region": "\u041a\u0438\u0457\u0432",
+            "locality": "keiv"
+          }
+        },
+        "dateSubmitted": "2017-11-29T15:26:44.124592+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a3",
+        "date": "2017-11-29T15:26:44.124429+02:00",
+        "type": "complaint",
+        "id": "f3f85be233cc4993b84f99ff0dd3280e"
+      },
+      {
+        "relatedLot": "e229575c5f8465e25ef8dedd00895110",
+        "status": "pending",
+        "description": "complaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lot",
+        "author": {
+          "contactPoint": {
+            "telephone": "+38(111)111-11-11",
+            "name": "asdasd asdbas basdbasd",
+            "email": "sasdasd@smail.com"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "01234561",
+            "legalName": "test@i.d"
+          },
+          "name": "test@i.d",
+          "address": {
+            "postalCode": "12345",
+            "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+            "streetAddress": "123",
+            "region": "\u041a\u0438\u0457\u0432",
+            "locality": "keiv"
+          }
+        },
+        "title": "complaint n2 lot",
+        "dateSubmitted": "2017-11-29T15:26:57.098255+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a4",
+        "date": "2017-11-29T15:26:57.098080+02:00",
+        "type": "complaint",
+        "id": "7e656bb488fc4bdcac93a2329e6398d1"
+      },
+      {
+        "status": "stopping",
+        "description": "complaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelvv",
+        "title": "complaint n3 lot 1 for cancel",
+        "author": {
+          "contactPoint": {
+            "telephone": "+38(111)111-11-11",
+            "name": "asdasd asdbas basdbasd",
+            "email": "sasdasd@smail.com"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "01234561",
+            "legalName": "test@i.d"
+          },
+          "name": "test@i.d",
+          "address": {
+            "postalCode": "12345",
+            "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+            "streetAddress": "123",
+            "region": "\u041a\u0438\u0457\u0432",
+            "locality": "keiv"
+          }
+        },
+        "cancellationReason": "11112 2 21  21  2  22 1 1sdfa afsd 4ad fs45ad fs546dsaf6afsd 5",
+        "dateCanceled": "2017-11-29T15:27:45.123363+02:00",
+        "dateSubmitted": "2017-11-29T15:27:18.101480+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a5",
+        "date": "2017-11-29T15:27:45.136261+02:00",
+        "type": "complaint",
+        "id": "848160992cea449ea830b4cd53e5310f"
+      }
+    ],
+    "complaintPeriod": {
+      "startDate": "2017-11-29T13:48:00+02:00",
+      "endDate": "2017-12-08T13:37:00+02:00"
+    },
+    "enquiryPeriod": {
+      "startDate": "2017-11-29T13:48:00+02:00",
+      "clarificationsUntil": "2017-12-08T13:34:00+02:00",
+      "endDate": "2017-12-08T13:31:00+02:00",
+      "invalidationDate": "2017-11-29T13:48:27.304988+02:00"
+    },
+    "submissionMethod": "electronicAuction",
+    "procurementMethodType": "aboveThresholdUA",
+    "awardCriteria": "lowestCost",
+    "owner": "brizol.net",
+    "id": "14d926e4ae944208a83d3b8e68e94185",
+    "guarantee": {
+      "currency": "UAH",
+      "amount": 0.0
+    },
+    "documents": [
+      {
+        "hash": "md5:148f6febd9c978a522ea87789e233b3c",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/3f02c7f01d934e919187183c57f5ec9b?KeyID=ce796f2d&Signature=UlsHy7ocRj4jevF0t4hg8zpQMM56sO3cnXUQcTXotxKk9wwLET26z6zAKNiguR63vtQeZozWjVItj9bQPj%252BIBQ%253D%253D",
+        "title": "tender",
+        "documentOf": "tender",
+        "datePublished": "2017-11-29T13:47:22.468791+02:00",
+        "dateModified": "2017-11-29T13:47:22.468812+02:00",
+        "id": "f72b566d115141d0a8a10e21893fcf6b"
+      },
+      {
+        "hash": "md5:148f6febd9c978a522ea87789e233b3c",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/2d4812fa50f549f196f8448d3967396c?KeyID=ce796f2d&Signature=%2FRh15FQfT85sg0zwlMMeZa7iAQmhp5IzXK3SWc%2Fuq%252BGhjdBAhBa8HAnLedPrzHZEdr5BDWzrqhY4FCS8ikgXDg%253D%253D",
+        "title": "lot 1",
+        "documentOf": "lot",
+        "datePublished": "2017-11-29T13:47:24.178849+02:00",
+        "dateModified": "2017-11-29T13:47:24.178869+02:00",
+        "relatedItem": "e229575c5f8465e25ef8dedd00895110",
+        "id": "281c11f089e24cfba7aba9a75e286d79"
+      },
+      {
+        "hash": "md5:148f6febd9c978a522ea87789e233b3c",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/5ed16a5a8f6c41b8ab5529d31547f0ba?KeyID=ce796f2d&Signature=IuI9vgc2Dnt6JcSZqLr7dXM75NrprRyNRq0FTlNeHtW6DytF7oRWcAj2UX2xwQftYIQ49q8jPNtRF%252BI00XprAQ%253D%253D",
+        "title": "lot 2",
+        "documentOf": "lot",
+        "datePublished": "2017-11-29T13:47:33.153515+02:00",
+        "dateModified": "2017-11-29T13:47:33.153542+02:00",
+        "relatedItem": "3ed67f7ade15c5be65dee3f64546b2a9",
+        "id": "ecd3bdfd4cec41a9b824b2fcee8e103f"
+      },
+      {
+        "hash": "md5:148f6febd9c978a522ea87789e233b3c",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/ff7f1f5949ff4b8192900aeaf601f7be?KeyID=ce796f2d&Signature=c%2FObCufurdy3bSP2tnVx8Rpmo4UF3toLvY%2Fa3OUAURm3zG66vQLwS0wcw1%252BT9XtFxu%252B9xM4eVA6FRnJ4%252BraMCg%253D%253D",
+        "title": "lot 1 tovar",
+        "documentOf": "item",
+        "datePublished": "2017-11-29T13:47:34.680025+02:00",
+        "dateModified": "2017-11-29T13:47:34.680045+02:00",
+        "relatedItem": "8b134feeb14db10069228c2e42ea8295",
+        "id": "237f5c1c648244778f0dff2e08394c07"
+      },
+      {
+        "hash": "md5:148f6febd9c978a522ea87789e233b3c",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs-sandbox.prozorro.openprocurement.net/get/3ed5fb7ae2704ffa9baffbf0fefe772e?KeyID=ce796f2d&Signature=cDCdGsAeoDs2%2FXAts6f%252BM%2FhkXLawTr4%252B8w1gnnJZjHiGLLiqAnUdI%252BkAzG%252BF0avDueVQLmlIAxb3NwKIC%2F5ECA%253D%253D",
+        "title": "lot 2 tovar",
+        "documentOf": "item",
+        "datePublished": "2017-11-29T13:47:36.224964+02:00",
+        "dateModified": "2017-11-29T13:47:36.224985+02:00",
+        "relatedItem": "83b8dd11874bfb495b594f9a0662f264",
+        "id": "8059da9fa89b4bce8b2848bccd7df62a"
+      }
+    ],
+    "title": "[\u0422\u0415\u0421\u0422\u0423\u0412\u0410\u041d\u041d\u042f] local related item",
+    "lots": [
+      {
+        "status": "active",
+        "description": "erferf",
+        "title": "lot1",
+        "minimalStep": {
+          "currency": "UAH",
+          "amount": 234.34,
+          "valueAddedTaxIncluded": true
+        },
+        "auctionPeriod": {
+          "startDate": "2017-12-08T14:14:22+02:00"
+        },
+        "title_en": "",
+        "description_en": "",
+        "value": {
+          "currency": "UAH",
+          "amount": 23434.0,
+          "valueAddedTaxIncluded": true
+        },
+        "date": "2017-11-29T15:09:29.431523+02:00",
+        "id": "e229575c5f8465e25ef8dedd00895110",
+        "guarantee": {
+          "currency": "UAH",
+          "amount": 0.0
+        }
+      },
+      {
+        "status": "active",
+        "description": "erferf",
+        "title": "lot2",
+        "minimalStep": {
+          "currency": "UAH",
+          "amount": 1232.31,
+          "valueAddedTaxIncluded": true
+        },
+        "auctionPeriod": {
+          "startDate": "2017-12-08T14:15:00+02:00",
+          "shouldStartAfter": "2017-12-08T13:41:00+02:00"
+        },
+        "title_en": "",
+        "description_en": "",
+        "value": {
+          "currency": "UAH",
+          "amount": 123231.0,
+          "valueAddedTaxIncluded": true
+        },
+        "date": "2017-11-29T13:46:48.838705+02:00",
+        "id": "3ed67f7ade15c5be65dee3f64546b2a9",
+        "guarantee": {
+          "currency": "UAH",
+          "amount": 0.0
+        }
+      }
+    ],
+    "tenderID": "UA-2017-11-29-000072-a",
+    "dateModified": "2017-11-29T15:09:29.431523+02:00",
+    "status": "active.awarded",
+    "tenderPeriod": {
+      "startDate": "2017-11-29T13:48:00+02:00",
+      "endDate": "2017-12-08T13:41:00+02:00"
+    },
+    "description": "rff",
+    "procurementMethodDetails": "quick, accelerator=1440",
+    "title_en": "[TESTING] ",
+    "description_en": "",
+    "date": "2017-11-29T13:46:52.839468+02:00",
+    "submissionMethodDetails": "quick",
+    "items": [
+      {
+        "relatedLot": "e229575c5f8465e25ef8dedd00895110",
+        "description": "tovar",
+        "classification": {
+          "scheme": "\u0414\u041a021",
+          "description": "\u0421\u0456\u043b\u044c\u0441\u044c\u043a\u043e\u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u0441\u044c\u043a\u0430, \u0444\u0435\u0440\u043c\u0435\u0440\u0441\u044c\u043a\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f, \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f \u0440\u0438\u0431\u0430\u043b\u044c\u0441\u0442\u0432\u0430, \u043b\u0456\u0441\u0456\u0432\u043d\u0438\u0446\u0442\u0432\u0430 \u0442\u0430 \u0441\u0443\u043f\u0443\u0442\u043d\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f",
+          "id": "03000000-1"
+        },
+        "description_en": "",
+        "deliveryAddress": {
+          "postalCode": "12345",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+          "streetAddress": "efrfref",
+          "region": "\u0416\u0438\u0442\u043e\u043c\u0438\u0440\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "locality": "referf"
+        },
+        "deliveryDate": {
+          "startDate": "2016-12-31T00:00:00+02:00",
+          "endDate": "2020-01-07T00:00:00+02:00"
+        },
+        "id": "8b134feeb14db10069228c2e42ea8295",
+        "unit": {
+          "code": "BX",
+          "name": "\u044f\u0449\u0438\u043a"
+        },
+        "quantity": 23
+      },
+      {
+        "relatedLot": "3ed67f7ade15c5be65dee3f64546b2a9",
+        "description": "tovar",
+        "classification": {
+          "scheme": "\u0414\u041a021",
+          "description": "\u0421\u0456\u043b\u044c\u0441\u044c\u043a\u043e\u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u0441\u044c\u043a\u0430, \u0444\u0435\u0440\u043c\u0435\u0440\u0441\u044c\u043a\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f, \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f \u0440\u0438\u0431\u0430\u043b\u044c\u0441\u0442\u0432\u0430, \u043b\u0456\u0441\u0456\u0432\u043d\u0438\u0446\u0442\u0432\u0430 \u0442\u0430 \u0441\u0443\u043f\u0443\u0442\u043d\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f",
+          "id": "03000000-1"
+        },
+        "description_en": "",
+        "deliveryAddress": {
+          "postalCode": "12345",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+          "streetAddress": "ergerg",
+          "region": "\u0414\u043d\u0456\u043f\u0440\u043e\u043f\u0435\u0442\u0440\u043e\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "locality": "ergreger"
+        },
+        "deliveryDate": {
+          "startDate": "2017-01-05T00:00:00+02:00",
+          "endDate": "2020-02-04T00:00:00+02:00"
+        },
+        "id": "83b8dd11874bfb495b594f9a0662f264",
+        "unit": {
+          "code": "BX",
+          "name": "\u044f\u0449\u0438\u043a"
+        },
+        "quantity": 234
+      }
+    ],
+    "cancellations": [
+      {
+        "status": "active",
+        "relatedLot": "e229575c5f8465e25ef8dedd00895110",
+        "reason": "1",
+        "reasonType": "cancelled",
+        "date": "2017-11-29T15:09:29.427650+02:00",
+        "cancellationOf": "lot",
+        "id": "a30d783a1d8442b79a2d56f23e2113ad"
+      }
+    ],
+    "value": {
+      "currency": "UAH",
+      "amount": 146665.0,
+      "valueAddedTaxIncluded": true
+    },
+    "minimalStep": {
+      "currency": "UAH",
+      "amount": 234.34,
+      "valueAddedTaxIncluded": true
+    },
+    "mode": "test",
+    "title_ru": "[\u0422\u0415\u0421\u0422\u0418\u0420\u041e\u0412\u0410\u041d\u0418\u0415] ",
+    "next_check": "2017-12-08T13:41:00+02:00",
+    "procuringEntity": {
+      "contactPoint": {
+        "telephone": "+38(444)444-44-44",
+        "name_en": "\u0424\u0430\u0439\u043d\u0438\u0439 \u041c\u043e\u043b\u043e\u0434\u0435\u0446\u044c \u041c\u043e\u043b\u043e\u0434\u043a\u043e\u0432\u0438\u0447",
+        "name": "\u0424\u0430\u0439\u043d\u0438\u0439 \u041c\u043e\u043b\u043e\u0434\u0435\u0446\u044c \u041c\u043e\u043b\u043e\u0434\u043a\u043e\u0432\u0438\u0447",
+        "email": "buyer.brizol@yandex.com"
+      },
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "84567891",
+        "legalName": "\u041a\u043e\u043c\u043f\u0430\u043d\u0456\u044f \"\u041e\u0420\u0413\u0410\u041d\u0406\u0417\u0410\u0422\u041e\u0420+\""
+      },
+      "name": "\u041a\u043e\u043c\u043f\u0430\u043d\u0456\u044f \"\u041e\u0420\u0413\u0410\u041d\u0406\u0417\u0410\u0422\u041e\u0420+\"",
+      "kind": "defense",
+      "address": {
+        "postalCode": "12345",
+        "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+        "streetAddress": "buyer.brizol@yandex.com",
+        "region": "\u041a\u0438\u0457\u0432",
+        "locality": "buyer.brizol@yandex.com"
+      }
+    }
+  }
+}

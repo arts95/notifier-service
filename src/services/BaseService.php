@@ -77,7 +77,7 @@ class BaseService
         if ($this->_ownerOfPurchase == null) {
             $this->_ownerOfPurchase = $this->requesterService->getOwnerOfPurchase();
         }
-        return new UserEntity($this->_ownerOfPurchase['userID'], $this->_ownerOfPurchase['email']);
+        return new UserEntity($this->_ownerOfPurchase['id'], $this->_ownerOfPurchase['email']);
     }
 
     public function getRequestersEmail(): array

@@ -140,10 +140,12 @@ class TenderNotifier extends Notifier
                         'complaint' => $complaint,
                     ]);
                 }
-                $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
-                    'purchase' => $this->nPurchase,
-                    'complaint' => $complaint,
-                ]);
+                if ($this->service->getOwnerOfPurchase()) {
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                }
             } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
                 /** @todo set id of event */
                 if ($this->service->getRequesterByComplaintId($complaint->getId())) {
@@ -152,10 +154,12 @@ class TenderNotifier extends Notifier
                         'complaint' => $complaint,
                     ]);
                 }
-                $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
-                    'purchase' => $this->nPurchase,
-                    'complaint' => $complaint,
-                ]);
+                if ($this->service->getOwnerOfPurchase()) {
+                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                        'purchase' => $this->nPurchase,
+                        'complaint' => $complaint,
+                    ]);
+                }
             } elseif (in_array($complaint->getStatus(), ['answered'])) {
                 /** @todo set id of event */
                 if ($this->service->getRequesterByComplaintId($complaint->getId())) {
@@ -190,10 +194,12 @@ class TenderNotifier extends Notifier
                             'complaint' => $complaint,
                         ]);
                     }
-                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
-                        'purchase' => $this->nPurchase,
-                        'complaint' => $complaint,
-                    ]);
+                    if ($this->service->getOwnerOfPurchase()) {
+                        $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
                 } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
                     /** @todo set id of event */
                     if ($this->service->getRequesterByComplaintId($complaint->getId())) {
@@ -202,10 +208,12 @@ class TenderNotifier extends Notifier
                             'complaint' => $complaint,
                         ]);
                     }
-                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
-                        'purchase' => $this->nPurchase,
-                        'complaint' => $complaint,
-                    ]);
+                    if ($this->service->getOwnerOfPurchase()) {
+                        $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
                 } elseif (in_array($complaint->getStatus(), ['answered'])) {
                     /** @todo set id of event */
                     if ($this->service->getRequesterByComplaintId($complaint->getId())) {
@@ -241,10 +249,12 @@ class TenderNotifier extends Notifier
                             'complaint' => $complaint,
                         ]);
                     }
-                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
-                        'purchase' => $this->nPurchase,
-                        'complaint' => $complaint,
-                    ]);
+                    if ($this->service->getOwnerOfPurchase()) {
+                        $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
                 } elseif (in_array($complaint->getStatus(), ['claim', 'pending'])) {
                     /** @todo set id of event */
                     if ($this->service->getRequesterByComplaintId($complaint->getId())) {
@@ -253,10 +263,12 @@ class TenderNotifier extends Notifier
                             'complaint' => $complaint,
                         ]);
                     }
-                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
-                        'purchase' => $this->nPurchase,
-                        'complaint' => $complaint,
-                    ]);
+                    if ($this->service->getOwnerOfPurchase()) {
+                        $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
+                            'purchase' => $this->nPurchase,
+                            'complaint' => $complaint,
+                        ]);
+                    }
                 } elseif (in_array($complaint->getStatus(), ['answered'])) {
                     /** @todo set id of event */
                     if ($this->service->getRequesterByComplaintId($complaint->getId())) {

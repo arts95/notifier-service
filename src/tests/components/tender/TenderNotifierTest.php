@@ -18,6 +18,7 @@ class TenderNotifierTest extends \app\tests\components\base\BaseTestCase
 
     /**
      * @test
+     * @covers TenderNotifier::checkTerminateStatus()
      */
     public function testCheckTerminateStatusTenderStatusEqual(): void
     {
@@ -32,6 +33,7 @@ class TenderNotifierTest extends \app\tests\components\base\BaseTestCase
 
     /**
      * @test
+     * @covers TenderNotifier::checkTerminateStatus()
      */
     public function testCheckTerminateStatusLotStatusEqual(): void
     {
@@ -46,6 +48,7 @@ class TenderNotifierTest extends \app\tests\components\base\BaseTestCase
 
     /**
      * @test
+     * @covers TenderNotifier::checkTerminateStatus()
      */
     public function testCheckTerminateStatusTenderStatusChange(): void
     {
@@ -55,12 +58,12 @@ class TenderNotifierTest extends \app\tests\components\base\BaseTestCase
         $nTender = new TenderEntity(json_decode($new, 1), 'data');
         $tenderNotifier = new TenderNotifier($oTender, $nTender);
         $data = $this->invokeMethod($tenderNotifier, 'checkTerminateStatus');
-        var_dump($data);
         $this->assertNotEmpty($data);
     }
 
     /**
      * @test
+     * @covers TenderNotifier::checkTerminateStatus()
      */
     public function testCheckTerminateStatusLotStatusChange(): void
     {
@@ -73,4 +76,18 @@ class TenderNotifierTest extends \app\tests\components\base\BaseTestCase
         $this->assertNotEmpty($data);
     }
 
+    /**
+     * @test
+     * @covers TenderNotifier::checkSecondStage()
+     */
+    public function testCheckSecondStage()
+    {
+        $old = file_get_contents(__DIR__ . '/data/tender/second-stage/old.json');
+        $new = file_get_contents(__DIR__ . '/data/tender/second-stage/new.json');
+        $oTender = new TenderEntity(json_decode($old, 1), 'data');
+        $nTender = new TenderEntity(json_decode($new, 1), 'data');
+        $tenderNotifier = new TenderNotifier($oTender, $nTender);
+        $data = $this->invokeMethod($tenderNotifier, 'checkSecondStage');
+        $this->assertNotEmpty($data);
+    }
 }

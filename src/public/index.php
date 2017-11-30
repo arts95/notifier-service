@@ -35,6 +35,11 @@ $app->get('/test/{type}/{purchaseID}/bidders', function (Request $request, Respo
     return $response;
 });
 
+$app->get('/test', function (Request $request, Response $response) {
+    $response->getBody()->write(file_get_contents('db.json'));
+    return $response;
+});
+
 $app->get('/test/{type}/{purchaseID}/bidders/{bidID}', function (Request $request, Response $response) {
     $db = json_decode(file_get_contents('db.json'), 1);
     $type = $request->getAttribute('type');

@@ -113,7 +113,7 @@ final class AuctionNotifierTest extends BaseTestCase
         $this->assertCount(1, $data['newAnswerOnQuestions']);
     }
 
-    /**
+    /**575ad94e1e3e48c1a71fa8c12b45164d
      * @test
      */
     public function testGetQuestionsNewAnswers(): void

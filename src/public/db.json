@@ -70,14 +70,14 @@
     }
   },
   "auction": {
-    "tenderID": {
+    "575ad94e1e3e48c1a71fa8c12b45164d": {
       "owner": {
         "id": 2,
         "email": "akievtest@gmail.com"
       },
       "bidders": [
         {
-          "id": "userID",
+          "id": 4,
           "email": "akievtest@gmail.com",
           "bid": {
             "id": "bidID",
@@ -87,17 +87,17 @@
       ],
       "requesters": [
         {
-          "id": "userID",
+          "id": 3,
           "email": "akievtest@gmail.com",
           "questions": [
             {
-              "id": "questionID"
+              "id": "62e23ab12c4b48ac975e4574bc336216"
             },
             {
-              "id": "questionID"
+              "id": "9dd42068f5874909b888bbc8a96f1613"
             },
             {
-              "id": "questionID"
+              "id": "28ba735259f444e6b8ab1fcabb765127"
             }
           ]
         }

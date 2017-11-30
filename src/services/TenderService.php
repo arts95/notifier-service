@@ -39,7 +39,7 @@ class TenderService extends BaseService
         if (empty($this->_requesters)) return [];
         $data = [];
         foreach ($this->_requesters as $requester) {
-            $data[] = new RequesterEntity($requester['userID'], $requester['email'], $requester['questions'], $requester['complaints']);
+            $data[] = new RequesterEntity($requester['id'], $requester['email'], $requester['questions'], $requester['complaints']);
         }
         return $data;
     }
@@ -73,7 +73,7 @@ class TenderService extends BaseService
         $data = [];
         foreach ($this->_bidders as $bidder) {
             if ($lotID !== null) {
-                $bidder = new BidderEntity($bidder['userID'], $bidder['email'], $bidder['bid']);
+                $bidder = new BidderEntity($bidder['id'], $bidder['email'], $bidder['bid']);
                 if (in_array($lotID, $bidder->getBid()->getLotValues())) {
                     $data[] = $bidder;
                 }

@@ -30,7 +30,10 @@ class AuctionNotifier extends Notifier
     {
         $this->oPurchase = $oAuction;
         $this->nPurchase = $nAuction;
-        $this->service = new AuctionService($this->nPurchase->getId(), []);
+        $this->service = new AuctionService([
+            'type' => 'auction',
+            'purchaseID' => $this->nPurchase->getId(),
+        ]);
     }
 
     public static function getNotifier(AuctionEntity $oAuction, AuctionEntity $nAuction): AuctionNotifier
@@ -55,15 +58,15 @@ class AuctionNotifier extends Notifier
         if (!in_array($this->nPurchase->getStatus(), ['cancelled', 'unsuccessful'])) return [];
         if ($this->oPurchase->getStatus() == $this->nPurchase->getStatus()) return [];
 
-        $bidderEmail = $this->service->getBiddersEmail();
+        $biddersEmail = $this->service->getBiddersEmail();
         $requesters = $this->service->getRequesters();
         $events = [];
 
         if (!empty($requesters)) {
             foreach ($requesters as $requester) {
-                if (!empty($bidderEmail) && in_array($requester->getEmail(), $bidderEmail)) {
+                if (!empty($biddersEmail) && in_array($requester->getEmail(), $biddersEmail)) {
                     /** @todo requester and bidder. title in email!!!! */
-                    unset($bidderEmail[$requester->getEmail()]);
+                    unset($biddersEmail[$requester->getEmail()]);
                 }
                 $events[] = new EventEntity('', $requester, [
                     'purchase' => $this->nPurchase,
@@ -73,7 +76,7 @@ class AuctionNotifier extends Notifier
 
         if (!empty($this->service->getBidders())) {
             foreach ($this->service->getBidders() as $bidder) {
-                if (!in_array($bidder->getEmail(), $bidderEmail)) continue;
+                if (!in_array($bidder->getEmail(), $biddersEmail)) continue;
                 $events[] = new EventEntity('', $bidder, [
                     'purchase' => $this->nPurchase,
                 ]);

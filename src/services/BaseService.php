@@ -27,12 +27,11 @@ class BaseService
     /**
      * BaseService constructor.
      *
-     * @param string $purchaseID
      * @param array $requesterConfig
      */
-    public function __construct(string $purchaseID, $requesterConfig)
+    public function __construct(array $requesterConfig)
     {
-        $this->requesterService = new RequesterService($purchaseID, $requesterConfig);
+        $this->requesterService = new RequesterService($requesterConfig);
     }
 
     /**
@@ -59,7 +58,7 @@ class BaseService
         if (empty($this->_bidders)) return [];
         $data = [];
         foreach ($this->_bidders as $bidder) {
-            $data[] = new BidderEntity($bidder['userID'], $bidder['email'], $bidder['bid']);
+            $data[] = new BidderEntity($bidder['id'], $bidder['email'], $bidder['bid']);
         }
         return $data;
     }
@@ -102,7 +101,7 @@ class BaseService
         if (empty($this->_requesters)) return [];
         $data = [];
         foreach ($this->_requesters as $requester) {
-            $data[] = new RequesterEntity($requester['userID'], $requester['email'], $requester['questions'], []);
+            $data[] = new RequesterEntity($requester['id'], $requester['email'], $requester['questions'], []);
         }
         return $data;
     }

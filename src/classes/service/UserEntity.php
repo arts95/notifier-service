@@ -13,6 +13,7 @@ namespace app\entity\service;
  */
 class UserEntity
 {
+    /** @todo maybe delete user.id ? */
     protected $id;
     protected $email;
 

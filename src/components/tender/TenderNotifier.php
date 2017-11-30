@@ -28,7 +28,10 @@ class TenderNotifier extends Notifier
     {
         $this->oPurchase = $oTender;
         $this->nPurchase = $nTender;
-        $this->service = new TenderService($this->nPurchase->getId(), []);
+        $this->service = new TenderService([
+            'type' => 'tender',
+            'purchaseID' => $this->nPurchase->getId(),
+        ]);
         $this->events = [];
     }
 

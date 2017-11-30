@@ -11,35 +11,45 @@ use GuzzleHttp\Client;
 
 class RequesterService
 {
-    private const _TYPE_AUCTION = 'auction';
-    private const _TYPE_TENDER = 'tender';
     private $client;
     private $type;
     private $purchaseID;
 
-    /** @todo write request */
+    /** @todo catch request in another way. */
 
     /**
      * RequesterService constructor.
      *
-     * @param string $purchaseID
      * @param array $config
+     * @throws \Exception
      */
-    public function __construct(string $purchaseID, array $config)
+    public function __construct(array $config)
     {
         /** @todo configure from $config */
         $this->client = new Client([
             'base_uri' => 'http://notifier.dev/test/',
         ]);
+        if (isset($config['type'])) {
+            $this->type = $config['type'];
+        } else {
+            throw new \Exception('no type');
+        }
+        if (isset($config['purchaseID'])) {
+            $this->purchaseID = $config['purchaseID'];
+        } else {
+            throw new \Exception('no purchaseID');
+        }
     }
 
     public function getBidders(): array
     {
-        $body = $this->client->get('bidders', [
-            'type' => $this->type,
-            'purchaseID' => $this->purchaseID,
-        ])->getBody();
-        return $data = json_decode($body, true);
+        $body = $this->client->get("{$this->type}/{$this->purchaseID}/bidders")->getBody();
+        $data = json_decode($body, true);
+        if ($data == null) {
+            return [];
+        } else {
+            return $data;
+        }
         /**
          * auction
          * return [
@@ -56,32 +66,37 @@ class RequesterService
 
     public function getBidderByBidID(string $bidID): array
     {
-        $body = $this->client->get('bidders', [
-            'type' => $this->type,
-            'purchaseID' => $this->purchaseID,
-            'bidID' => $bidID,
-        ])->getBody();
-        return $data = json_decode($body, true);
+        $body = $this->client->get("{$this->type}/{$this->purchaseID}/bidders/{$bidID}")->getBody();
+        $data = json_decode($body, true);
+        if ($data == null) {
+            return [];
+        } else {
+            return $data;
+        }
 //        return ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']];
     }
 
     public function getOwnerOfPurchase(): array
     {
-        $body = $this->client->get('owner', [
-            'type' => $this->type,
-            'purchaseID' => $this->purchaseID,
-        ])->getBody();
-        return $data = json_decode($body, true);
+        $body = $this->client->get("{$this->type}/{$this->purchaseID}/owner")->getBody();
+        $data = json_decode($body, true);
+        if ($data == null) {
+            return [];
+        } else {
+            return $data;
+        }
 //        return ['userID' => 1, 'email' => 'email@email.test', 'bid' => ['id' => 1, 'status' => 'active']];
     }
 
     public function getRequesters(): array
     {
-        $body = $this->client->get('requesters', [
-            'type' => $this->type,
-            'purchaseID' => $this->purchaseID,
-        ])->getBody();
-        return $data = json_decode($body, true);
+        $body = $this->client->get("{$this->type}/{$this->purchaseID}/requesters")->getBody();
+        $data = json_decode($body, true);
+        if ($data == null) {
+            return [];
+        } else {
+            return $data;
+        }
         /**
          * auction
          * return [

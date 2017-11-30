@@ -83,6 +83,147 @@
         "featureOf": "item"
       }
     ],
+    "questions": [
+      {
+        "date": "2017-11-29T15:19:16.822886+02:00",
+        "description": "question n1question n1question n1question n1question n1question n1question n1",
+        "id": "bb40369263c8433bb8b5cd36d8033059",
+        "questionOf": "tender",
+        "title": "question n1 tender"
+      },
+      {
+        "description": "question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1question n2 lot 1",
+        "title": "question n2 lot 1",
+        "relatedItem": "e229575c5f8465e25ef8dedd00895110",
+        "date": "2017-11-29T15:19:52.922404+02:00",
+        "id": "de50ea82174845439760aafe19c1cecf",
+        "questionOf": "lot"
+      },
+      {
+        "description": "question n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerquestion n3 gegerv",
+        "title": "question n3 geger",
+        "relatedItem": "83b8dd11874bfb495b594f9a0662f264",
+        "date": "2017-11-29T15:20:16.585026+02:00",
+        "id": "3ff1f81faea34fc0b2f48a1e01d269f4",
+        "questionOf": "item"
+      }
+    ],
+    "complaints": [
+      {
+        "status": "claim",
+        "description": "claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1claim n1v",
+        "title": "claim n1 tender",
+        "dateSubmitted": "2017-11-29T15:24:39.408498+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a1",
+        "date": "2017-11-29T15:24:39.408376+02:00",
+        "type": "claim",
+        "id": "5866c906a99148d5b1ce6b42f8a5e376"
+      },
+      {
+        "relatedLot": "3ed67f7ade15c5be65dee3f64546b2a9",
+        "status": "claim",
+        "description": "claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot claim n2 lot vv",
+        "title": "claim n2 lot  2",
+        "dateSubmitted": "2017-11-29T15:25:00.113747+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a2",
+        "date": "2017-11-29T15:25:00.113644+02:00",
+        "type": "claim",
+        "id": "32b2d8299dcd4554b95b465e21ae2c48"
+      },
+      {
+        "status": "pending",
+        "description": "complaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tendercomplaint n1 tenderv",
+        "title": "complaint n1 tender",
+        "author": {
+          "contactPoint": {
+            "telephone": "+38(111)111-11-11",
+            "name": "asdasd asdbas basdbasd",
+            "email": "sasdasd@smail.com"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "01234561",
+            "legalName": "test@i.d"
+          },
+          "name": "test@i.d",
+          "address": {
+            "postalCode": "12345",
+            "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+            "streetAddress": "123",
+            "region": "\u041a\u0438\u0457\u0432",
+            "locality": "keiv"
+          }
+        },
+        "dateSubmitted": "2017-11-29T15:26:44.124592+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a3",
+        "date": "2017-11-29T15:26:44.124429+02:00",
+        "type": "complaint",
+        "id": "f3f85be233cc4993b84f99ff0dd3280e"
+      },
+      {
+        "relatedLot": "e229575c5f8465e25ef8dedd00895110",
+        "status": "pending",
+        "description": "complaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lotcomplaint n2 lot",
+        "author": {
+          "contactPoint": {
+            "telephone": "+38(111)111-11-11",
+            "name": "asdasd asdbas basdbasd",
+            "email": "sasdasd@smail.com"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "01234561",
+            "legalName": "test@i.d"
+          },
+          "name": "test@i.d",
+          "address": {
+            "postalCode": "12345",
+            "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+            "streetAddress": "123",
+            "region": "\u041a\u0438\u0457\u0432",
+            "locality": "keiv"
+          }
+        },
+        "title": "complaint n2 lot",
+        "dateSubmitted": "2017-11-29T15:26:57.098255+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a4",
+        "date": "2017-11-29T15:26:57.098080+02:00",
+        "type": "complaint",
+        "id": "7e656bb488fc4bdcac93a2329e6398d1"
+      },
+      {
+        "status": "stopping",
+        "description": "complaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelcomplaint n3 lot 1 for cancelvv",
+        "title": "complaint n3 lot 1 for cancel",
+        "author": {
+          "contactPoint": {
+            "telephone": "+38(111)111-11-11",
+            "name": "asdasd asdbas basdbasd",
+            "email": "sasdasd@smail.com"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "01234561",
+            "legalName": "test@i.d"
+          },
+          "name": "test@i.d",
+          "address": {
+            "postalCode": "12345",
+            "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+            "streetAddress": "123",
+            "region": "\u041a\u0438\u0457\u0432",
+            "locality": "keiv"
+          }
+        },
+        "cancellationReason": "11112 2 21  21  2  22 1 1sdfa afsd 4ad fs45ad fs546dsaf6afsd 5",
+        "dateCanceled": "2017-11-29T15:27:45.123363+02:00",
+        "dateSubmitted": "2017-11-29T15:27:18.101480+02:00",
+        "complaintID": "UA-2017-11-29-000089-a.a5",
+        "date": "2017-11-29T15:27:45.136261+02:00",
+        "type": "complaint",
+        "id": "848160992cea449ea830b4cd53e5310f"
+      }
+    ],
     "complaintPeriod": {
       "startDate": "2017-11-29T13:48:00+02:00",
       "endDate": "2017-12-08T13:37:00+02:00"
@@ -97,7 +238,7 @@
     "procurementMethodType": "aboveThresholdUA",
     "awardCriteria": "lowestCost",
     "owner": "brizol.net",
-    "id": "00dbe58c42ad451d9a4751090e387f48",
+    "id": "14d926e4ae944208a83d3b8e68e94185",
     "guarantee": {
       "currency": "UAH",
       "amount": 0.0

@@ -125,102 +125,34 @@ class AuctionNotifier extends Notifier
 
     protected function checkQualificationResult(): array
     {
-        if ($this->nPurchase->getVersion() == 'PS') {
-            return $this->qualificationResultPS();
-        } else {
-            $awards = $this->getAwardsByQualificationResultEA();
-            if (empty($awards)) return [];
-            $events = [];
-            foreach ($awards as $award) {
-                switch ($award->getStatus()) {
-                    case '':
-                        /** here is custom notification for some status */
-                        break;
-                    default:
-                        /** status doesn't exist, custom message */
-                }
-
-                /** @todo set event id */
-                if ($this->service->getOwnerOfPurchase()) {
-                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
-                        'purchase' => $this->nPurchase,
-                    ]);
-                }
-                if ($this->service->getBidderByID($award->getBidId())) {
-                    $events[] = new EventEntity('', $this->service->getBidderByID($award->getBidId()), [
-                        'purchase' => $this->nPurchase,
-                    ]);
-                }
-            }
-            return $events;
-        }
-    }
-
-    /**
-     * Сообщение о результатах квалификации
-     * Версия 2.3
-     *
-     * @return EventEntity[]
-     */
-    protected function qualificationResultPS(): array
-    {
-        if (empty($this->nPurchase->getAwards())) return [];
-        $bidIdInAward = $events = [];
-        foreach ($this->nPurchase->getAwards() as $award) {
-            $check = $this->getEntityInfo($this->oPurchase->getAwards(), $award->getId());
-
-            if (in_array($award->getStatus(), ['pending', 'unsuccessful', 'cancelled'])) {
-                /** статусі, когда другие участники еще могут победить */
-                $bidIdInAward[] = $award['bid_id'];
-            } elseif ($award->getStatus() == 'cancelled') {
-                if ($this->service->getOwnerOfPurchase()) {
-                    /** @todo set event id */
-                    $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
-                        'purchase' => $this->nPurchase,
-                    ]);
-                }
+        $awards = $this->getAwardsByQualificationResultEA();
+        if (empty($awards)) return [];
+        $events = [];
+        foreach ($awards as $award) {
+            switch ($award->getStatus()) {
+                case '':
+                    /** here is custom notification for some status */
+                    break;
+                default:
+                    /** status doesn't exist, custom message */
             }
 
-            /** письмо про то статус квалификации участника перешел в указазаніе статусі */
-            if ($check->new && ($check->entity ? $check->entity->getStatus() != $award->getStatus() : true)) {
-                /** @todo and notify */
-                $bidder = $this->service->getBidderByID($award->getBidId());
-                if ($bidder) {
-                    /** @todo set event id */
-                    $events[] = new EventEntity('', $bidder, [
-                        'purchase' => $this->nPurchase,
-                    ]);
-                    unset($bidder);
-                }
-            }
-
-        }
-        /** отправляем письмо только один раз, сразу после того, как закончился аукцион */
-        if ($this->nPurchase->getStatus() != 'active.qualification') return $events;
-        if ($this->nPurchase->getStatus() == $this->oPurchase->getStatus()) return $events;
-        if (empty($this->nPurchase->getBids())) return $events;
-        if (empty($bidIdInAward)) return $events;
-
-        /** теперь вібираем участников которіе не первіе в очереди */
-        foreach ($this->nPurchase->getBids() as $bid) {
-            /** отсеиваем тех, которіе первіе по счету и им уже отправили письмо о активной квалификации*/
-            if ($bid->getStatus() != 'active') continue;
-            $bidder = $this->service->getBidderByID($bid->getId());
-            if ($bidder) {
-                /** @todo set event id */
-                $events[] = new EventEntity('', $bidder, [
+            /** @todo set event id */
+            if ($this->service->getOwnerOfPurchase()) {
+                $events[] = new EventEntity('', $this->service->getOwnerOfPurchase(), [
                     'purchase' => $this->nPurchase,
                 ]);
-                unset($bidder);
+            }
+            if ($this->service->getBidderByID($award->getBidId())) {
+                $events[] = new EventEntity('', $this->service->getBidderByID($award->getBidId()), [
+                    'purchase' => $this->nPurchase,
+                ]);
             }
         }
         return $events;
     }
 
     /**
-     * Сообщение о результатах квалификации первому и второму участнику
-     * Версия 2.4
-     *
      * @return AwardEntity[]
      */
     protected function getAwardsByQualificationResultEA(): array
